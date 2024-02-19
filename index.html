@@ -25,7 +25,7 @@
       <div class="container">
         <div class="top-bar">
           <!-- Mobile menu -->
-          <button class="hamburger-menu">
+          <button class="hamburger-menu" onclick="burgerFunction()">
             <img src="./icon/burger.svg" alt="" />
           </button>
           <script src="./js/scripts.js"></script>
@@ -68,7 +68,7 @@
                 <img src="./icon/user.svg" alt="" />
               </button>
               <div class="top-act-separate"></div>
-              <button class="top-act-btn">
+              <button class="top-act-btn" onclick="darkFunction()">
                 <img src="./icon/mode.svg" alt="" />
               </button>
             </div>
@@ -78,20 +78,27 @@
     </header>
     <!-- Mobile Header -->
     <header class="mobile-header">
-      <div class="menu-overlay"></div>
+      <div class="menu-overlay" onclick="burgerFunction()"></div>
       <!-- Menu-content -->
       <div class="menu-drawer">
-        <!-- <button class="navbar-close">
+        <button class="navbar-close" onclick="burgerFunction()">
           <img src="./icon/arrow-left.svg" alt="" />
-        </button> -->
+        </button>
+        <nav class="navbar-mobile">
+          <ul>
+            <li><a href="#!">Trang chủ</a></li>
+            <li><a href="#!">Sản phẩm</a></li>
+            <li><a href="#!">Về chúng tôi</a></li>
+            <li><a href="#!">Hỗ trợ</a></li>
+            <li><a href="#!">Liên hệ</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <!-- Thẻ main bao bọc toàn bộ nội dung của trang -->
     <main style="height: 2200px">
-      <!-- Header -->
-
       <!--  Slider section -->
-      <div class="hero"></div>
+      <div class="slider"></div>
     </main>
   </body>
 </html>

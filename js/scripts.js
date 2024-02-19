@@ -1,10 +1,13 @@
 // Click hambergur menu
-const hamburgerMenu = document.querySelector(".hamburger-menu");
-const overlay = document.querySelector(".menu-overlay");
-const menuDrawer = document.querySelector(".menu-drawer");
+function burgerFunction() {
+  var overlay = document.querySelector(".menu-overlay");
+  var menuDrawer = document.querySelector(".menu-drawer");
+  overlay.classList.toggle("active");
+  menuDrawer.classList.toggle("active");
+}
 
-hamburgerMenu.addEventListener("click", () => {
-  // overlay.classList.toggle("active");
-  // menuDrawer.classList.toggle("active");
-  document.write("Bạn đã click vào nút!");
-});
+//Click dark mode button
+function darkFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}

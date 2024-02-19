@@ -27,7 +27,6 @@
   }
 
   .hamburger-menu {
-    display: block;
     background: none;
     border: none;
     cursor: pointer;
@@ -56,12 +55,18 @@
     transition: 0.5s;
   }
 
-  .menu-overlay .active {
+  .menu-overlay.active {
     opacity: 1;
     visibility: visible;
   }
 
-  .menu-drawer .active {
+  .menu-drawer.active {
     transform: translateX(0%);
+  }
+
+  .navbar-close {
+    border: 0;
+    margin: 20px;
+    cursor: pointer;
   }
 }
