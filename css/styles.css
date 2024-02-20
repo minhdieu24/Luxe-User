@@ -188,3 +188,8 @@ a {
 .dot-container .dot.active {
   background-color: #f86624;
 }
+
+/* ========= Marquee ======== */
+.mar {
+  background-color: var(--background-color);
+}

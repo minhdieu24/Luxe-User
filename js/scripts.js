@@ -10,9 +10,16 @@ function burgerFunction() {
 function darkFunction() {
   const element = document.body;
   element.classList.toggle("dark-mode");
+  // Đổi ảnh marquee chỉ khi bật dark-mode
+  const imageMarquee = document.querySelector(".mar img");
+  if (element.classList.contains("dark-mode")) {
+    imageMarquee.src = "./img/marquee-dark.png";
+  } else {
+    imageMarquee.src = "./img/marquee-light.png";
+  }
 }
 
-//Slider
+//Load slider
 function loadImage() {
   const imgPosition = document.querySelectorAll(".hero-slider img");
   const imgContainer = document.querySelector(".hero-slider");
