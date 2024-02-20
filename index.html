@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <!-- Styles -->
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/responsinve.css" />
     <!-- Scripts -->
@@ -95,10 +96,31 @@
         </nav>
       </div>
     </header>
-    <!-- Thẻ main bao bọc toàn bộ nội dung của trang -->
-    <main style="height: 2200px">
-      <!--  Slider section -->
-      <div class="slider"></div>
-    </main>
+    <!--  Slider section -->
+    <section id="slider">  
+         <!-- aspect-ratio-169 -->
+      <div class="hero-slider">
+          <!-- Slide 1 -->
+          <div class="hero-slide--1">
+            <img src="./img/slider1.png" alt="" onload="loadImage()" />
+            <div class="infor">
+              <div class="slider-content slider-content--animation">
+              </div>
+            </div>
+          </div>
+          <div class="hero-slide--2">
+            <img src="./img/Slider2.png" alt="" onload="loadImage()" />
+          </div>
+          <div class="hero-slide--3">
+            <img src="./img/Slider3.png" alt="" onload="loadImage()" />
+          </div>
+        </div>
+      </div>
+      <div class="dot-container">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </section>
   </body>
 </html>
