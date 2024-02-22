@@ -42,7 +42,7 @@ function loadImage() {
 
   function slide(index) {
     imgContainer.style.left = index * -100 + "%";
-    const dotActive = document.querySelector(".active");
+    const dotActive = document.querySelector(".dot-container .dot.active");
     dotActive.classList.remove("active");
     dotItem[index].classList.add("active");
   }
