@@ -36,6 +36,7 @@
     max-width: calc(100% - 50px);
     margin-left: auto;
     margin-right: auto;
+    display: flex;
     /* không để margin: auto vì nếu vậy sẽ mặc định margin top+bottom = 0 > sau này sẽ ghi đè*/
   }
   
@@ -144,7 +145,45 @@
     text-decoration: underline;
     color: var(--primary-color);
   }
-  
+  /* Đường viền dưới header */
+  .vien {
+    width: 1440px;
+    height: 6px;
+    background: #FFBE98;
+  }
+
+  /* ==== Mô tả sản phẩm ==== */
+  .Product-Description {
+    max-width: calc(100% - 50px);
+    height: 11000;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFFFFF;
+    margin-top: 75px;
+    margin-left: 67px;
+  }
+  .khung {
+    width: 527px;
+    height: 527px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FAFAFA;
+  }
+  .product-information {
+    width: 550px;
+    height: 527px;
+    margin-left: 96px;
+    background: black;
+  }
+  .khung-nho {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background: black;
+    float: left;
+  }
+
   /* ===== Footer ===== */
   .footer-row {
     padding: 55px 0;
