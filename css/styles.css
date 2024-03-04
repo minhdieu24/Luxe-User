@@ -3,18 +3,23 @@
 }
 
 :root {
-  --text-color: #717171;
+  --text-color-1: #717171;
+  /* product-card__title */
+  --text-color-2: #1a162e;
   --primary-color: #ef9059;
   --nav-color: #717171;
-  --background-color: #fff;
+  --background-color-1: #fff;
+  --background-color-2: #f6f6f6;
   --second-color: #fff5f0;
 }
 
 .dark-mode {
-  --text-color: #eeeeee;
+  --text-color-1: #eeeeee;
+  --text-color-2: #ffffff;
   --primary-color: #ef9059;
   --nav-color: #171c28;
-  --background-color: #171c28;
+  --background-color-1: #171c28;
+  --background-color-2: #292e39;
 }
 
 /* Để sử dụng rem */
@@ -47,7 +52,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
-  color: #1a162e;
+  color: #522a28;
   padding: 15px 35px;
 }
 
@@ -58,7 +63,7 @@ a {
 /* ======= Header ====== */
 .fixed-header {
   position: relative;
-  background-color: var(--background-color);
+  background-color: var(--background-color-1);
   padding: 10px 0px;
 }
 
@@ -100,7 +105,7 @@ a {
   margin-left: 15px;
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--text-color);
+  color: var(--text-color-1);
   padding: 8px 10px;
 }
 
@@ -135,8 +140,8 @@ a {
 }
 
 .top-bar .top-act-separate {
-  width: 1px;
-  height: 30px;
+  width: 2px;
+  height: 23px;
   background: #939090;
 }
 
@@ -147,7 +152,7 @@ a {
 
 /* ========= Slider Section ======== */
 .main {
-  background: #f6f6f6;
+  background: var(--background-color-2);
 }
 
 #slider {
@@ -194,18 +199,19 @@ a {
 
 /* ========= Marquee ======== */
 .mar {
-  background-color: var(--background-color);
+  background-color: var(--background-color-1);
 }
 
 /* ========= Product Sales ========= */
 #product-sale {
-  background: #f6f6f6;
+  background: var(--background-color-2);
 }
 
 #product-sale h2 {
-  padding: 50px 0 30px 0;
+  margin-top: -2px;
+  padding: 52px 0 30px 0;
   color: #ef9059;
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-weight: 700;
   text-align: center;
 }
@@ -236,13 +242,15 @@ a {
   height: 100%;
   padding: 16px;
   border-radius: 20px;
-  background: #fff;
-  box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+  background: var(--background-color-1);
+  box-shadow: 0px 60px 20px 0px rgba(237, 237, 246, 0.2);
 }
 
 .product-card__img-wrap {
   position: relative;
   padding-top: 100%;
+  background-color: var(--background-color-1);
+  border-radius: 20px;
 }
 
 .product-card__thumb {
@@ -269,7 +277,7 @@ a {
 .product-card__title a {
   display: inline-block;
   margin-top: 16px;
-  color: #1a162e;
+  color: var(--text-color-2);
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 150%;
@@ -278,13 +286,20 @@ a {
 .product-card__price,
 .product-card__price-sales,
 .product-card__score {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 500;
+}
+
+.product-card__price {
+  color: #f98542;
+  font-weight: 700;
 }
 
 .product-card__price-sales {
   margin-left: 10px;
   text-decoration: line-through;
+  font-weight: 700;
+  color: #f98542;
 }
 
 .product-card__collection {
@@ -322,15 +337,15 @@ a {
 }
 
 .collection-title {
-  color: #522a28;
-  font-size: 2.6rem;
+  color: #ef9059;
+  font-size: 3.8rem;
   font-weight: 700;
   text-align: center;
 }
 
 .collection-desc {
   margin: 10px 0;
-  color: #522a28;
+  color: #ef9059;
   text-align: center;
   font-size: 1.6rem;
   font-weight: 400;
@@ -363,12 +378,28 @@ a {
 /* ========= Reviews ======== */
 #home-reviews {
   padding: 30px 0 50px;
+  background-color: var(--background-color-1);
+  min-height: 420px;
   position: relative;
-  background-color: #fff;
+  width: 100%;
+}
+
+.review-main {
+  width: 60%;
+  margin: 30px auto;
+  min-height: inherit;
+  overflow: hidden;
+}
+
+.review-container {
+  position: relative;
+  min-height: inherit;
+  width: 100%;
+  height: 100%;
 }
 
 .review-title {
-  font-size: 5.5rem;
+  font-size: 3.8rem;
   font-weight: 700;
   text-align: center;
 }
@@ -378,29 +409,37 @@ a {
 }
 
 .review-title-2 {
-  color: #1a162e;
+  color: var(--text-color-2);
 }
 
 .review-desc {
   margin-top: 15px;
-  color: #777171;
+  color: var(--text-color-2);
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 400;
 }
 
+.home-review {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
 .review-content {
-  margin: auto;
-  width: 60%;
+  margin: 20px auto;
+  width: 100%;
+  color: #000000;
 }
 
 .review-avt {
   display: block;
-  margin: 30px 50% 0;
-  max-width: 230px;
+  margin: 0 50%;
+  width: 230px;
   height: 245px;
-  border-radius: 116px;
+  border-radius: 50%;
   transform: translateX(-50%);
+  object-fit: cover;
 }
 
 .review-icon {
@@ -409,11 +448,14 @@ a {
   transform: translateX(-50%);
 }
 
-.review-content .review-1 {
+.review-content .review-script {
+  color: var(--text-color-2);
   margin-top: 17px;
   padding: 15px;
-  border: 1px solid #522a28;
+  border: 1px solid var(--text-color-2);
   text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .dot-container-review {
@@ -439,11 +481,15 @@ a {
 }
 
 /* ============= Newsletter ========= */
+#newsletter {
+  background-color: #f6f6f6;
+}
+
 #newsletter .news {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 0;
+  padding: 67px 0;
 }
 
 .news-content {
@@ -479,9 +525,15 @@ a {
   height: 60px;
 }
 
+.news-register input {
+  padding-left: 20px;
+}
+
+.news-register input,
 .news-register input::placeholder {
-  margin-left: 20px;
-  font-size: 1.7rem;
+  color: #1e1e1e;
+  font-family: Quicksand;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 
