@@ -216,23 +216,13 @@ a {
   text-align: center;
 }
 
-.row-cols-4 {
-  flex: 0 0 auto;
-  width: 25%;
-}
-
-.row-cols-sm-1 {
-  flex: 0 0 auto;
-  width: 100%;
-}
-
 .product-home {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.col {
+.product-item {
   flex: 1 0;
-  justify-content: space-between;
   margin: 5px;
 }
 
@@ -333,7 +323,8 @@ a {
 
 /* ========= Collection Nhẫn cầu hôn ====== */
 .collection-infor {
-  margin: 10px 0;
+  margin: 10px auto;
+  max-width: 85%;
 }
 
 .collection-title {
@@ -353,21 +344,26 @@ a {
 
 .img-collection {
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
+  width: 100%;
+  background-color: #efe6df;
+}
+
+.banner-left,
+.banner-right {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-}
-
-.banner-left {
-  position: relative;
-  width: 50%;
-}
-
-.banner-left img {
-  position: absolute;
+  width: 100%;
 }
 
 .banner-right {
-  width: 50%;
+  flex-grow: 1;
+}
+
+.img-collection img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .btn.home-col {
@@ -379,15 +375,14 @@ a {
 #home-reviews {
   padding: 30px 0 50px;
   background-color: var(--background-color-1);
-  min-height: 420px;
-  position: relative;
   width: 100%;
+  position: relative;
 }
 
 .review-main {
   width: 60%;
   margin: 30px auto;
-  min-height: inherit;
+  min-height: 420px;
   overflow: hidden;
 }
 
@@ -427,7 +422,7 @@ a {
 }
 
 .review-content {
-  margin: 20px auto;
+  margin: 20px auto 0px;
   width: 100%;
   color: #000000;
 }
@@ -456,10 +451,11 @@ a {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 500;
+  align-self: stretch;
 }
 
 .dot-container-review {
-  margin: 15px 50% 0px;
+  margin: 0px 50% 0px;
   height: 20px;
   background: none;
   display: flex;
@@ -630,6 +626,10 @@ a {
 
 .footer-copyright {
   background-color: #f6f6f6;
+}
+
+.footer__copyright-text {
+  text-align: center;
 }
 
 .footer-copyright .container {

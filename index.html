@@ -86,15 +86,37 @@
         <button class="navbar-close" onclick="burgerFunction()">
           <img src="./icon/arrow-left.svg" alt="" />
         </button>
+        <hr>
         <nav class="navbar-mobile">
           <ul>
-            <li><a href="#!">Trang chủ</a></li>
-            <li><a href="#!">Sản phẩm</a></li>
-            <li><a href="#!">Về chúng tôi</a></li>
-            <li><a href="#!">Hỗ trợ</a></li>
-            <li><a href="#!">Liên hệ</a></li>
+            <li><a href="#!">TRANG CHỦ</a></li>
+            <li><a href="#!">SẢN PHẨM</a></li>
+            <li><a href="#!">VỀ CHÚNG TÔI</a></li>
+            <li><a href="#!">HỖ TRỢ</a></li>
+            <li><a href="#!">LIÊN HỆ</a></li>
           </ul>
         </nav>
+        <hr>
+        <!-- Action -->
+        <div class="top-act">
+            <button class="top-act-btn">
+              <img src="./icon/search.svg" alt="" />
+            </button>
+            <button class="top-act-btn">
+              <img src="./icon/heart.svg" alt="" />
+              <span class="top-act-title"> 03 </span>
+            </button>
+            <button class="top-act-btn">
+              <img src="./icon/cart.svg" alt="" />
+              <span class="top-act-title"> 03 </span>
+            </button>
+            <button class="top-act-btn">
+              <img src="./icon/user.svg" alt="" />
+            </button>
+            <button class="top-act-btn mode" onclick="darkFunction()">
+              <img src="./icon/mode.svg" alt="" />
+            </button>
+        </div>
       </div>
     </header>
     <!--  Slider section -->
@@ -130,9 +152,9 @@
     <section id="product-sale">
       <div class="container">
         <h2>Khuyến mãi tháng 2</h2>
-        <div class="row-cols-4 row-cols-sm-1 product-home">
+        <div class="product-home">
           <!-- Product card 1 -->
-          <div class="col">
+          <div class="product-item">
               <div class="product-card">
                   <div class="product-card__img-wrap">
                       <a href="./product-detail.html">
@@ -147,15 +169,15 @@
                   </h3>
                   <p class="product-card__collection">Nhẫn cưới</p>
                   <div class="product-card__row">
-                    <span class="product-card__price">1.000.000 VNĐ</span>
-                    <span class="product-card__price-sales">1.500.000 VNĐ</span>
+                    <span class="product-card__price">1.000.000đ</span>
+                    <span class="product-card__price-sales">1.500.000đ</span>
                     <img src="./icon/star.svg" alt="" class="product-card__star" />
                     <span class="product-card__score">4.3</span>
                   </div>
               </div>
           </div>
           <!-- Product 2 -->
-          <div class="col">
+          <div class="product-item">
             <div class="product-card">
                 <div class="product-card__img-wrap">
                     <a href="./product-detail.html">
@@ -170,15 +192,15 @@
                 </h3>
                 <p class="product-card__collection">Nhẫn cưới</p>
                 <div class="product-card__row">
-                  <span class="product-card__price">1.000.000 VNĐ</span>
-                  <span class="product-card__price-sales">1.500.000 VNĐ</span>
+                  <span class="product-card__price">1.000.000đ</span>
+                  <span class="product-card__price-sales">1.500.000đ</span>
                   <img src="./icon/star.svg" alt="" class="product-card__star" />
                   <span class="product-card__score">4.3</span>
                 </div>
             </div>
           </div>
             <!-- Product 3 -->
-          <div class="col">
+          <div class="product-item">
               <div class="product-card">
                   <div class="product-card__img-wrap">
                       <a href="./product-detail.html">
@@ -193,15 +215,15 @@
                   </h3>
                   <p class="product-card__collection">Nhẫn cưới</p>
                   <div class="product-card__row">
-                    <span class="product-card__price">1.000.000 VNĐ</span>
-                    <span class="product-card__price-sales">1.500.000 VNĐ</span>
+                    <span class="product-card__price">1.000.000đ</span>
+                    <span class="product-card__price-sales">1.500.000đ</span>
                     <img src="./icon/star.svg" alt="" class="product-card__star" />
                     <span class="product-card__score">4.3</span>
                   </div>
               </div>
           </div>
           <!-- Product 4 -->
-          <div class="col">
+          <div class="product-item">
             <div class="product-card">
                 <div class="product-card__img-wrap">
                     <a href="./product-detail.html">
@@ -216,8 +238,8 @@
                 </h3>
                 <p class="product-card__collection">Nhẫn cưới</p>
                 <div class="product-card__row">
-                  <span class="product-card__price">1.000.000 VNĐ</span>
-                  <span class="product-card__price-sales">1.500.000 VNĐ</span>
+                  <span class="product-card__price">1.000.000đ</span>
+                  <span class="product-card__price-sales">1.500.000đ</span>
                   <img src="./icon/star.svg" alt="" class="product-card__star" />
                   <span class="product-card__score">4.3</span>
                 </div>
@@ -252,9 +274,9 @@
     <section id="product-sale">
       <div class="container">
         <h2>Sản phẩm bán chạy</h2>
-        <div class="row-cols-4 row-cols-sm-1 product-home">
+        <div class="product-home">
           <!-- Product card 1 -->
-          <div class="col">
+          <div class="product-item">
               <div class="product-card">
                   <div class="product-card__img-wrap">
                       <a href="./product-detail.html">
@@ -269,15 +291,15 @@
                   </h3>
                   <p class="product-card__collection">Nhẫn cưới</p>
                   <div class="product-card__row">
-                    <span class="product-card__price">1.000.000 VNĐ</span>
-                    <span class="product-card__price-sales">1.500.000 VNĐ</span>
+                    <span class="product-card__price">1.000.000đ</span>
+                    <span class="product-card__price-sales">1.500.000đ</span>
                     <img src="./icon/star.svg" alt="" class="product-card__star" />
                     <span class="product-card__score">4.3</span>
                   </div>
               </div>
           </div>
           <!-- Product 2 -->
-          <div class="col">
+          <div class="product-item">
             <div class="product-card">
                 <div class="product-card__img-wrap">
                     <a href="./product-detail.html">
@@ -292,15 +314,15 @@
                 </h3>
                 <p class="product-card__collection">Nhẫn cưới</p>
                 <div class="product-card__row">
-                  <span class="product-card__price">1.000.000 VNĐ</span>
-                  <span class="product-card__price-sales">1.500.000 VNĐ</span>
+                  <span class="product-card__price">1.000.000đ</span>
+                  <span class="product-card__price-sales">1.500.000đ</span>
                   <img src="./icon/star.svg" alt="" class="product-card__star" />
                   <span class="product-card__score">4.3</span>
                 </div>
             </div>
           </div>
             <!-- Product 3 -->
-          <div class="col">
+          <div class="product-item">
               <div class="product-card">
                   <div class="product-card__img-wrap">
                       <a href="./product-detail.html">
@@ -315,15 +337,15 @@
                   </h3>
                   <p class="product-card__collection">Nhẫn cưới</p>
                   <div class="product-card__row">
-                    <span class="product-card__price">1.000.000 VNĐ</span>
-                    <span class="product-card__price-sales">1.500.000 VNĐ</span>
+                    <span class="product-card__price">1.000.000đ</span>
+                    <span class="product-card__price-sales">1.500.000đ</span>
                     <img src="./icon/star.svg" alt="" class="product-card__star" />
                     <span class="product-card__score">4.3</span>
                   </div>
               </div>
           </div>
           <!-- Product 4 -->
-          <div class="col">
+          <div class="product-item">
             <div class="product-card">
                 <div class="product-card__img-wrap">
                     <a href="./product-detail.html">
@@ -338,8 +360,8 @@
                 </h3>
                 <p class="product-card__collection">Nhẫn cưới</p>
                 <div class="product-card__row">
-                  <span class="product-card__price">1.000.000 VNĐ</span>
-                  <span class="product-card__price-sales">1.500.000 VNĐ</span>
+                  <span class="product-card__price">1.000.000đ</span>
+                  <span class="product-card__price-sales">1.500.000đ</span>
                   <img src="./icon/star.svg" alt="" class="product-card__star" />
                   <span class="product-card__score">4.3</span>
                 </div>
@@ -419,7 +441,7 @@
     <footer class="footer">
       <div class="footer-row">
         <div class="container">
-          <div class="footer-column-1">
+          <div class="footer-column">
             <!-- Logo -->
             <a href="./" class="logo-foot">
               <img src="./icon/Logo.svg" alt="Luxe" />
@@ -440,7 +462,7 @@
               </div>
             </div>
           </div>
-          <div class="footer-column-2">
+          <div class="footer-column">
             <h3 class="footer__heading">Danh mục</h3>
             <ul class="footer__list">
                 <li class="footer__item">
@@ -468,7 +490,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer-column-3">
+          <div class="footer-column">
             <h3 class="footer__heading">Thông tin liên hệ</h3>
             <ul class="footer__list">
                 <li class="footer__item">
@@ -482,7 +504,7 @@
                 </li>
             </ul>
           </div>
-          <div class="footer-column-4">
+          <div class="footer-column">
             <h3 class="footer__heading">Theo dõi</h3>
             <div class="footer__social">
                 <a href="#!" class="footer__social-btn">

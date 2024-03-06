@@ -63,28 +63,28 @@ function loadReview() {
   const rvContainer = document.querySelector(".review-container");
   const dotReview = document.querySelectorAll(".dot-review");
   let rvNumber = reviews.length;
-  let index = 0;
-  reviews.forEach(function (review, index) {
-    review.style.left = index * 100 + "%";
-    dotReview[index].addEventListener("click", function () {
-      slide(index);
+  let index_rv = 0;
+  reviews.forEach(function (review, index_rv) {
+    review.style.left = index_rv * 100 + "%";
+    dotReview[index_rv].addEventListener("click", function () {
+      slide_rv(index_rv);
     });
   });
   function rvSlide() {
-    index++;
-    if (index >= rvNumber) {
-      index = 0;
+    index_rv++;
+    if (index_rv >= rvNumber) {
+      index_rv = 0;
     }
-    slide(index);
+    slide_rv(index_rv);
   }
 
-  function slide(index) {
-    rvContainer.style.left = index * -100 + "%";
-    const dotActive = document.querySelector(
+  function slide_rv(index_rv) {
+    rvContainer.style.left = index_rv * -100 + "%";
+    const dot_rvActive = document.querySelector(
       ".dot-container-review .dot-review.active"
     );
-    dotActive.classList.remove("active");
-    dotReview[index].classList.add("active");
+    dot_rvActive.classList.remove("active");
+    dotReview[index_rv].classList.add("active");
   }
   setInterval(rvSlide, 5000);
 }
