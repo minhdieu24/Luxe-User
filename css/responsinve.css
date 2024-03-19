@@ -1,0 +1,181 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .top-bar .hamburger-menu {
+      display: none;
+    }
+  
+  
+    .menu-drawer {
+      display: none;
+    }
+  }
+  
+  
+  /* Mobile */
+  @media screen and (max-width: 788px) {
+    /* Navigation */
+    .top-bar {
+      position: relative;
+    }
+  
+  
+    .top-bar .logo-nav {
+      margin-top: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+  
+    .navbar {
+      display: none;
+    }
+  
+  
+    .top-bar .top-act {
+      display: none;
+    }
+  
+  
+    .hamburger-menu {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  
+  
+    .hamburger-menu img {
+      width: 24px;
+    }
+  
+  
+    .menu-overlay {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.5s;
+    }
+  
+  
+    .menu-drawer {
+      position: fixed;
+      inset: 0 40% 0 0;
+      background: var(--background-color-1);
+      z-index: 2;
+      transform: translateX(-100%);
+      transition: 0.5s;
+    }
+  
+  
+    .menu-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+  
+  
+    .menu-drawer.active {
+      transform: translateX(0%);
+    }
+  
+  
+    .navbar-close {
+      border: 0;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+  
+    .menu-drawer {
+      padding: 20px;
+    }
+  
+  
+    .navbar-mobile ul a {
+      display: inline-block;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--text-color-1);
+      padding: 5px 10px 5px 0px;
+    }
+  
+  
+    .navbar-mobile ul a:hover {
+      text-decoration: underline;
+      color: var(--primary-color);
+    }
+  
+  
+    .menu-drawer .top-act {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      max-width: 60px;
+    }
+  
+  
+    .menu-drawer .top-act button {
+      border-radius: 5px;
+      margin: 5px 0px;
+      padding: 3px 2px;
+      border: 1px solid gray;
+    }
+  
+  
+    .menu-drawer .top-act button:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  
+  
+    /* ========= Product Sales ========= */
+    .product-home {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+  
+    /* ========= Collection Nhẫn cầu hôn ====== */
+  
+  
+    .img-collection {
+      flex-direction: column;
+    }
+  
+  
+    /* ========= Reviews ====== */
+    .review-main {
+      min-height: 520px;
+    }
+  
+  
+    /* ========= Newsletter ====== */
+    #newsletter .news {
+      flex-direction: column;
+    }
+  
+  
+    .news-content,
+    .news-register {
+      width: 90%;
+    }
+  
+  
+    .news-content {
+      margin-bottom: 20px;
+    }
+  
+  
+    /* ========= Footer ====== */
+    .footer-row .container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+  
+    .footer-column:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+  
