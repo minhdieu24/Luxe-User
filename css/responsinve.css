@@ -131,41 +131,7 @@
     }
   
   
-    /* ========= Product Sales ========= */
-    .product-home {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-  
-    /* ========= Collection Nhẫn cầu hôn ====== */
-  
-  
-    .img-collection {
-      flex-direction: column;
-    }
-  
-  
-    /* ========= Reviews ====== */
-    .review-main {
-      min-height: 520px;
-    }
-  
-  
-    /* ========= Newsletter ====== */
-    #newsletter .news {
-      flex-direction: column;
-    }
-  
-  
-    .news-content,
-    .news-register {
-      width: 90%;
-    }
-  
-  
-    .news-content {
-      margin-bottom: 20px;
-    }
+   
   
   
     /* ========= Footer ====== */
