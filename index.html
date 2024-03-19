@@ -22,7 +22,64 @@
   </head>
 <body>
   <div class="div">
-    <div class="div-2">
+    <!-- PC Header -->
+    <header class="fixed-header">
+      <div class="container">
+        <div class="top-bar">
+          <!-- Mobile menu -->
+          <button class="hamburger-menu" onclick="burgerFunction()">
+            <img src="./icon/burger.svg" alt="" />
+          </button>
+          <script src="./js/scripts.js"></script>
+          <!-- Logo -->
+          <a href="./" class="logo-nav">
+            <img src="./icon/Logo.svg" alt="Luxe" />
+            <h1 class="logo-title">Luxe</h1>
+          </a>
+          <!-- nav = navigation giống div nhưng có ngữ nghĩa -->
+          <!-- Navigation -->
+          <nav class="navbar">
+            <ul>
+              <li><a href="#!">Trang chủ</a></li>
+              <li><a href="#!">Sản phẩm</a></li>
+              <li><a href="#!">Về chúng tôi</a></li>
+              <li><a href="#!">Hỗ trợ</a></li>
+              <li><a href="#!">Liên hệ</a></li>
+            </ul>
+          </nav>
+
+          <!-- Action -->
+          <div class="top-act">
+            <div class="top-act-group">
+              <button class="top-act-btn">
+                <img src="./icon/search.svg" alt="" />
+              </button>
+            </div>
+            <div class="top-act-group">
+              <button class="top-act-btn">
+                <img src="./icon/heart.svg" alt="" />
+                <span class="top-act-title"> 03 </span>
+              </button>
+              <div class="top-act-separate"></div>
+              <button class="top-act-btn">
+                <img src="./icon/cart.svg" alt="" />
+                <span class="top-act-title"> 03 </span>
+              </button>
+              <div class="top-act-separate"></div>
+              <button class="top-act-btn">
+                <img src="./icon/user.svg" alt="" />
+              </button>
+              <div class="top-act-separate"></div>
+              <button class="top-act-btn" onclick="darkFunction()">
+                <img src="./icon/moon.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--<div class="div-2">
       <div class="div-3">
         <div class="div-4">
           <div class="div-5">
@@ -58,7 +115,7 @@
           <img src="./icon/moon.svg" alt="" class="img-6" />
         </div>
       </div>
-    </div>
+    </div>-->
     <div class="div-22"></div>
     <div class="div-23">
       <div class="div-24">
@@ -79,7 +136,7 @@
           <div class="div-26">
             <p class="product-card__collection">Nhẫn</p>
             <!--<div class="div-27">Nhẫn</div>-->
-            <div class="div-28">Nhẫn cưới Kim cương NC 795KC</div>
+            <p class="div-28">Nhẫn cưới Kim cương NC 795KC</p>
             <div class="div-78">
               <img src="./icon/star.svg" alt="" class="img-17" />
               <div class="div-79">4.9 (77)</div>
@@ -182,104 +239,102 @@
       </div>
       </div>
     </div>
-      <div class="div-73">
-        <div class="div-74">
-          <div class="column-13">
-            <div class="div-75">
-              <div class="div-76">Customer Reviews</div>
-              <div class="div-77">77 Reviews</div>
-              <div class="div-78">
-                <img src="./icon/star.svg" alt="" class="img-17" />
-                <div class="div-79">4.9</div>
-              </div>
-              <div class="div-80">
-                <div class="div-86">5 Stars</div>
-                <div class="div-82"><div class="div-83"></div></div>
-                <div class="div-84">37</div>
-              </div>
-              <div class="div-85">
-                <div class="div-86">4 Stars</div>
-                <div class="div-87"><div class="div-88"></div></div>
-                <div class="div-89">20</div>
-              </div>
-              <div class="div-97">
-                <div class="div-86">3 Stars</div>
-                <div class="div-99"><div class="div-100"></div></div>
-                <div class="div-101">12</div>
-              </div>
-              <div class="div-102">
-                <div class="div-86">2 Stars</div>
-                <div class="div-104"><div class="div-105"></div></div>
-                <div class="div-106">8</div>
-              </div>
-              <div class="div-107">
-                <div class="div-86">1 Stars</div>
-                <div class="div-109"></div>
-                <div class="div-110">0</div>
-              </div>
+    <div class="div-73">
+      <div class="div-74">
+        <div class="column-13">
+          <div class="div-75">
+            <div class="div-76">Customer Reviews</div>
+            <div class="div-77">77 Reviews</div>
+            <div class="div-78">
+              <img src="./icon/star.svg" alt="" class="img-17" />
+              <div class="div-79">4.9</div>
             </div>
-          </div>
-          <div class="column-14">
-            <div class="div-90">
-              <div class="div-91">How would you rate this?</div>
-              <img src="./icon/5star.svg" alt="" class="img-18" />
-              <form id="reviewForm">
-                <div class="form-group">
-                    <label for="reviewTitle">Add a headline</label> <br>
-                    <input class="div-93" type="text" id="reviewTitle" name="reviewTitle">
-                </div>
-                <div class="form-group">
-                    <label for="reviewDetails">Write a summary of your review</label> <br>
-                    <textarea class="div-113" id="reviewDetails" name="reviewDetails" rows="4"></textarea>
-                </div>
-                <button style="border: none;" class="btn" type="submit">Submit</button>
-              </form>
+            <div class="div-80">
+              <div class="div-86">5 Stars</div>
+              <div class="div-82"><div class="div-83"></div></div>
+              <div class="div-84">37</div>
+            </div>
+            <div class="div-85">
+              <div class="div-86">4 Stars</div>
+              <div class="div-87"><div class="div-88"></div></div>
+              <div class="div-89">20</div>
+            </div>
+            <div class="div-97">
+              <div class="div-86">3 Stars</div>
+              <div class="div-99"><div class="div-100"></div></div>
+              <div class="div-101">12</div>
+            </div>
+            <div class="div-102">
+              <div class="div-86">2 Stars</div>
+              <div class="div-104"><div class="div-105"></div></div>
+              <div class="div-106">8</div>
+            </div>
+            <div class="div-107">
+              <div class="div-86">1 Stars</div>
+              <div class="div-109"></div>
+              <div class="div-110">0</div>
             </div>
           </div>
         </div>
-        <div class="div-115">
-          <div class="div-116">
-            <div class="column-17">
-              <div class="div-117">
-                <img src="img/nhẫn 2.jpg" alt="" class="img-19" />
-                <div class="div-118">Thu Hiền</div>
-                <img src="./icon/5star.svg" alt="" class="img-20" />
-                <div class="div-119">Nhẫn quá đẹp</div>
-                <div class="div-120">
-                  Chưa bao giờ tôi mua một chiếc nhẫn đẹp như dị. Happy new yearrr.
-                  Chúc mọi người năm mới vui vẻ.
-                </div>
+        <div class="column-14">
+          <div class="div-90">
+            <div class="div-91">How would you rate this?</div>
+            <img src="./icon/5star.svg" alt="" class="img-18" style="margin-bottom: 20px;" />
+            <form id="reviewForm">
+              <div class="form-group">
+                  <label for="reviewTitle">Add a headline</label> <br>
+                  <input class="div-93" type="text" id="reviewTitle" name="reviewTitle">
               </div>
-            </div>
-            <div class="column-18">
-              <div class="div-121">
-                <img src="img/nhẫn 2.jpg" alt="" class="img-21" />
-                <div class="div-122">Minh Diệu</div>
-                <img src="./icon/5star.svg" alt="" class="img-22" />
-                <div class="div-123">Nhẫn quá đẹp</div>
-                <div class="div-124">
-                  Chưa bao giờ tôi mua một chiếc nhẫn đẹp như dị. Happy new yearrr.
-                  Chúc mọi người năm mới vui vẻ.
-                </div>
+              <div class="form-group">
+                  <label for="reviewDetails">Write a summary of your review</label> <br>
+                  <textarea class="div-113" id="reviewDetails" name="reviewDetails" rows="4"></textarea>
               </div>
-            </div>
-            <div class="column-19">
-              <div class="div-125">
-                <img src="img/nhẫn 2.jpg" alt="" class="img-23" />
-                <div class="div-126">Bảo Ngọc</div>
-                <img src="./icon/5star.svg" alt="" class="img-24" />
-                <div class="div-127">Nhẫn quá đẹp</div>
-                <div class="div-128">
-                  Chưa bao giờ tôi mua một chiếc nhẫn đẹp như dị. Happy new yearrr.
-                  Chúc mọi người năm mới vui vẻ.
-                </div>
-              </div>
-            </div>
+              <button style="border: none; margin-top: 15px;" class="btn" type="submit">Submit</button>
+            </form>
           </div>
         </div>
-        <a href="#!" class="btn home-product">Load more</a>
-  
       </div>
+      <div class="div-115">
+        <div class="div-116">
+          <div class="column-17">
+            <div class="div-117">
+              <img src="img/nhẫn 2.jpg" alt="" class="img-19" />
+              <div class="div-118">Thu Hiền</div>
+              <img src="./icon/5star.svg" alt="" class="img-20" />
+              <div class="div-119">Nhẫn quá đẹp</div>
+              <div class="div-120">
+                Chưa bao giờ tôi mua một chiếc nhẫn đẹp như dị. Happy new yearrr.
+                Chúc mọi người năm mới vui vẻ.
+              </div>
+            </div>
+          </div>
+          <div class="column-18">
+            <div class="div-121">
+              <img src="img/nhẫn 2.jpg" alt="" class="img-21" />
+              <div class="div-122">Minh Diệu</div>
+              <img src="./icon/5star.svg" alt="" class="img-22" />
+              <div class="div-123">Nhẫn quá đẹp</div>
+              <div class="div-124">
+                Chưa bao giờ tôi mua một chiếc nhẫn đẹp như dị. Happy new yearrr.
+                Chúc mọi người năm mới vui vẻ.
+              </div>
+            </div>
+          </div>
+          <div class="column-19">
+            <div class="div-125">
+              <img src="img/nhẫn 2.jpg" alt="" class="img-23" />
+              <div class="div-126">Bảo Ngọc</div>
+              <img src="./icon/5star.svg" alt="" class="img-24" />
+              <div class="div-127">Nhẫn quá đẹp</div>
+              <div class="div-128">
+                Chưa bao giờ tôi mua một chiếc nhẫn đẹp như dị. Happy new yearrr. Chúc mọi người năm mới vui vẻ.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#!" class="btn home-product">Load more</a>
+    </div>
     <div class="container">
       <div class="div-130">SẢN PHẨM TƯƠNG TỰ, THAM KHẢO NGAY!</div>
       <div class="product-home">

@@ -44,6 +44,7 @@ body {
 .product-home {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  padding: 0 76px;
 }
 
 .product-item {
@@ -221,9 +222,6 @@ td{
   object-position: center;
   width: 41px;
 }
-.div-6 {
-  font-family: Quicksand, sans-serif;
-}
 .div-7 {
   background-color: #fff;
   display: flex;
@@ -240,7 +238,6 @@ td{
   }
 }
 .div-8 {
-  font-family: Quicksand, sans-serif;
   white-space: nowrap;
   flex-grow: 1;
 }
@@ -251,18 +248,12 @@ td{
 }
 .div-9 {
   color: var(--Secondary-Color-Secondary-1, #20242f);
-  font-family: Quicksand, sans-serif;
 }
 .div-10 {
-  font-family: Quicksand, sans-serif;
   flex-grow: 1;
   flex-basis: auto;
 }
-.div-11 {
-  font-family: Quicksand, sans-serif;
-}
 .div-12 {
-  font-family: Quicksand, sans-serif;
   white-space: nowrap;
   flex-grow: 1;
 }
@@ -343,9 +334,6 @@ td{
   object-position: center;
   width: 24px;
 }
-.div-18 {
-  font-family: Quicksand, sans-serif;
-}
 .div-19 {
   background-color: #939090;
   align-self: stretch;
@@ -368,9 +356,6 @@ td{
   object-fit: auto;
   object-position: center;
   width: 24px;
-}
-.div-21 {
-  font-family: Quicksand, sans-serif;
 }
 .img-5 {
   aspect-ratio: 0.88;
@@ -487,7 +472,7 @@ td{
   flex-direction: column;
   font-size: 15px;
   color: #000;
-  line-height: 173%;
+  line-height: 70%;
   padding: 0 20px;
 }
 @media (max-width: 991px) {
@@ -498,7 +483,7 @@ td{
 }
 .div-27 {
   color: #a6a6a6;
-  font: 400 25px/96% Quicksand, sans-serif;
+  font: 400 25px/96%;
 }
 @media (max-width: 991px) {
   .div-27 {
@@ -508,8 +493,11 @@ td{
 .div-28 {
   color: #522a28;
   text-transform: capitalize;
-  margin-top: 19px;
-  font: 700 42px/176% Quicksand, sans-serif;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 42px;
+  font: 700 42px/100%;
+  line-height: 100%;
 }
 @media (max-width: 991px) {
   .div-28 {
@@ -520,7 +508,7 @@ td{
 .div-29 {
   text-transform: capitalize;
   margin-top: 37px;
-  font: 500 24px/142% Quicksand, sans-serif;
+  font: 500 24px/70%;
 }
 @media (max-width: 991px) {
   .div-29 {
@@ -528,7 +516,6 @@ td{
   }
 }
 .div-30 {
-  font-family: Quicksand, sans-serif;
   font-style: italic;
   font-weight: 300;
   margin-top: 26px;
@@ -549,7 +536,6 @@ td{
   }
 }
 .div-32 {
-  font-family: Quicksand, sans-serif;
   font-weight: 300;
   margin-top: 18px;
 }
@@ -589,7 +575,6 @@ td{
   width: 29px;
 }
 .div-36 {
-  font-family: Quicksand, sans-serif;
   flex-grow: 1;
   flex-basis: auto;
   margin: auto 0;
@@ -645,7 +630,7 @@ td{
   color: #522a28;
   text-align: center;
   padding: 8px 30px;
-  font: 600 20px/130% Quicksand, sans-serif;
+  font: 600 20px/130%;
 }
 @media (max-width: 991px) {
   .div-44 {
@@ -686,7 +671,6 @@ td{
   text-align: center;
   color: #522a28;
   padding: 15px 35px;
-  font-family: Quicksand, sans-serif;
 }
 .btn.them{
   width: 450px;
@@ -702,7 +686,6 @@ td{
   color: #522a28;
   flex-grow: 1;
   flex-basis: auto;
-  font-family: Quicksand, sans-serif;
   font-weight: 700;
 }
 @media (max-width: 991px) {
@@ -717,7 +700,6 @@ td{
   font-weight: 300;
 }
 .div-51 {
-  font-family: Quicksand, sans-serif;
   font-weight: 400;
   flex-grow: 1;
   flex-basis: auto;
@@ -735,7 +717,6 @@ td{
 }
 .div-54 {
   color: #522a28;
-  font-family: Quicksand, sans-serif;
   font-weight: 400;
   flex-grow: 1;
   flex-basis: auto;
@@ -757,7 +738,9 @@ td{
 .div-56 {
   color: #000;
   align-self: stretch;
-  font: 700 20px/130% Quicksand, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
 }
 @media (max-width: 991px) {
   .div-56 {
@@ -875,7 +858,7 @@ td{
   align-items: center;
   margin: auto 0;
   margin-left: 33px;
-  font: 700 20px/130% Quicksand, sans-serif;
+  font: 700 20px/130%;
 }
 @media (max-width: 991px) {
   .div-62 {
@@ -897,7 +880,7 @@ td{
 }
 .div-63 {
   color: #000;
-  font: 400 20px/26px Quicksand, sans-serif;
+  font: 400 20px/26px;
 }
 @media (max-width: 991px) {
   .div-63 {
@@ -918,7 +901,7 @@ td{
 }
 .div-64 {
   color: #000;
-  font: 400 20px/26px Quicksand, sans-serif;
+  font: 400 20px/26px;
 }
 @media (max-width: 991px) {
   .div-64 {
@@ -929,7 +912,7 @@ td{
   color: #000;
   align-self: stretch;
   margin-top: 50px;
-  font: 700 20px/130% Quicksand, sans-serif;
+  font: 700 20px/130%;
 }
 @media (max-width: 991px) {
   .div-65 {
@@ -1037,7 +1020,7 @@ td{
   align-self: stretch;
   margin: auto 0;
   margin-left: 33px;
-  font: 700 20px/130% Quicksand, sans-serif;
+  font: 700 20px/130%;
 }
 @media (max-width: 991px) {
   .div-70 {
@@ -1059,7 +1042,7 @@ td{
 }
 .div-71 {
   color: #000;
-  font: 400 20px/26px Quicksand, sans-serif;
+  font: 400 20px/26px;
 }
 @media (max-width: 991px) {
   .div-71 {
@@ -1080,7 +1063,7 @@ td{
 }
 .div-72 {
   color: #000;
-  font: 400 20px/26px Quicksand, sans-serif;
+  font: 400 20px/26px;
 }
 @media (max-width: 991px) {
   .div-72 {
@@ -1088,9 +1071,11 @@ td{
   }
 }
 .div-73 {
+  align-items: center;
   margin-top: 107px;
   width: 100%;
   max-width: 1191px;
+  padding: 0 76px;
 }
 @media (max-width: 991px) {
   .div-73 {
@@ -1134,7 +1119,9 @@ td{
 }
 .div-76 {
   color: #522a28;
-  font: 700 20px/150% Quicksand, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
 }
 @media (max-width: 991px) {
   .div-76 {
@@ -1144,7 +1131,9 @@ td{
 .div-77 {
   color: var(--Text-Color-Dark, #131717);
   margin-top: 34px;
-  font: 600 18px/167% Quicksand, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 167%;
 }
 @media (max-width: 991px) {
   .div-77 {
@@ -1160,7 +1149,7 @@ td{
   color: #000;
   font-weight: 400;
   white-space: nowrap;
-  line-height: 171%;
+  line-height: 50%;
 }
 @media (max-width: 991px) {
   .div-78 {
@@ -1175,8 +1164,8 @@ td{
   fill: #ffca0e;
 }
 .div-79 {
-  font-family: Quicksand, sans-serif;
   margin: auto 0;
+  font-weight: 300;
 }
 .div-80 {
   display: flex;
@@ -1216,7 +1205,7 @@ td{
 .div-84 {
   color: var(--Text-Color-Dark, #131717);
   text-align: right;
-  font: 400 18px/167% Quicksand, sans-serif;
+  font: 400 18px/167%;
 }
 .div-85 {
   display: flex;
@@ -1233,7 +1222,7 @@ td{
 .div-86 {
   color: var(--Text-Color-Dark, #131717);
   white-space: nowrap;
-  font: 400 18px/167% Quicksand, sans-serif;
+  font: 400 18px/167%;
 }
 @media (max-width: 991px) {
   .div-86 {
@@ -1266,7 +1255,7 @@ td{
 .div-89 {
   color: var(--Text-Color-Dark, #131717);
   text-align: right;
-  font: 400 18px/167% Quicksand, sans-serif;
+  font: 400 18px/167%;
 }
 .column-14 {
   display: flex;
@@ -1294,7 +1283,9 @@ td{
 }
 .div-91 {
   color: #522a28;
-  font: 700 20px/150% Quicksand, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
 }
 @media (max-width: 991px) {
   .div-91 {
@@ -1311,7 +1302,6 @@ td{
 }
 .div-92 {
   color: var(--Text-Color-Dark, #131717);
-  font-family: Quicksand, sans-serif;
   font-weight: 600;
   margin-top: 29px;
 }
@@ -1321,12 +1311,12 @@ td{
   }
 }
 .div-93 {
-  font-family: Quicksand, sans-serif;
   border-color: rgba(196, 209, 208, 1);
   border-style: solid;
   border-width: 1px;
   background-color: #fff;
   margin-top: 20px;
+  margin-bottom: 20px;
   justify-content: center;
   align-items: start;
   color: var(--Text-Color-Light, #566363);
@@ -1420,7 +1410,7 @@ td{
 .div-101 {
   color: var(--Text-Color-Dark, #131717);
   text-align: right;
-  font: 400 18px/167% Quicksand, sans-serif;
+  font: 400 18px/167%;
 }
 .div-102 {
   display: flex;
@@ -1458,7 +1448,7 @@ td{
 .div-106 {
   color: var(--Text-Color-Dark, #131717);
   text-align: right;
-  font: 400 18px/167% Quicksand, sans-serif;
+  font: 400 18px/167%;
 }
 .div-107 {
   display: flex;
@@ -1486,7 +1476,6 @@ td{
 }
 .div-110 {
   text-align: right;
-  font-family: Quicksand, sans-serif;
 }
 .column-16 {
   display: flex;
@@ -1516,7 +1505,6 @@ td{
 }
 .div-112 {
   color: var(--Text-Color-Dark, #131717);
-  font-family: Quicksand, sans-serif;
 }
 @media (max-width: 991px) {
   .div-112 {
@@ -1524,7 +1512,6 @@ td{
   }
 }
 .div-113 {
-  font-family: Quicksand, sans-serif;
   border-color: rgba(196, 209, 208, 1);
   border-style: solid;
   border-width: 1px;
@@ -1544,7 +1531,6 @@ td{
   }
 }
 .div-114 {
-  font-family: Quicksand, sans-serif;
   border-radius: 5px;
   background-color: #ef9059;
   align-self: start;
@@ -1765,7 +1751,7 @@ td{
   white-space: nowrap;
   text-align: center;
   padding: 15px 35px;
-  font: 600 18px/167% Quicksand, sans-serif;
+  font: 600 18px/167%;
 }
 @media (max-width: 991px) {
   .div-129 {
@@ -1777,7 +1763,9 @@ td{
 .div-130 {
   color: #522a28;
   margin-top: 113px;
-  font: 700 42px/81% Quicksand, sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 81%;
   text-align: center;
 }
 @media (max-width: 991px) {
@@ -1857,7 +1845,6 @@ td{
   width: 99px;
 }
 .div-135 {
-  font-family: Quicksand, sans-serif;
   flex-grow: 1;
   margin: auto 0;
 }
@@ -1869,7 +1856,7 @@ td{
 .div-136 {
   color: #fff;
   margin-top: 58px;
-  font: 700 20px/130% Quicksand, sans-serif;
+  font: 700 20px/130%;
 }
 @media (max-width: 991px) {
   .div-136 {
@@ -1910,7 +1897,7 @@ td{
 .div-139 {
   color: var(--White, #fff);
   white-space: nowrap;
-  font: 700 20px/130% Quicksand, sans-serif;
+  font: 700 20px/130%;
 }
 @media (max-width: 991px) {
   .div-139 {
@@ -1918,7 +1905,6 @@ td{
   }
 }
 .div-140 {
-  font-family: Quicksand, sans-serif;
   margin-top: 33px;
   white-space: nowrap;
 }
@@ -1928,7 +1914,6 @@ td{
   }
 }
 .div-141 {
-  font-family: Quicksand, sans-serif;
   margin-top: 25px;
   white-space: nowrap;
 }
@@ -1938,7 +1923,6 @@ td{
   }
 }
 .div-142 {
-  font-family: Quicksand, sans-serif;
   margin-top: 26px;
   white-space: nowrap;
 }
@@ -1948,11 +1932,9 @@ td{
   }
 }
 .div-143 {
-  font-family: Quicksand, sans-serif;
   margin-top: 25px;
 }
 .div-144 {
-  font-family: Quicksand, sans-serif;
   margin-top: 27px;
 }
 .div-145 {
@@ -1965,7 +1947,7 @@ td{
 .div-146 {
   color: var(--White, #fff);
   white-space: nowrap;
-  font: 700 20px/130% Quicksand, sans-serif;
+  font: 700 20px/130%;
 }
 @media (max-width: 991px) {
   .div-146 {
