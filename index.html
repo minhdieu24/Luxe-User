@@ -78,8 +78,12 @@
       </div>
       <div class="cross-bar"></div>
     </header>
+
+    <!-- Product detail -->
     <div class="product-detail">
       <div class="product-inf">
+
+        <!-- Product image -->
         <div class="product-inf__image">
           <img src="img/nhẫn vàng.webp" alt="" class="product-inf__image1" />
           <div class="img-pro">
@@ -91,6 +95,8 @@
             <img src="./icon/arrow2.svg" alt=""/>
           </div>
         </div>
+
+        <!-- Product information -->
         <div class="product-inf__word">
           <p class="product-card__collection">Nhẫn</p>
           <p class="product-inf__title">Nhẫn cưới Kim cương NC 795KC</p>
@@ -107,38 +113,44 @@
           <div class="sales-promotion">
             <div class="sales-promotion1">
               <div class="return">
-                <img src="./icon/return.svg" alt="" class="img-10" />
+                <img src="./icon/return.svg" alt="" class="img-return" />
                 <p class="return__text"> Đổi trả miễn phí trong 72 giờ </p>
               </div>
               <div class="payment">
-                <img src="./icon/payment.svg" alt="" class="img-11" />
+                <img src="./icon/payment.svg" alt="" class="img-return" />
                 <p class="return__text"> Trả góp 0% </p>
               </div>
             </div>
             <div class="sales-promotion1">
               <div class="return">
-                <img src="./icon/guarantee.svg" alt="" class="img-12" />
+                <img src="./icon/guarantee.svg" alt="" class="img-return" />
                 <p class="return__text"> Bảo hành trọn đời </p>
               </div>
               <div class="payment">
-                <img src="./icon/delivery.svg" alt="" class="img-13" />
+                <img src="./icon/delivery.svg" alt="" class="img-return" />
                 <p class="return__text"> Miễn phí giao hàng toàn quốc </p>
               </div>
             </div>
           </div>
+
+          <!-- Decrease or Increase quantity -->
           <div class="quantity">
             <table>
               <tr>
-                <td onclick="Decrease()">-</td>
-                <td id="count">1</td>
-                <td onclick="Increase()">+</td>
+                <td class ="dec-ins" onclick="Decrease()">-</td>
+                <td id="count" class="dec-ins count">1</td>
+                <td class ="dec-ins" onclick="Increase()">+</td>
               </tr>
             </table>
+            
+            <!-- Button THÊM VÀO GIỎ HÀNG -->
             <a href="#!" class="btn them">THÊM VÀO GIỎ HÀNG</a>    
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Product description -->
     <p class="product-text"> Chi tiết sản phẩm</p>
     <div class="product-description">
       <p class="text-ring">Nhẫn nữ</p>
@@ -171,13 +183,17 @@
         </div>
       </div>
     </div>
+
+    <!-- Review -->
     <div class="review">
       <div class="review-read">
+
+        <!-- Review statistics -->
         <div class="review-statistics">
           <p class="customer-review">Customer Reviews</p>
           <p class="review-quantity">77 Reviews</p>
           <div class="product-inf__star">
-            <img src="./icon/star.svg" alt="" class="img-17" />
+            <img src="./icon/star.svg" alt="" />
             <p> 4.9 </p>
           </div>
           <div class="star">
@@ -206,22 +222,28 @@
             <p class="star-quality">0</p>
           </div>
         </div>
+
+        <!-- Writing review -->
         <div class="review-writing">
           <p class="customer-review">How would you rate this?</p>
-          <img src="./icon/5star.svg" alt="" class="img-18" style="margin-bottom: 20px;" />
+          <img src="./icon/5star.svg" alt="" class="img-star" />
           <form id="reviewForm">
-            <div class="form-group">
-                <label for="reviewTitle">Add a headline</label> <br>
-                <input class="write-headline" type="text" id="reviewTitle" name="reviewTitle">
+            <div class="review-form">
+              <div class="form-group">
+                  <label for="reviewTitle">Add a headline</label> <br>
+                  <input class="write-headline" type="text" id="reviewTitle" name="reviewTitle">
+              </div>
+              <div class="form-group">
+                  <label for="reviewDetails">Write a summary of your review</label> <br>
+                  <textarea class="write-detail" id="reviewDetails" name="reviewDetails" rows="4"></textarea>
+              </div>
             </div>
-            <div class="form-group">
-                <label for="reviewDetails">Write a summary of your review</label> <br>
-                <textarea class="write-detail" id="reviewDetails" name="reviewDetails" rows="4"></textarea>
-            </div>
-            <button style="border: none; margin-top: 15px;" class="btn" type="submit">Submit</button>
+            <button style="border: none; margin-top: 15px;" class="btn submit" type="submit">Submit</button>
           </form>
         </div>
       </div>
+
+      <!-- Customer review -->
       <div class="review-customer">
         <div class="customer">
           <img src="img/nhẫn 2.jpg" alt="" class="ava-img" />
@@ -251,12 +273,17 @@
           </p>
         </div>
       </div>
+
+      <!-- Button Load more -->
       <a href="#!" class="btn home-product__Load">Load more</a>
     </div>
+
+    <!-- Similar products -->
     <div class="container">
       <p class="product-inf__title__1">SẢN PHẨM TƯƠNG TỰ, THAM KHẢO NGAY!</p>
       <div class="product-home">
-        <!-- Product card 1 -->
+
+        <!-- Product 1 -->
         <div class="product-item">
             <div class="product-card">
                 <div class="product-card__img-wrap">
@@ -279,6 +306,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Product 2 -->
         <div class="product-item">
           <div class="product-card">
@@ -302,6 +330,7 @@
               </div>
           </div>
         </div>
+
           <!-- Product 3 -->
         <div class="product-item">
             <div class="product-card">
@@ -325,6 +354,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Product 4 -->
         <div class="product-item">
           <div class="product-card">
@@ -349,18 +379,22 @@
         </div>
       </div>
     </div>
+
     <!-- Button xem thêm -->
     <a href="#!" class="btn home-product">Xem thêm</a>
+
   <!-- Footer -->
     <footer class="footer">
       <div class="footer-row">
         <div class="container">
           <div class="footer-column">
+
             <!-- Logo -->
             <a href="./" class="logo-foot">
               <img src="./icon/Logo.svg" alt="Luxe" />
               <h1 class="logo-title">Luxe</h1>
             </a>
+            
             <!-- Download app -->
             <div class="download-container">
               <p class="download-title">

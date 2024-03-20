@@ -67,7 +67,9 @@
       flex-wrap: wrap;
     }
     .btn.them{
-        max-width: 55%;
+      position: absolute;
+      width: 100%;
+      max-width: 60%;
     }
     .product-text {
       margin-top: 40px;
@@ -94,9 +96,9 @@
         margin-top: 40px;
     }
     .inf-text {
-        width: 50%;
-        margin-top: 22px;
-    white-space: initial;
+      width: 80%;
+      margin-top: 30px;
+      white-space: initial;
     }
     .des-text {
       margin-top: 0px;
@@ -181,6 +183,23 @@
     max-width: 100%;
     margin-top: 40px;
     margin-left: 120px;
+    }
+    .review-form{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+    }
+    .form-group{
+      width: 150%;
+    }
+    textarea{
+      width: 250px;
+    }
+    form input[type="text"] {
+      width: 250px; 
+    }
+    .btn.submit{
+      margin-left: 230px;
     }
     .customer{
         max-width: 50%;
