@@ -1,10 +1,29 @@
 html {
   font-size: 62.5%;
 }
+:root {
+  --text-color-1: #717171;
+  /* product-card__title */
+  --text-color-2: #1a162e;
+  --primary-color: #ef9059;
+  --nav-color: #717171;
+  --background-color-1: #fff;
+  --background-color-2: #f6f6f6;
+  --second-color: #fff5f0;
+}
+.dark-mode {
+  --text-color-1: #eeeeee;
+  --text-color-2: #ffffff;
+  --primary-color: #ef9059;
+  --nav-color: #171c28;
+  --background-color-1: #171c28;
+  --background-color-2: #292e39;
+}
 
 body {
   font-size: 1.6rem;
   font-family: Quicksand, sans-serif;
+  background-color: var(--background-color-1);
 }
 a {
   text-decoration: none;
