@@ -10,7 +10,7 @@
 }
 
 /* Mobile */
-@media screen and (max-width: 788px) {
+@media screen and (max-width: 780px) {
   /* Navigation */
   .top-bar {
     position: relative;

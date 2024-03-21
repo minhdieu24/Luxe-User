@@ -38,7 +38,7 @@
           <!-- nav = navigation giống div nhưng có ngữ nghĩa -->
           <!-- Navigation -->
           <nav class="navbar">
-            <ul>
+            <ul id="PC_nav">
               <li><a href="#!">TRANG CHỦ</a></li>
               <li><a href="#!">SẢN PHẨM</a></li>
               <li><a href="#!">VỀ CHÚNG TÔI</a></li>
@@ -88,14 +88,18 @@
         </button>
         <hr>
         <nav class="navbar-mobile">
-          <ul>
-            <li><a href="#!">TRANG CHỦ</a></li>
-            <li><a href="#!">SẢN PHẨM</a></li>
-            <li><a href="#!">VỀ CHÚNG TÔI</a></li>
-            <li><a href="#!">HỖ TRỢ</a></li>
-            <li><a href="#!">LIÊN HỆ</a></li>
+          <ul id="mobile_nav" >
+            <script>
+              const pcNav = document.querySelector("#PC_nav");
+              const mobileNav = document.querySelector("#mobile_nav");
+              //Copy from PC nav to Mobile nav
+              mobileNav.innerHTML = pcNav.innerHTML;
+            </script>
+            <!-- Dùng JS copy ul từ PC qua mobile -->
           </ul>
+          
         </nav>
+        
         <hr>
         <!-- Action -->
         <div class="top-act">
@@ -151,7 +155,7 @@
       <!-- List products sales-->
     <section id="product-sale">
       <div class="container">
-        <h2>Khuyến mãi tháng 2</h2>
+        <h2>Khuyến mãi ngày 8/3</h2>
         <div class="product-home">
           <!-- Product card 1 -->
           <div class="product-item">
