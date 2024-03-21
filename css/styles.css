@@ -13,6 +13,9 @@
     --background-color-1: #fff;
     --background-color-2: #f6f6f6;
     --second-color: #fff5f0;
+    /* contact content*/
+    --contact-background: #f6f6f6;
+    --contact-text: #171c28;
   }
   
   
@@ -23,6 +26,9 @@
     --nav-color: #171c28;
     --background-color-1: #171c28;
     --background-color-2: #292e39;
+    /* contact content*/
+    --contact-background: #292e39;
+    --contact-text: #ffffff;
   }
   
   
@@ -203,7 +209,7 @@
   }
 
   .contact-info-content {
-    background-color: #f6f6f6;
+    background-color: var(--contact-background);
     display: flex;
     flex-grow: 1;
     align-items: center;
@@ -225,7 +231,7 @@
   .contact-info-wrapper {
     display: flex;
     margin-top: 30px;
-    width: 475px;
+    width: 75%px;
     max-width: 100%;
     flex-direction: column;
   }
@@ -262,7 +268,7 @@
   }
 
   .contact-subtitle {
-    color: #000;
+    color: var(--contact-text);
     font-family: Quicksand;
     font-size: 24px;
     font-style: normal;
@@ -365,7 +371,10 @@
   }
   .g-map {
     margin-top: 50px;
-    margin-left: 0px;
+    margin-left: 60%;
+    margin-bottom: 50px;
+    transform: translateX(-50%);
+    width: 100%;
   }
 /*  Form liên hệ  */
   .contact-form {
@@ -378,7 +387,7 @@
 
   @media (max-width: 991px) {
     .contact-form {
-      width: 50%;
+      width: 100%;
     }
   }
 
@@ -424,7 +433,7 @@
   }
 
   .contact-form-label {
-    font-family: Manrope, sans-serif;
+    font-family: Quicksand, sans-serif;
     margin-top: 42px;
   }
 
@@ -436,6 +445,8 @@
 
   .contact-form-input {
     border-radius: 5px;
+    font-family: Quicksand, sans-serif;
+    font-size: 16px;
     border: 1px solid rgba(5, 16, 35, 1);
     background-color: #f6f6f6;
     margin-top: 9px;
@@ -449,6 +460,8 @@
 
   .contact-form-input-phone {
     border-radius: 5px;
+    font-family: Quicksand, sans-serif;
+    font-size: 16px;
     border: 1px solid rgba(5, 16, 35, 1);
     background-color: #f6f6f6;
     margin-top: 10px;
@@ -462,6 +475,8 @@
 
   .contact-form-input-email {
     border-radius: 5px;
+    font-family: Quicksand, sans-serif;
+    font-size: 16px;
     border: 1px solid rgba(5, 16, 35, 1);
     background-color: #f6f6f6;
     margin-top: 12px;
@@ -469,12 +484,14 @@
   }
 
   .contact-form-label-address {
-    font-family: Manrope, sans-serif;
+    font-family: Quicksand, sans-serif;
     margin-top: 31px;
   }
 
   .contact-form-input-address {
     border-radius: 5px;
+    font-family: Quicksand, sans-serif;
+    font-size: 16px;
     border: 1px solid rgba(5, 16, 35, 1);
     background-color: #f6f6f6;
     margin-top: 9px;
@@ -482,12 +499,14 @@
   }
 
   .contact-form-label-message {
-    font-family: Manrope, sans-serif;
+    font-family: Quicksand, sans-serif;
     margin-top: 36px;
   }
 
   .contact-form-textarea {
     border-radius: 5px;
+    font-family: Quicksand, sans-serif;
+    font-size: 16px;
     border: 1px solid rgba(5, 16, 35, 1);
     background-color: #f6f6f6;
     margin-top: 8px;
@@ -497,18 +516,21 @@
   .contact-form-submit {
     font-family: Quicksand, sans-serif;
     border-radius: 4px;
+    font-size: 18px;
     background-color: #522a28;
     align-self: end;
     color: #f6f6f6;
     white-space: nowrap;
     justify-content: center;
-    margin: 28px 47px 0 0;
+    margin: 28px 0 0 0;
     padding: 12px 16px;
+    cursor: pointer;
   }
 
   @media (max-width: 991px) {
     .contact-form-submit {
       margin-right: 10px;
+      margin-bottom: 50px;
       white-space: initial;
     }
   }
