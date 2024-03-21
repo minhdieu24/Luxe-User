@@ -140,7 +140,6 @@ a {
   flex-direction: column;
   width: 43%;
   justify-items: center;
-  margin-left: 0px;
 }
 .product-inf__image1 {
   aspect-ratio: 0.95;
@@ -193,13 +192,20 @@ a {
   white-space: nowrap;
   line-height: 50%;
 }
-
-.product-inf__price{
-  text-transform: capitalize;
+.product-price{
   margin-top: 37px;
-  font: 500 24px/70%;
+}
+.product-inf__price, .product-inf__price-sales{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 70%;
+  color: #f98542 ;
 }
 
+.product-inf__price-sales {
+  margin-left: 10px;
+  text-decoration: line-through;
+}
 .product-inf__text {
   font-style: italic;
   font-weight: 300;
