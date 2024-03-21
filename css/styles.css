@@ -16,6 +16,9 @@
     /* contact content*/
     --contact-background: #f6f6f6;
     --contact-text: #171c28;
+    /* faq content*/
+    --faq-background: #f6f6f6;
+    --faq-text: #522a28;
   }
   
   
@@ -29,6 +32,9 @@
     /* contact content*/
     --contact-background: #292e39;
     --contact-text: #ffffff;
+    /* faq content*/
+    --faq-background: #292e39;
+    --faq-text: #ffffff;
   }
   
   
@@ -549,7 +555,7 @@
 
   /*== FAQ ==*/
   .faq-section {
-    background-color: #f6f6f6;
+    background-color: var(--faq-background);
     display: flex;
     padding: 80px 0;
     flex-direction: column;
@@ -557,12 +563,13 @@
   }
 
   .faq-title {
-    color: #522a28;
+    color: var(--faq-text);
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #000;
     margin-top: 20px;
+    margin-bottom: 80px;
     font: 700 58px/117% Quicksand, sans-serif;
   }
 
@@ -582,18 +589,6 @@
   }
 
   .faq-item {
-    border-radius: 4px;
-    background-color: #ffbe98;
-    display: flex;
-    margin-top: 50px;
-    width: 1170px;
-    max-width: 100%;
-    gap: 20px;
-    font-size: 26px;
-    color: #131717;
-    font-weight: 500;
-    letter-spacing: -0.13px;
-    line-height: 115%;
     padding: 22px 31px;
   }
 
@@ -609,6 +604,18 @@
     flex-grow: 1;
     flex-basis: auto;
     margin: auto 0;
+    background-color: #ffbe98;
+    display: flex;
+    width: 1170px;
+    max-width: 100%;
+    gap: 20px;
+    font-size: 26px;
+    color: #131717;
+    font-weight: 500;
+    letter-spacing: -0.13px;
+    line-height: 115%;
+    padding: 22px 31px;
+    cursor: pointer;
   }
 
   @media (max-width: 991px) {
@@ -621,6 +628,18 @@
     flex-grow: 1;
     flex-basis: auto;
     margin: auto 0;
+    display: none;
+    background-color: #EF9059;
+    display: flex;
+    width: 1170px;
+    max-width: 100%;
+    gap: 20px;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: 500;
+    letter-spacing: -0.13px;
+    line-height: 115%;
+    padding: 22px 31px;
  
   }
   

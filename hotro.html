@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/responsinve.css" />
     <!-- Scripts -->
-    <script src="./js/scripts.js"></script>
+    <script src="./js/script.js"></script>
   </head>
   <body>
     <!-- PC Header -->
@@ -122,34 +122,56 @@
         <h2 class="faq-title">Câu hỏi thường gặp</h2>
         <!-- Câu hỏi 1 -->
         <div class="faq-item">
-            <a class="faq-question" href="#faq-1" data-toggle="collapse" id="question1">Làm cách nào để nhận được mã giảm giá từ LUXE?</a>
-            <img src="./icon/plus.svg" alt="" />
-            <div class="faq-answer" id="faq-1">
-              <p class="faq__text">Để nhận được mã giảm giá từ Luxe, hãy thực hiện các bước sau:</p>
-              <p class="faq__text"><strong>1. Trở thành thành viên của Luxe:</strong> Điền thông tin của bạn tại mục "Đăng kí thành viên" ở cuối trang, sau đó nhấn nút "Đăng kí".</p>
-              <p class="faq__text"><strong>2. Chờ đợi thông báo từ chúng tôi:</strong> Mã giảm giá sẽ được đính kèm tại các sự kiện giảm giá tiếp theo và Luxe sẽ email thông báo đến bạn.</p>
-          </div>
+            <!--<a class="faq-question" href="#faq-1" data-toggle="collapse">Làm cách nào để nhận được mã giảm giá từ LUXE?</a>-->
+            <div class="faq-question"> Làm cách nào để nhận được mã giảm giá từ LUXE?</div>
+            <div class="faq-answer">
+              <p>Để nhận được mã giảm giá từ Luxe, hãy thực hiện các bước sau:</p>
+              <p><strong>1. Trở thành thành viên của Luxe:</strong> Điền thông tin của bạn tại mục "Đăng kí thành viên" ở cuối trang, sau đó nhấn nút "Đăng kí".</p>
+              <p><strong>2. Chờ đợi thông báo từ chúng tôi:</strong> Mã giảm giá sẽ được đính kèm tại các sự kiện giảm giá tiếp theo và Luxe sẽ email thông báo đến bạn.</p>
+            </div>
         </div>
+        
         <!-- Câu hỏi 2 -->
         <div class="faq-item">
-          <a class="faq-question" href="#faq-2" data-toggle="collapse" id="question2">Tôi có thể đưa ý tưởng thiết kế sản phẩm theo ý của mình hay không?</a>
-          <img src="./icon/plus.svg" alt=""/>
+          <div class="faq-question">Tôi có thể đưa ý tưởng thiết kế sản phẩm theo ý của mình hay không?</div>
+          <div class="faq-answer">
+            Bạn có thể đưa thiết kế theo ý tưởng thiết kế cho nhân viên của chúng tôi tại cửa hàng hoặc liên hệ qua phần liên hệ của cửa hàng tại đây
+          </div>
         </div>
         <!-- Câu hỏi 3 -->
         <div class="faq-item">
-          <a class="faq-question" href="#faq-3" data-toggle="collapse" id="question3">Phí vận chuyển được tính như thế nào?</a>
-          <img src="./icon/plus.svg" alt=""/>
+          <div class="faq-question"> Phí vận chuyển được tính như thế nào?</div>
+          <div class="faq-answer">
+            Phí vận chuyển sẽ được tính tùy theo đơn hàng, vị trí và mã giảm giá của bạn nhé. Bạn có thể xem thêm chính sách giao hàng tại đây.
+          </div>
         </div>
         <!-- Câu hỏi 4 -->
         <div class="faq-item">
-          <a class="faq-question" href="#faq-4" data-toggle="collapse" id="question4">Nếu không vừa ý, tôi có thể đổi trả hay không?</a>
-          <img src="./icon/plus.svg" alt=""/>
+          <div class="faq-question">Nếu không vừa ý, tôi có thể đổi trả hay không?</div>
+          <div class="faq-answer">
+            Bạn có thể đổi trả trong vòng 7 ngày sau khi giao hàng nhé!
+          </div>
         </div>
         <!-- Câu hỏi 5 -->
         <div class="faq-item">
-          <a class="faq-question" href="#faq-4" data-toggle="collapse" id="question4">Xuất hoá đơn điện tử/ hoá đơn VAT như thế nào?</a>
-          <img src="./icon/plus.svg" alt=""/>
+          <div class="faq-question"> Xuất hoá đơn điện tử/ hoá đơn VAT như thế nào?</div>
+          <div class="faq-answer">
+            Bạn liên hệ nhân viên của Luxe tại cửa hàng hoặc thông qua các kênh liên lạc qua facebook/instagram của Luxe kèm theo hoá đơn để được hỗ trợ nhé!
+          </div>
         </div>
+        <!-- Ẩn hiện nội dung-->
+      <script> 
+        const faqquestion = document.querySelectorAll('.faq-question');
+          faqquestion.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                if (content.style.display === 'none') {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
+            });
+          });</script>
       </section>
     <!-- Footer -->
     <footer class="footer">
@@ -234,10 +256,6 @@
           </div>
         </div>
     </div>
-
-
-
-
     <div class="footer-copyright">
         <div class="container">
           <div class="payment-method">
