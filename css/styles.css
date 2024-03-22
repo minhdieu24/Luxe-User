@@ -212,7 +212,7 @@ label{
   text-transform: capitalize;
   margin-top: 10px;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 3.8rem;
   line-height: 100%;
 }
 .product-inf__title__1 {
@@ -298,6 +298,7 @@ label{
   width: 29px;
 }
 .return__text {
+  font-size: 1.6rem;
   flex-grow: 1;
   flex-basis: auto;
   margin: auto 0;
@@ -469,7 +470,7 @@ td{
   display: flex;
   flex-direction: column;
   line-height: normal;
-  width: 57%;
+  position: relative;
   margin-left: 0px;
   flex-grow: 1;
 }
@@ -477,7 +478,7 @@ td{
 .customer-review {
   color: var(--text-color-3);
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.8rem;
   line-height: 150%;
 }
 
@@ -527,6 +528,7 @@ td{
   flex-direction: column;
   font-size: 18px;
   line-height: 167%;
+  position: relative;
   width: 43%;
 }
 
@@ -608,7 +610,7 @@ form input[type="text"] {
   color: var(--Text-Color-Dark, #131717);
   padding: 32px 27px;
   line-height: normal;
-  width: 80%;
+  position: relative;
   margin-left: 0px;
 }
 .ava-img {
@@ -620,7 +622,7 @@ form input[type="text"] {
 }
 .review-tittle {
   margin-top: 20px;
-  font: 600 18px/167% Manrope, sans-serif;
+  font: 600 1.8rem/167% Manrope, sans-serif;
 }
 .star-img {
   aspect-ratio: 6.67;
@@ -633,7 +635,7 @@ form input[type="text"] {
 .review-detail {
   color: var(--Text-Color-Light, #566363);
   margin-top: 24px;
-  font: 400 16px/28px Manrope, sans-serif;
+  font: 400 1.5rem/28px Manrope, sans-serif;
 }
 .btn.home-product__Load {
   margin: 60px 0px 40px 50%;
