@@ -152,7 +152,6 @@ label{
   align-self: center;
   margin-top: 60px;
   width: 100%;
-  max-width: 1268px;
 }
 .product-inf {
   gap: 20px;
@@ -337,18 +336,16 @@ label{
   justify-content: center;
   text-align: center;
   gap: 20px;
-  font-size: 25px;
+  font-size: 2.4rem;
   line-height: 130%;
   color: var(--text-color-3);
-  flex-grow: 1;
-  flex-basis: auto;
   font-weight: 700;
 }
 
 .product-description {
   display: flex;
   margin-top: 4px;
-  width: 100%;
+  position: relative;
   flex-direction: column;
   align-items: center;
   padding: 0 76px;
@@ -358,7 +355,7 @@ label{
   color: var(--text-color-dark);
   align-self: stretch;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 2.2rem;
   line-height: 130%;
 }
 
@@ -367,7 +364,6 @@ label{
   margin-top: 37px;
   width: 100%;
   gap: 10px;
-  max-width: 80%;
   display: flex;
 }
 
@@ -381,9 +377,8 @@ label{
   justify-content: center;
   align-items: center;
   aspect-ratio: 1;
-  width: 27%;
+  width: 30%;
   padding: 0 9px;
-  margin-right: 30px;
   margin-left: 90px;
 }
 
@@ -416,10 +411,10 @@ td{
   width: 44px;
 }
 .frame {
+  align-items: center;
   border-radius: 20px;
   background-color: #ffbe98;
   flex-grow: 1;
-  width: 90%;
   padding: 74px 80px 74px 0;
   margin-left: 15px;
   gap: 80px;
@@ -427,39 +422,33 @@ td{
 }
 
 .inf-text {
-  display: flex;
   flex-direction: column;
   line-height: normal;
-  width: 33%;
   color: #000;
   white-space: nowrap;
-  align-items: center;
-  margin: auto 0;
-  margin-top: 40px;
-  margin-left: 33px;
+  margin: 0 2% 0 5%;
   font-weight: 700;
-  font: 20px/130%;
+  font: 2.2rem/130%;
 }
 
 .des-text {
   color: #000;
-  font: 400 20px/26px;
+  font: 400 2.2rem/26px;
   display: flex;
+  position: relative;
   flex-direction: column;
   line-height: normal;
-  width:80%;
-  margin-left: 20px;
-  margin-top: 10px;
+  margin-right: 2%;
 }
 /* ======= Review ====== */
 .review {
   margin-top: 107px;
   width: 100%;
-  max-width: 1191px;
   padding: 0 76px;
 }
 
 .review-read {
+  width: 100%;
   background-color: var(--background-color-3);
   gap: 50px;
   display: flex;
@@ -526,7 +515,7 @@ td{
 .review-writing {
   display: flex;
   flex-direction: column;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 167%;
   position: relative;
   width: 43%;
@@ -584,19 +573,21 @@ td{
   font-weight: 400;
   padding: 24px 60px 111px 15px;
 }
-textarea{
-  width: 300px;
+form textarea [class="write-detail"]{
+  width: 40%;
 }
 form input[type="text"] {
-  width: 300px; 
+  width: 40%; 
 }
 
 .review-customer {
+  justify-content: center;
   grid-template-columns: repeat(3, 1fr);
-  align-self: stretch;
   margin-top: 47px;
+  margin-bottom: 30px;
   gap: 10px;
   display: grid;
+  padding: 0 76px;
 }
 
 .customer {
@@ -604,14 +595,11 @@ form input[type="text"] {
   border-style: solid;
   border-width: 1px;
   background-color: var(--Shapes-Color-White, #fff);
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
+
   color: var(--Text-Color-Dark, #131717);
   padding: 32px 27px;
   line-height: normal;
-  position: relative;
-  margin-left: 0px;
+
 }
 .ava-img {
   aspect-ratio: 1;
@@ -637,8 +625,12 @@ form input[type="text"] {
   margin-top: 24px;
   font: 400 1.5rem/28px Manrope, sans-serif;
 }
+.re-cus{
+  flex: 1 0;
+  margin: 5px;
+}
 .btn.home-product__Load {
-  margin: 60px 0px 40px 50%;
+  margin: 10px 0px 40px 50%;
   transform: translate(-50%);
 }
 

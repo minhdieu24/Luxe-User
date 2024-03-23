@@ -105,10 +105,10 @@
     }
     .inf-text {
       width: 80%;
-      margin-top: 30px;
       white-space: initial;
     }
     .des-text {
+      width: 70%;
       margin-top: 0px;
     }
     .column-8 {
@@ -190,7 +190,7 @@
     gap: 10px;
     max-width: 100%;
     margin-top: 40px;
-    margin-left: 120px;
+    margin-left: 100px;
     }
     .review-form{
       display: grid;
@@ -210,13 +210,13 @@
       margin-left: 200px;
     }
     .customer{
-        max-width: 50%;
+        max-width: 70%;
     }
     .btn.home-product{
         margin: 50px 50%;
     }
     .btn.home-product__Load{
-        margin: 10px 0px 40px 39%;
+      margin: 0px 0px 40px 49%;
     }
     .img-25 {
       max-width: 100%;
