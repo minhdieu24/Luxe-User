@@ -100,7 +100,7 @@ a:visited {
 /* ======= Header ====== */
 .fixed-header {
   position: relative;
-  background-color: var(--background-color);
+  background-color: var(--background-color-1);
   padding: 10px 0px;
 }
 
@@ -140,7 +140,7 @@ a:visited {
   display: flex;
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--text-color);
+  color: var(--text-color-1);
   padding: 8px 0px;
   text-align: center;
 }
