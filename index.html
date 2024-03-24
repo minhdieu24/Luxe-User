@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="css/responsinve.css" />
     <!-- Scripts -->
     <script src="./js/scripts.js"></script>
+    <script src="./js/filter.js"></script>
   </head>
   <body>
     <!-- PC Header -->
@@ -187,8 +188,501 @@
     <!---------------------- BỘ LỌC SẢN PHẨM --------------------------------->
     <article id="article-products">
       <div class="toolbar toolbar-products">
-        <div class="toolbar-products-filter">
-          <div class="trigger-filter">Bộ lọc</div>
+        <div class="filter-wrapper pull-left">
+          <div class="filter-custom trigger-filter">
+            <span>Bộ lọc</span>
+            <img
+              style="max-width: 10px"
+              src="https://theme.hstatic.net/1000112469/1000770197/14/down.png?v=1206"
+              alt=""
+            />
+            <div class="groupFilterNew" style="display: block">
+              <div class="contentFilter clearfix">
+                <div class="collection-filter-price collection-item">
+                  <div class="sidebar-sort">
+                    <div class="sort_title">
+                      <span>Khoảng giá</span> <i class="fa fa-sort-down"></i>
+                    </div>
+                    <ul
+                      class="no-bullets filter-price clearfix sidebar-content"
+                    >
+                      <li class="hide custom-filter-input" data-filter1="0-max">
+                        <label>
+                          <input
+                            type="checkbox"
+                            name="price-filter"
+                            data-price="0:max"
+                            data-value="0-max"
+                            value="((price:product>=0))"
+                          />
+                          <span>Tất cả</span>
+                        </label>
+                      </li>
+                      <li
+                        class="custom-filter-input"
+                        data-filter1="0-1-000-000"
+                      >
+                        <label>
+                          <input
+                            type="checkbox"
+                            name="price-filter"
+                            data-price="0:1,000,000"
+                            data-value="0-1-000-000"
+                            value="((price:product<1,000,000))"
+                          />
+                          <span>Nhỏ hơn 1.000.000₫</span>
+                        </label>
+                      </li>
+                      <li
+                        class="custom-filter-input"
+                        data-filter1="1-000-000-3-000-000"
+                      >
+                        <label>
+                          <input
+                            type="checkbox"
+                            name="price-filter"
+                            data-price="1,000,000:3,000,000"
+                            data-value="1-000-000-3-000-000"
+                            value="((price:product>=1,000,000)&amp;&amp;(price:product<3,000,000))"
+                          />
+                          <span>Từ 1.000.000₫ - 3.000.000₫</span>
+                        </label>
+                      </li>
+                      <li
+                        class="custom-filter-input"
+                        data-filter1="3-000-000-5-000-000"
+                      >
+                        <label>
+                          <input
+                            type="checkbox"
+                            name="price-filter"
+                            data-price="3,000,000:5,000,000"
+                            data-value="3-000-000-5-000-000"
+                            value="((price:product>=3,000,000)&amp;&amp;(price:product<5,000,000))"
+                          />
+                          <span>Từ 3.000.000₫ - 5.000.000₫</span>
+                        </label>
+                      </li>
+                      <li
+                        class="custom-filter-input"
+                        data-filter1="5-000-000-7-000-000"
+                      >
+                        <label>
+                          <input
+                            type="checkbox"
+                            name="price-filter"
+                            data-price="5,000,000:7,000,000"
+                            data-value="5-000-000-7-000-000"
+                            value="((price:product>=5,000,000)&amp;&amp;(price:product<7,000,000))"
+                          />
+                          <span>Từ 5.000.000₫ - 7.000.000₫</span>
+                        </label>
+                      </li>
+                      <li
+                        class="custom-filter-input"
+                        data-filter1="7-000-000-10-000-000"
+                      >
+                        <label>
+                          <input
+                            type="checkbox"
+                            name="price-filter"
+                            data-price="7,000,000:10,000,000"
+                            data-value="7-000-000-10-000-000"
+                            value="((price:product>=7,000,000)&amp;&amp;(price:product<10,000,000))"
+                          />
+                          <span>Từ 7.000.000₫ - 10.000.000₫</span>
+                        </label>
+                      </li>
+                      <li
+                        class="custom-filter-input"
+                        data-filter1="10-000-000-max"
+                      >
+                        <label>
+                          <input
+                            type="checkbox"
+                            name="price-filter"
+                            data-price="10,000,000:max"
+                            data-value="10-000-000-max"
+                            value="((price:product>=10,000,000))"
+                          />
+                          <span>Lớn hơn 10.000.000₫</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="collection-filter-color collection-item">
+                  <div class="sidebar-sort">
+                    <div class="sort_title">
+                      <span>Màu sắc</span> <i class="fa fa-sort-down"></i>
+                    </div>
+                    <ul
+                      class="mg-left-0 no-bullets filter-variant filter-color clearfix"
+                    >
+                      <li class="pd-left-0">
+                        <label
+                          data-filter="Vàng Vàng"
+                          data-filter1="vang-vang"
+                          class="filter-vendor__item custom-filter-input vang-vang"
+                        >
+                          <input
+                            class=""
+                            type="checkbox"
+                            value="(variant:product=Vàng Vàng)"
+                            data-value="vang-vang"
+                          />
+                          <span>Vàng Vàng</span>
+                        </label>
+                      </li>
+
+                      <li class="pd-left-0">
+                        <label
+                          data-filter="Vàng Trắng"
+                          data-filter1="vang-trang"
+                          class="filter-vendor__item custom-filter-input vang-trang"
+                        >
+                          <input
+                            class=""
+                            type="checkbox"
+                            value="(variant:product=Vàng Trắng)"
+                            data-value="vang-trang"
+                          />
+                          <span>Vàng Trắng</span>
+                        </label>
+                      </li>
+
+                      <li class="pd-left-0">
+                        <label
+                          data-filter="Vàng Hồng"
+                          data-filter1="vang-hong"
+                          class="filter-vendor__item custom-filter-input vang-hong"
+                        >
+                          <input
+                            class=""
+                            type="checkbox"
+                            value="(variant:product=Vàng Hồng)"
+                            data-value="vang-hong"
+                          />
+                          <span>Vàng Hồng</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="collection-filter-tag1 collection-item">
+                  <div class="sidebar-sort">
+                    <div class="sort_title">
+                      <span>Chất liệu</span> <i class="fa fa-sort-down"></i>
+                    </div>
+                    <ul
+                      class="grid mg-left-0 no-bullets filter-variant filter-size clearfix"
+                    >
+                      <li
+                        class="pd-left-0 grid__item large--one-whole medium--one-whole small--one-whole"
+                      >
+                        <label
+                          data-filter="10k"
+                          data-filter1="10k"
+                          class="filter-vendor__item custom-filter-input 10k"
+                        >
+                          <input
+                            type="checkbox"
+                            value="(tag:product=10k)"
+                            data-value="10k"
+                          />
+                          <span>10k</span>
+                        </label>
+                      </li>
+
+                      <li
+                        class="pd-left-0 grid__item large--one-whole medium--one-whole small--one-whole"
+                      >
+                        <label
+                          data-filter="14k"
+                          data-filter1="14k"
+                          class="filter-vendor__item custom-filter-input 14k"
+                        >
+                          <input
+                            type="checkbox"
+                            value="(tag:product=14k)"
+                            data-value="14k"
+                          />
+                          <span>14k</span>
+                        </label>
+                      </li>
+
+                      <li
+                        class="pd-left-0 grid__item large--one-whole medium--one-whole small--one-whole"
+                      >
+                        <label
+                          data-filter="18k"
+                          data-filter1="18k"
+                          class="filter-vendor__item custom-filter-input 18k"
+                        >
+                          <input
+                            type="checkbox"
+                            value="(tag:product=18k)"
+                            data-value="18k"
+                          />
+                          <span>18k</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="collection-filter-tag2 collection-item">
+                  <div class="sidebar-sort">
+                    <div class="sort_title">
+                      <span>Đá</span> <i class="fa fa-sort-down"></i>
+                    </div>
+                    <ul
+                      class="grid mg-left-0 no-bullets filter-variant filter-size clearfix"
+                    >
+                      <li
+                        class="pd-left-0 grid__item large--one-whole medium--one-whole small--one-whole"
+                      >
+                        <label
+                          data-filter="Kim Cương"
+                          data-filter1="kim-cuong"
+                          class="filter-vendor__item custom-filter-input kim-cuong"
+                        >
+                          <input
+                            type="checkbox"
+                            value="(tag:product=Kim Cương)"
+                            data-value="kim-cuong"
+                          />
+                          <span>Kim Cương</span>
+                        </label>
+                      </li>
+
+                      <li
+                        class="pd-left-0 grid__item large--one-whole medium--one-whole small--one-whole"
+                      >
+                        <label
+                          data-filter="Moissanite"
+                          data-filter1="moissanite"
+                          class="filter-vendor__item custom-filter-input moissanite"
+                        >
+                          <input
+                            type="checkbox"
+                            value="(tag:product=Moissanite)"
+                            data-value="moissanite"
+                          />
+                          <span>Moissanite</span>
+                        </label>
+                      </li>
+
+                      <li
+                        class="pd-left-0 grid__item large--one-whole medium--one-whole small--one-whole"
+                      >
+                        <label
+                          data-filter="Đá Cubic Zirconia"
+                          data-filter1="da-cubic-zirconia"
+                          class="filter-vendor__item custom-filter-input da-cubic-zirconia"
+                        >
+                          <input
+                            type="checkbox"
+                            value="(tag:product=Đá Cubic Zirconia)"
+                            data-value="da-cubic-zirconia"
+                          />
+                          <span>Đá Cubic Zirconia</span>
+                        </label>
+                      </li>
+
+                      <li
+                        class="pd-left-0 grid__item large--one-whole medium--one-whole small--one-whole"
+                      >
+                        <label
+                          data-filter="Đá Màu"
+                          data-filter1="da-mau"
+                          class="filter-vendor__item custom-filter-input da-mau"
+                        >
+                          <input
+                            type="checkbox"
+                            value="(tag:product=Đá Màu)"
+                            data-value="da-mau"
+                          />
+                          <span>Đá Màu</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Các phần tử filter -->
+              <div class="header_filter_chosen">
+                <span class="filter_chosen price" data-value="0:max"
+                  >0 : max <a><span></span></a
+                ></span>
+                <span class="filter_chosen price" data-value="0-1-000-000"
+                  >0 : 1.000.000đ <a><span></span></a
+                ></span>
+                <span
+                  class="filter_chosen price"
+                  data-value="1-000-000-3-000-000"
+                  >1.000.000đ : 3.000.000đ <a><span></span></a
+                ></span>
+                <span
+                  class="filter_chosen price"
+                  data-value="3-000-000-5-000-000"
+                  >3,000.000đ : 5.000.000đ <a><span></span></a
+                ></span>
+                <span
+                  class="filter_chosen price"
+                  data-value="5-000-000-7-000-000"
+                  >5.000.000đ : 7.000.000đ <a><span></span></a
+                ></span>
+                <span
+                  class="filter_chosen price"
+                  data-value="7-000-000-10-000-000"
+                  >7.000.000đ : 10.000.000đ <a><span></span></a
+                ></span>
+                <span class="filter_chosen price" data-value="10-000-000-max"
+                  >10.000.000đ : max <a><span></span></a
+                ></span>
+
+                <span class="filter_chosen" data-value="vang-vang"
+                  >Vàng Vàng <a><span></span></a
+                ></span>
+
+                <span class="filter_chosen" data-value="vang-trang"
+                  >Vàng Trắng <a><span></span></a
+                ></span>
+
+                <span class="filter_chosen" data-value="vang-hong"
+                  >Vàng Hồng <a><span></span></a
+                ></span>
+
+                <span class="filter_chosen" data-value="10k"
+                  >10k <a><span></span></a
+                ></span>
+
+                <span class="filter_chosen" data-value="14k"
+                  >14k <a><span></span></a
+                ></span>
+
+                <span class="filter_chosen" data-value="18k"
+                  >18k <a><span></span></a
+                ></span>
+
+                <span class="filter_chosen" data-value="kim-cuong"
+                  >Kim Cương <a><span></span></a
+                ></span>
+
+                <span class="filter_chosen" data-value="moissanite"
+                  >Moissanite <a><span></span></a
+                ></span>
+
+                <span class="filter_chosen" data-value="da-cubic-zirconia"
+                  >Đá Cubic Zirconia <a><span></span></a
+                ></span>
+
+                <span class="filter_chosen" data-value="da-mau"
+                  >Đá Màu <a><span></span></a
+                ></span>
+                <span class="clear_all"
+                  ><a href="javascript:void(0)">Bỏ lọc</a></span
+                >
+              </div>
+              <div class="bottom-filter">
+                <button class="btn-custom-filter">ÁP DỤNG</button>
+                <button class="cancel-filter">HỦY</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- bao gồm thư viện jQuery -->
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script>
+            $(document).ready(function () {
+              $(".custom-filter-input input").click(function () {
+                // lấy giá trị của thuộc tính data-value của ô lựa chọn đã được nhấp vào và lưu trữ vào biến value
+                var value = $(this).attr("data-value");
+                console.log(value);
+                $(
+                  //hiển thị giá trị đã chọn trong bộ lọc
+                  ".header_filter_chosen .filter_chosen[data-value=" +
+                    value +
+                    "]"
+                ).toggleClass("show_tag");
+
+                var check_filter = false;
+                $(".filter_chosen").each(function () {
+                  if ($(this).hasClass("show_tag")) {
+                    check_filter = true;
+                  }
+                });
+                if (check_filter) {
+                  $(".clear_all").addClass("show_btn");
+                } else {
+                  $(".clear_all").removeClass("show_btn");
+                }
+              });
+
+              $(".clear_all a").click(function () {
+                $(".filter_chosen.show_tag a").trigger("click");
+              });
+
+              $(".filter-color label").click(function () {
+                $(this).toggleClass("active");
+              });
+
+              $(".header_filter_chosen .filter_chosen > a").click(function () {
+                var $parent = $(this).parent();
+                //      $(this).parent('.filter_chosen').removeClass('show_tag');
+
+                var val = $parent.attr("data-value");
+                $(".custom-filter-input[data-filter1=" + val + "]")
+                  .find("input")
+                  .trigger("click");
+              });
+              $(".header_filter_chosen .filter_chosen.price > a").click(
+                function () {
+                  var $parent = $(this).parent();
+                  var val = $parent.attr("data-value");
+                  $(".custom-filter-input[data-filter1=0-max]")
+                    .find("input")
+                    .trigger("click");
+                }
+              );
+            });
+          </script>
+          <script>
+            $(document).ready(function () {
+              $(".filter-custom > span").click(function () {
+                $(".groupFilterNew").toggle("fast");
+              });
+              $(".btn-custom-filter").click(function () {
+                $(".groupFilterNew").hide();
+              });
+              $(".cancel-filter").click(function () {
+                $(".clear_all > a").trigger("click");
+              });
+              $(".cancel-filter-mb").click(function () {
+                $(".filter_mb")
+                  .find(".collection-item")
+                  .find("input[type=checkbox]")
+                  .each(function () {
+                    if ($(this).is(":checked")) {
+                      console.log($(this).val());
+                      $(this).click();
+                    }
+                  });
+                $(".filter_mb")
+                  .find(".collection-filter-price")
+                  .find("input[type=radio]")
+                  .each(function () {
+                    if ($(this).val() == "((price:product>=0))") {
+                      $(this).trigger("click");
+                    }
+                  });
+              });
+            });
+          </script>
+          <!----------------------------- -->
           <h3 class="trigger-filter--separator">|</h3>
           <div class="toolbar-amount" id="toolbar-amount">
             <!-- Hiển thị: -->
@@ -246,26 +740,57 @@
           <!-- SP 1 -->
           <section class="prod-list__item">
             <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
+              <a href="">
+                <img
+                  class="prod-list__item__img1"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lac-tay-2.webp"
+                />
+              </a>
+              <span class="product-sale-tag">
+                <span> NEW!</span>
+              </span>
+              <!-- Hover heart and cart -->
+              <div class="button-heart-cart-hover">
+                <!-- <div class="button-heart"> -->
+                <a href="">
+                  <img
+                    src="./icon/heart.svg"
+                    alt=""
+                    class="prod-list__item__image--heart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+                <!-- <div class="button-cart"> -->
+                <a href="">
+                  <img
+                    src="./icon/cart.svg"
+                    alt=""
+                    class="prod-list__item__image--cart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+              </div>
             </div>
+
             <div class="prod-list__item__inner">
               <div class="prod-list__item__inner--child">
                 <div class="prod-list__item__info">
                   <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
+                    <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
                   </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
+                  <div class="prod-list__item__info--masp">Nhẫn</div>
                 </div>
                 <div class="prod-list__item__info--price-fb">
-                  <span class="prod-list__item__info--price">
-                    <b>2,090,000 VNĐ</b></span
-                  >
-
+                  <div class="prod-list__item--price">
+                    <span class="prod-list__item__info--price">
+                      2.090.000đ
+                    </span>
+                    <span class="prod-list__item__info--price-sales">
+                      3.000.000đ
+                    </span>
+                  </div>
                   <div class="prod-list__item__info--star-icon">
                     <img
                       class="info--star-icon"
@@ -279,27 +804,57 @@
               </div>
             </div>
           </section>
-
           <!-- SP 2 -->
           <section class="prod-list__item">
             <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
+              <a href="">
+                <img
+                  class="prod-list__item__img1"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lac-tay-2.webp"
+                />
+              </a>
+              <!-- Hover heart and cart -->
+              <div class="button-heart-cart-hover">
+                <!-- <div class="button-heart"> -->
+                <a href="">
+                  <img
+                    src="./icon/heart.svg"
+                    alt=""
+                    class="prod-list__item__image--heart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+                <!-- <div class="button-cart"> -->
+                <a href="">
+                  <img
+                    src="./icon/cart.svg"
+                    alt=""
+                    class="prod-list__item__image--cart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+              </div>
             </div>
+
             <div class="prod-list__item__inner">
               <div class="prod-list__item__inner--child">
                 <div class="prod-list__item__info">
                   <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
+                    <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
                   </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
+                  <div class="prod-list__item__info--masp">Nhẫn</div>
                 </div>
                 <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
+                  <div class="prod-list__item--price">
+                    <span class="prod-list__item__info--price">
+                      2.090.000đ
+                    </span>
+                    <span class="prod-list__item__info--price-sales">
+                      3.000.000đ
+                    </span>
+                  </div>
                   <div class="prod-list__item__info--star-icon">
                     <img
                       class="info--star-icon"
@@ -313,27 +868,57 @@
               </div>
             </div>
           </section>
-
           <!-- SP 3 -->
           <section class="prod-list__item">
             <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
+              <a href="">
+                <img
+                  class="prod-list__item__img1"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lac-tay-2.webp"
+                />
+              </a>
+              <!-- Hover heart and cart -->
+              <div class="button-heart-cart-hover">
+                <!-- <div class="button-heart"> -->
+                <a href="">
+                  <img
+                    src="./icon/heart.svg"
+                    alt=""
+                    class="prod-list__item__image--heart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+                <!-- <div class="button-cart"> -->
+                <a href="">
+                  <img
+                    src="./icon/cart.svg"
+                    alt=""
+                    class="prod-list__item__image--cart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+              </div>
             </div>
+
             <div class="prod-list__item__inner">
               <div class="prod-list__item__inner--child">
                 <div class="prod-list__item__info">
                   <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
+                    <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
                   </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
+                  <div class="prod-list__item__info--masp">Nhẫn</div>
                 </div>
                 <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
+                  <div class="prod-list__item--price">
+                    <span class="prod-list__item__info--price">
+                      2.090.000đ
+                    </span>
+                    <span class="prod-list__item__info--price-sales">
+                      3.000.000đ
+                    </span>
+                  </div>
                   <div class="prod-list__item__info--star-icon">
                     <img
                       class="info--star-icon"
@@ -351,23 +936,57 @@
           <!-- SP 4 -->
           <section class="prod-list__item">
             <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
+              <a href="">
+                <img
+                  class="prod-list__item__img1"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lac-tay-2.webp"
+                />
+              </a>
+              <span class="product-sale-tag">
+                <span> SALES!</span>
+              </span>
+              <!-- Hover heart and cart -->
+              <div class="button-heart-cart-hover">
+                <!-- <div class="button-heart"> -->
+                <a href="">
+                  <img
+                    src="./icon/heart.svg"
+                    alt=""
+                    class="prod-list__item__image--heart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+                <!-- <div class="button-cart"> -->
+                <a href="">
+                  <img
+                    src="./icon/cart.svg"
+                    alt=""
+                    class="prod-list__item__image--cart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+              </div>
             </div>
+
             <div class="prod-list__item__inner">
               <div class="prod-list__item__inner--child">
                 <div class="prod-list__item__info">
                   <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
+                    <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
                   </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
+                  <div class="prod-list__item__info--masp">Nhẫn</div>
                 </div>
                 <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
+                  <div class="prod-list__item--price">
+                    <span class="prod-list__item__info--price">
+                      2.090.000đ
+                    </span>
+                    <span class="prod-list__item__info--price-sales">
+                      3.000.000đ
+                    </span>
+                  </div>
                   <div class="prod-list__item__info--star-icon">
                     <img
                       class="info--star-icon"
@@ -385,23 +1004,54 @@
           <!-- SP 1 -->
           <section class="prod-list__item">
             <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
+              <a href="">
+                <img
+                  class="prod-list__item__img1"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lac-tay-2.webp"
+                />
+              </a>
+              <!-- Hover heart and cart -->
+              <div class="button-heart-cart-hover">
+                <!-- <div class="button-heart"> -->
+                <a href="">
+                  <img
+                    src="./icon/heart.svg"
+                    alt=""
+                    class="prod-list__item__image--heart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+                <!-- <div class="button-cart"> -->
+                <a href="">
+                  <img
+                    src="./icon/cart.svg"
+                    alt=""
+                    class="prod-list__item__image--cart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+              </div>
             </div>
+
             <div class="prod-list__item__inner">
               <div class="prod-list__item__inner--child">
                 <div class="prod-list__item__info">
                   <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
+                    <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
                   </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
+                  <div class="prod-list__item__info--masp">Nhẫn</div>
                 </div>
                 <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
+                  <div class="prod-list__item--price">
+                    <span class="prod-list__item__info--price">
+                      2.090.000đ
+                    </span>
+                    <span class="prod-list__item__info--price-sales">
+                      3.000.000đ
+                    </span>
+                  </div>
                   <div class="prod-list__item__info--star-icon">
                     <img
                       class="info--star-icon"
@@ -419,23 +1069,54 @@
           <!-- SP 2 -->
           <section class="prod-list__item">
             <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
+              <a href="">
+                <img
+                  class="prod-list__item__img1"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lac-tay-2.webp"
+                />
+              </a>
+              <!-- Hover heart and cart -->
+              <div class="button-heart-cart-hover">
+                <!-- <div class="button-heart"> -->
+                <a href="">
+                  <img
+                    src="./icon/heart.svg"
+                    alt=""
+                    class="prod-list__item__image--heart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+                <!-- <div class="button-cart"> -->
+                <a href="">
+                  <img
+                    src="./icon/cart.svg"
+                    alt=""
+                    class="prod-list__item__image--cart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+              </div>
             </div>
+
             <div class="prod-list__item__inner">
               <div class="prod-list__item__inner--child">
                 <div class="prod-list__item__info">
                   <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
+                    <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
                   </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
+                  <div class="prod-list__item__info--masp">Nhẫn</div>
                 </div>
                 <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
+                  <div class="prod-list__item--price">
+                    <span class="prod-list__item__info--price">
+                      2.090.000đ
+                    </span>
+                    <span class="prod-list__item__info--price-sales">
+                      3.000.000đ
+                    </span>
+                  </div>
                   <div class="prod-list__item__info--star-icon">
                     <img
                       class="info--star-icon"
@@ -453,23 +1134,54 @@
           <!-- SP 3 -->
           <section class="prod-list__item">
             <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
+              <a href="">
+                <img
+                  class="prod-list__item__img1"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lac-tay-2.webp"
+                />
+              </a>
+              <!-- Hover heart and cart -->
+              <div class="button-heart-cart-hover">
+                <!-- <div class="button-heart"> -->
+                <a href="">
+                  <img
+                    src="./icon/heart.svg"
+                    alt=""
+                    class="prod-list__item__image--heart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+                <!-- <div class="button-cart"> -->
+                <a href="">
+                  <img
+                    src="./icon/cart.svg"
+                    alt=""
+                    class="prod-list__item__image--cart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+              </div>
             </div>
+
             <div class="prod-list__item__inner">
               <div class="prod-list__item__inner--child">
                 <div class="prod-list__item__info">
                   <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
+                    <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
                   </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
+                  <div class="prod-list__item__info--masp">Nhẫn</div>
                 </div>
                 <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
+                  <div class="prod-list__item--price">
+                    <span class="prod-list__item__info--price">
+                      2.090.000đ
+                    </span>
+                    <span class="prod-list__item__info--price-sales">
+                      3.000.000đ
+                    </span>
+                  </div>
                   <div class="prod-list__item__info--star-icon">
                     <img
                       class="info--star-icon"
@@ -487,23 +1199,54 @@
           <!-- SP 4 -->
           <section class="prod-list__item">
             <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
+              <a href="">
+                <img
+                  class="prod-list__item__img1"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lac-tay-2.webp"
+                />
+              </a>
+              <!-- Hover heart and cart -->
+              <div class="button-heart-cart-hover">
+                <!-- <div class="button-heart"> -->
+                <a href="">
+                  <img
+                    src="./icon/heart.svg"
+                    alt=""
+                    class="prod-list__item__image--heart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+                <!-- <div class="button-cart"> -->
+                <a href="">
+                  <img
+                    src="./icon/cart.svg"
+                    alt=""
+                    class="prod-list__item__image--cart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+              </div>
             </div>
+
             <div class="prod-list__item__inner">
               <div class="prod-list__item__inner--child">
                 <div class="prod-list__item__info">
                   <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
+                    <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
                   </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
+                  <div class="prod-list__item__info--masp">Nhẫn</div>
                 </div>
                 <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
+                  <div class="prod-list__item--price">
+                    <span class="prod-list__item__info--price">
+                      2.090.000đ
+                    </span>
+                    <span class="prod-list__item__info--price-sales">
+                      3.000.000đ
+                    </span>
+                  </div>
                   <div class="prod-list__item__info--star-icon">
                     <img
                       class="info--star-icon"
@@ -521,23 +1264,55 @@
           <!-- SP 1 -->
           <section class="prod-list__item">
             <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
+              <a href="">
+                <img
+                  class="prod-list__item__img1"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lac-tay-2.webp"
+                />
+              </a>
+
+              <!-- Hover heart and cart -->
+              <div class="button-heart-cart-hover">
+                <!-- <div class="button-heart"> -->
+                <a href="">
+                  <img
+                    src="./icon/heart.svg"
+                    alt=""
+                    class="prod-list__item__image--heart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+                <!-- <div class="button-cart"> -->
+                <a href="">
+                  <img
+                    src="./icon/cart.svg"
+                    alt=""
+                    class="prod-list__item__image--cart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+              </div>
             </div>
+
             <div class="prod-list__item__inner">
               <div class="prod-list__item__inner--child">
                 <div class="prod-list__item__info">
                   <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
+                    <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
                   </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
+                  <div class="prod-list__item__info--masp">Nhẫn</div>
                 </div>
                 <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
+                  <div class="prod-list__item--price">
+                    <span class="prod-list__item__info--price">
+                      2.090.000đ
+                    </span>
+                    <span class="prod-list__item__info--price-sales">
+                      3.000.000đ
+                    </span>
+                  </div>
                   <div class="prod-list__item__info--star-icon">
                     <img
                       class="info--star-icon"
@@ -555,23 +1330,54 @@
           <!-- SP 2 -->
           <section class="prod-list__item">
             <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
+              <a href="">
+                <img
+                  class="prod-list__item__img1"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lac-tay-2.webp"
+                />
+              </a>
+              <!-- Hover heart and cart -->
+              <div class="button-heart-cart-hover">
+                <!-- <div class="button-heart"> -->
+                <a href="">
+                  <img
+                    src="./icon/heart.svg"
+                    alt=""
+                    class="prod-list__item__image--heart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+                <!-- <div class="button-cart"> -->
+                <a href="">
+                  <img
+                    src="./icon/cart.svg"
+                    alt=""
+                    class="prod-list__item__image--cart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+              </div>
             </div>
+
             <div class="prod-list__item__inner">
               <div class="prod-list__item__inner--child">
                 <div class="prod-list__item__info">
                   <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
+                    <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
                   </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
+                  <div class="prod-list__item__info--masp">Nhẫn</div>
                 </div>
                 <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
+                  <div class="prod-list__item--price">
+                    <span class="prod-list__item__info--price">
+                      2.090.000đ
+                    </span>
+                    <span class="prod-list__item__info--price-sales">
+                      3.000.000đ
+                    </span>
+                  </div>
                   <div class="prod-list__item__info--star-icon">
                     <img
                       class="info--star-icon"
@@ -589,23 +1395,54 @@
           <!-- SP 3 -->
           <section class="prod-list__item">
             <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
+              <a href="">
+                <img
+                  class="prod-list__item__img1"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lac-tay-2.webp"
+                />
+              </a>
+              <!-- Hover heart and cart -->
+              <div class="button-heart-cart-hover">
+                <!-- <div class="button-heart"> -->
+                <a href="">
+                  <img
+                    src="./icon/heart.svg"
+                    alt=""
+                    class="prod-list__item__image--heart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+                <!-- <div class="button-cart"> -->
+                <a href="">
+                  <img
+                    src="./icon/cart.svg"
+                    alt=""
+                    class="prod-list__item__image--cart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+              </div>
             </div>
+
             <div class="prod-list__item__inner">
               <div class="prod-list__item__inner--child">
                 <div class="prod-list__item__info">
                   <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
+                    <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
                   </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
+                  <div class="prod-list__item__info--masp">Nhẫn</div>
                 </div>
                 <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
+                  <div class="prod-list__item--price">
+                    <span class="prod-list__item__info--price">
+                      2.090.000đ
+                    </span>
+                    <span class="prod-list__item__info--price-sales">
+                      3.000.000đ
+                    </span>
+                  </div>
                   <div class="prod-list__item__info--star-icon">
                     <img
                       class="info--star-icon"
@@ -623,23 +1460,54 @@
           <!-- SP 4 -->
           <section class="prod-list__item">
             <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
+              <a href="">
+                <img
+                  class="prod-list__item__img1"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lac-tay-2.webp"
+                />
+              </a>
+              <!-- Hover heart and cart -->
+              <div class="button-heart-cart-hover">
+                <!-- <div class="button-heart"> -->
+                <a href="">
+                  <img
+                    src="./icon/heart.svg"
+                    alt=""
+                    class="prod-list__item__image--heart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+                <!-- <div class="button-cart"> -->
+                <a href="">
+                  <img
+                    src="./icon/cart.svg"
+                    alt=""
+                    class="prod-list__item__image--cart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+              </div>
             </div>
+
             <div class="prod-list__item__inner">
               <div class="prod-list__item__inner--child">
                 <div class="prod-list__item__info">
                   <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
+                    <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
                   </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
+                  <div class="prod-list__item__info--masp">Nhẫn</div>
                 </div>
                 <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
+                  <div class="prod-list__item--price">
+                    <span class="prod-list__item__info--price">
+                      2.090.000đ
+                    </span>
+                    <span class="prod-list__item__info--price-sales">
+                      3.000.000đ
+                    </span>
+                  </div>
                   <div class="prod-list__item__info--star-icon">
                     <img
                       class="info--star-icon"
@@ -709,24 +1577,57 @@
           <!-- sp1 -->
           <div class="card swiper-slide">
             <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/day chuyen-1.webp"
-              />
-              <div class="prod-list__item__image--text">HOT!</div>
+              <a href="">
+                <img
+                  class="prod-list__item__img1"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lac-tay-2.webp"
+                />
+              </a>
+              <span class="product-sale-tag">
+                <span> NEW!</span>
+              </span>
+              <!-- Hover heart and cart -->
+              <div class="button-heart-cart-hover">
+                <!-- <div class="button-heart"> -->
+                <a href="">
+                  <img
+                    src="./icon/heart.svg"
+                    alt=""
+                    class="prod-list__item__image--heart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+                <!-- <div class="button-cart"> -->
+                <a href="">
+                  <img
+                    src="./icon/cart.svg"
+                    alt=""
+                    class="prod-list__item__image--cart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+              </div>
             </div>
+
             <div class="prod-list__item__inner">
               <div class="prod-list__item__inner--child">
                 <div class="prod-list__item__info">
                   <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
+                    <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
                   </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
+                  <div class="prod-list__item__info--masp">Nhẫn</div>
                 </div>
                 <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
+                  <div class="prod-list__item--price">
+                    <span class="prod-list__item__info--price">
+                      2.090.000đ
+                    </span>
+                    <span class="prod-list__item__info--price-sales">
+                      3.000.000đ
+                    </span>
+                  </div>
                   <div class="prod-list__item__info--star-icon">
                     <img
                       class="info--star-icon"
@@ -743,24 +1644,54 @@
           <!-- sp2 -->
           <div class="card swiper-slide">
             <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
-              <div class="prod-list__item__image--text">HOT!</div>
+              <a href="">
+                <img
+                  class="prod-list__item__img1"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lac-tay-2.webp"
+                />
+              </a>
+              <!-- Hover heart and cart -->
+              <div class="button-heart-cart-hover">
+                <!-- <div class="button-heart"> -->
+                <a href="">
+                  <img
+                    src="./icon/heart.svg"
+                    alt=""
+                    class="prod-list__item__image--heart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+                <!-- <div class="button-cart"> -->
+                <a href="">
+                  <img
+                    src="./icon/cart.svg"
+                    alt=""
+                    class="prod-list__item__image--cart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+              </div>
             </div>
+
             <div class="prod-list__item__inner">
               <div class="prod-list__item__inner--child">
                 <div class="prod-list__item__info">
                   <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
+                    <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
                   </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
+                  <div class="prod-list__item__info--masp">Nhẫn</div>
                 </div>
                 <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
+                  <div class="prod-list__item--price">
+                    <span class="prod-list__item__info--price">
+                      2.090.000đ
+                    </span>
+                    <span class="prod-list__item__info--price-sales">
+                      3.000.000đ
+                    </span>
+                  </div>
                   <div class="prod-list__item__info--star-icon">
                     <img
                       class="info--star-icon"
@@ -777,24 +1708,54 @@
           <!-- sp3 -->
           <div class="card swiper-slide">
             <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
-              <div class="prod-list__item__image--text">HOT!</div>
+              <a href="">
+                <img
+                  class="prod-list__item__img1"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lac-tay-2.webp"
+                />
+              </a>
+              <!-- Hover heart and cart -->
+              <div class="button-heart-cart-hover">
+                <!-- <div class="button-heart"> -->
+                <a href="">
+                  <img
+                    src="./icon/heart.svg"
+                    alt=""
+                    class="prod-list__item__image--heart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+                <!-- <div class="button-cart"> -->
+                <a href="">
+                  <img
+                    src="./icon/cart.svg"
+                    alt=""
+                    class="prod-list__item__image--cart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+              </div>
             </div>
+
             <div class="prod-list__item__inner">
               <div class="prod-list__item__inner--child">
                 <div class="prod-list__item__info">
                   <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
+                    <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
                   </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
+                  <div class="prod-list__item__info--masp">Nhẫn</div>
                 </div>
                 <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
+                  <div class="prod-list__item--price">
+                    <span class="prod-list__item__info--price">
+                      2.090.000đ
+                    </span>
+                    <span class="prod-list__item__info--price-sales">
+                      3.000.000đ
+                    </span>
+                  </div>
                   <div class="prod-list__item__info--star-icon">
                     <img
                       class="info--star-icon"
@@ -811,23 +1772,57 @@
           <!-- sp4 -->
           <div class="card swiper-slide">
             <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
+              <a href="">
+                <img
+                  class="prod-list__item__img1"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lac-tay-2.webp"
+                />
+              </a>
+              <span class="product-sale-tag">
+                <span> HOT!</span>
+              </span>
+              <!-- Hover heart and cart -->
+              <div class="button-heart-cart-hover">
+                <!-- <div class="button-heart"> -->
+                <a href="">
+                  <img
+                    src="./icon/heart.svg"
+                    alt=""
+                    class="prod-list__item__image--heart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+                <!-- <div class="button-cart"> -->
+                <a href="">
+                  <img
+                    src="./icon/cart.svg"
+                    alt=""
+                    class="prod-list__item__image--cart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+              </div>
             </div>
+
             <div class="prod-list__item__inner">
               <div class="prod-list__item__inner--child">
                 <div class="prod-list__item__info">
                   <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
+                    <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
                   </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
+                  <div class="prod-list__item__info--masp">Nhẫn</div>
                 </div>
                 <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
+                  <div class="prod-list__item--price">
+                    <span class="prod-list__item__info--price">
+                      2.090.000đ
+                    </span>
+                    <span class="prod-list__item__info--price-sales">
+                      3.000.000đ
+                    </span>
+                  </div>
                   <div class="prod-list__item__info--star-icon">
                     <img
                       class="info--star-icon"
@@ -844,23 +1839,54 @@
           <!-- sp5 -->
           <div class="card swiper-slide">
             <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
+              <a href="">
+                <img
+                  class="prod-list__item__img1"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lac-tay-2.webp"
+                />
+              </a>
+              <!-- Hover heart and cart -->
+              <div class="button-heart-cart-hover">
+                <!-- <div class="button-heart"> -->
+                <a href="">
+                  <img
+                    src="./icon/heart.svg"
+                    alt=""
+                    class="prod-list__item__image--heart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+                <!-- <div class="button-cart"> -->
+                <a href="">
+                  <img
+                    src="./icon/cart.svg"
+                    alt=""
+                    class="prod-list__item__image--cart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+              </div>
             </div>
+
             <div class="prod-list__item__inner">
               <div class="prod-list__item__inner--child">
                 <div class="prod-list__item__info">
                   <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
+                    <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
                   </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
+                  <div class="prod-list__item__info--masp">Nhẫn</div>
                 </div>
                 <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
+                  <div class="prod-list__item--price">
+                    <span class="prod-list__item__info--price">
+                      2.090.000đ
+                    </span>
+                    <span class="prod-list__item__info--price-sales">
+                      3.000.000đ
+                    </span>
+                  </div>
                   <div class="prod-list__item__info--star-icon">
                     <img
                       class="info--star-icon"
@@ -874,125 +1900,61 @@
               </div>
             </div>
           </div>
+
           <!-- sp6 -->
           <div class="card swiper-slide">
             <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
-            </div>
-            <div class="prod-list__item__inner">
-              <div class="prod-list__item__inner--child">
-                <div class="prod-list__item__info">
-                  <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
-                  </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
-                </div>
-                <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
-                  <div class="prod-list__item__info--star-icon">
-                    <img
-                      class="info--star-icon"
-                      loading="lazy"
-                      alt=""
-                      src="./img/iconlylightstar.svg"
-                    />
-                    <div class="prod-list__item__info--fb">4.3</div>
-                  </div>
-                </div>
+              <a href="">
+                <img
+                  class="prod-list__item__img1"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lac-tay-2.webp"
+                />
+              </a>
+              <span class="product-sale-tag">
+                <span> HOT!</span>
+              </span>
+              <!-- Hover heart and cart -->
+              <div class="button-heart-cart-hover">
+                <!-- <div class="button-heart"> -->
+                <a href="">
+                  <img
+                    src="./icon/heart.svg"
+                    alt=""
+                    class="prod-list__item__image--heart-hover"
+                  />
+                </a>
+                <!-- </div> -->
+                <!-- <div class="button-cart"> -->
+                <a href="">
+                  <img
+                    src="./icon/cart.svg"
+                    alt=""
+                    class="prod-list__item__image--cart-hover"
+                  />
+                </a>
+                <!-- </div> -->
               </div>
             </div>
-          </div>
-          <!-- sp7 -->
-          <div class="card swiper-slide">
-            <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
-            </div>
+
             <div class="prod-list__item__inner">
               <div class="prod-list__item__inner--child">
                 <div class="prod-list__item__info">
                   <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
+                    <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
                   </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
+                  <div class="prod-list__item__info--masp">Nhẫn</div>
                 </div>
                 <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
-                  <div class="prod-list__item__info--star-icon">
-                    <img
-                      class="info--star-icon"
-                      loading="lazy"
-                      alt=""
-                      src="./img/iconlylightstar.svg"
-                    />
-                    <div class="prod-list__item__info--fb">4.3</div>
+                  <div class="prod-list__item--price">
+                    <span class="prod-list__item__info--price">
+                      2.090.000đ
+                    </span>
+                    <span class="prod-list__item__info--price-sales">
+                      3.000.000đ
+                    </span>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- sp8 -->
-          <div class="card swiper-slide">
-            <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
-            </div>
-            <div class="prod-list__item__inner">
-              <div class="prod-list__item__inner--child">
-                <div class="prod-list__item__info">
-                  <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
-                  </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
-                </div>
-                <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
-                  <div class="prod-list__item__info--star-icon">
-                    <img
-                      class="info--star-icon"
-                      loading="lazy"
-                      alt=""
-                      src="./img/iconlylightstar.svg"
-                    />
-                    <div class="prod-list__item__info--fb">4.3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- sp9 -->
-          <div class="card swiper-slide">
-            <div class="prod-list__item__image">
-              <img
-                class="prod-list__item__img1"
-                loading="lazy"
-                alt=""
-                src="./img/lac-tay-2.webp"
-              />
-            </div>
-            <div class="prod-list__item__inner">
-              <div class="prod-list__item__inner--child">
-                <div class="prod-list__item__info">
-                  <div class="prod-list__item__info--title">
-                    Nhẫn Đá Cubic Zirconia
-                  </div>
-                  <div class="prod-list__item__info--masp">NLF 415</div>
-                </div>
-                <div class="prod-list__item__info--price-fb">
-                  <b class="prod-list__item__info--price">2,090,000 VNĐ</b>
                   <div class="prod-list__item__info--star-icon">
                     <img
                       class="info--star-icon"
