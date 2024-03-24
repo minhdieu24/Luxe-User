@@ -192,12 +192,7 @@
           <div class="filter-wrapper pull-left">
             <div class="filter-custom trigger-filter">
               <span>Bộ lọc</span>
-              <img
-                style="max-width: 10px"
-                src="https://theme.hstatic.net/1000112469/1000770197/14/down.png?v=1206"
-                alt=""
-              />
-              <div class="groupFilterNew" style="display: block">
+              <div class="groupFilterNew">
                 <div class="contentFilter clearfix">
                   <div class="collection-filter-price collection-item">
                     <div class="sidebar-sort">
@@ -667,25 +662,6 @@
                 $(".cancel-filter").click(function () {
                   $(".clear_all > a").trigger("click");
                 });
-                $(".cancel-filter-mb").click(function () {
-                  $(".filter_mb")
-                    .find(".collection-item")
-                    .find("input[type=checkbox]")
-                    .each(function () {
-                      if ($(this).is(":checked")) {
-                        console.log($(this).val());
-                        $(this).click();
-                      }
-                    });
-                  $(".filter_mb")
-                    .find(".collection-filter-price")
-                    .find("input[type=radio]")
-                    .each(function () {
-                      if ($(this).val() == "((price:product>=0))") {
-                        $(this).trigger("click");
-                      }
-                    });
-                });
               });
             </script>
             <!----------------------------- -->
@@ -698,13 +674,14 @@
           </div>
           <!----------- DROPDOWN ------------>
           <div class="prod-dropdown">
-            <label class="prod-dropdown--left"
-              ><img
+            <label class="prod-dropdown--left">
+              <!-- <img
                 width="20"
                 height="auto"
                 alt="Sắp xếp"
                 src="./img/icon-sort.png"
-              />Sắp xếp:
+              /> -->
+              <i class="fa-solid fa-arrow-up-wide-short"></i> Sắp xếp:
             </label>
             <div class="prod-dropdown--right">
               <div class="prod-dropdown__input-box"></div>
@@ -751,7 +728,7 @@
                     class="prod-list__item__img1"
                     loading="lazy"
                     alt=""
-                    src="./img/lac-tay-2.webp"
+                    src="./img/day-chuyen-2.webp"
                   />
                 </a>
                 <span class="product-sale-tag">
@@ -1987,79 +1964,78 @@
       <script src="js/swiper-bundle.min.js"></script>
       <!-- JavaScript -->
       <script src="js/Card-slider.js"></script>
-      <article id="products">
-        <div class="third-line"></div>
-        <div class="explore-dm">
-          <h2 class="explore-dm--text">DANH MỤC ƯA CHUỘNG</h2>
-          <div
-            class="explore-dm--content"
-            style="width: 70%; display: inline-block"
-          >
-            <p>
-              Với sự sáng tạo không ngừng, chúng tôi tin rằng mỗi sản phẩm sẽ
-              góp phần tạo nên phong cách của riêng bạn và là điểm nhấn nhá
-              tuyệt vời mỗi khi bạn xuất hiện
-            </p>
+      <!-------------- DANH MỤC ƯA CHUỘNG -------------->
+      <div class="third-line"></div>
+      <div class="explore-dm">
+        <h2 class="explore-dm--text">DANH MỤC ƯA CHUỘNG</h2>
+        <div
+          class="explore-dm--content"
+          style="width: 70%; display: inline-block"
+        >
+          <p>
+            Với sự sáng tạo không ngừng, chúng tôi tin rằng mỗi sản phẩm sẽ góp
+            phần tạo nên phong cách của riêng bạn và là điểm nhấn nhá tuyệt vời
+            mỗi khi bạn xuất hiện
+          </p>
+        </div>
+        <!-- Day chuyen -->
+        <div class="container-listing">
+          <div class="listing-title">
+            <a href="" class="listing-tile__link">
+              <figure class="listing-tile__image">
+                <img class="" src="img/day-chuyen-9.webp" />
+              </figure>
+              <div class="listing-tile__content">
+                <p class="listing-tile__title">DÂY CHUYỀN</p>
+              </div>
+            </a>
           </div>
-          <!-- Day chuyen -->
-          <div class="container-listing">
-            <div class="listing-title">
-              <a href="" class="listing-tile__link">
-                <figure class="listing-tile__image">
-                  <img class="" src="img/day-chuyen-9.webp" />
-                </figure>
-                <div class="listing-tile__content">
-                  <p class="listing-tile__title">DÂY CHUYỀN</p>
-                </div>
-              </a>
-            </div>
-            <!-- Bong tai -->
-            <div class="listing-title">
-              <a href="" class="listing-tile__link">
-                <figure class="listing-tile__image">
-                  <img class="" src="img/bong-tai-8.jpg" />
-                </figure>
-                <div class="listing-tile__content">
-                  <p class="listing-tile__title">BÔNG TAI</p>
-                </div>
-              </a>
-            </div>
-            <!-- nhan -->
-            <div class="listing-title">
-              <a href="" class="listing-tile__link">
-                <figure class="listing-tile__image">
-                  <img class="" src="img/nhan-5.webp" />
-                </figure>
-                <div class="listing-tile__content">
-                  <p class="listing-tile__title">NHẪN</p>
-                </div>
-              </a>
-            </div>
-            <!-- lắc tay -->
-            <div class="listing-title">
-              <a href="" class="listing-tile__link">
-                <figure class="listing-tile__image">
-                  <img class="" src="img/lac-tay-8.webp" />
-                </figure>
-                <div class="listing-tile__content">
-                  <p class="listing-tile__title">VÒNG TAY</p>
-                </div>
-              </a>
-            </div>
-            <!-- ALL -->
-            <div class="listing-title">
-              <a href="" class="listing-tile__link">
-                <figure class="listing-tile__image">
-                  <img class="" src="img/Nhan-cau-hon-1.webp" />
-                </figure>
-                <div class="listing-tile__content">
-                  <p class="listing-tile__title">Shop All</p>
-                </div>
-              </a>
-            </div>
+          <!-- Bong tai -->
+          <div class="listing-title">
+            <a href="" class="listing-tile__link">
+              <figure class="listing-tile__image">
+                <img class="" src="img/bong-tai-8.jpg" />
+              </figure>
+              <div class="listing-tile__content">
+                <p class="listing-tile__title">BÔNG TAI</p>
+              </div>
+            </a>
+          </div>
+          <!-- nhan -->
+          <div class="listing-title">
+            <a href="" class="listing-tile__link">
+              <figure class="listing-tile__image">
+                <img class="" src="img/nhan-5.webp" />
+              </figure>
+              <div class="listing-tile__content">
+                <p class="listing-tile__title">NHẪN</p>
+              </div>
+            </a>
+          </div>
+          <!-- lắc tay -->
+          <div class="listing-title">
+            <a href="" class="listing-tile__link">
+              <figure class="listing-tile__image">
+                <img class="" src="img/lac-tay-8.webp" />
+              </figure>
+              <div class="listing-tile__content">
+                <p class="listing-tile__title">VÒNG TAY</p>
+              </div>
+            </a>
+          </div>
+          <!-- ALL -->
+          <div class="listing-title">
+            <a href="" class="listing-tile__link">
+              <figure class="listing-tile__image">
+                <img class="" src="img/Nhan-cau-hon-1.webp" />
+              </figure>
+              <div class="listing-tile__content">
+                <p class="listing-tile__title">Shop All</p>
+              </div>
+            </a>
           </div>
         </div>
-      </article>
+      </div>
     </div>
     <!-- Footer -->
     <footer class="footer">
