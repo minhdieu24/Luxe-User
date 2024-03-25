@@ -1,42 +1,39 @@
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 :root {
-  --text-color-1: #717171;
-  --text-color-2: #1a162e;
-  --text-color-3: #522A28;
-  --text-color-dark:#000000;
+  --product-detail-text-color-1: #717171;
+  --product-detail-text-color-2: #1a162e;
+  --product-detail-text-color-3: #522A28;
+  --product-detail-text-color-dark:#000000;
   --primary-color: #ef9059;
-  --nav-color: #717171;
-  --background-color-1: #fff;
+  --product-detail-background-color-1: #fff;
   --background-color:#fff;
-  --background-color-2: #f6f6f6;
-  --background-color-3: #fff;
+  --product-detail-background-color-3: #fff;
   --second-color: #fff5f0;
 }
 .dark-mode {
-  --text-color-1: #eeeeee;
-  --text-color-2: #ffffff;
-  --text-color-3: #F86624;
-  --text-color-dark:#fff;
+  --product-detail-text-color-1: #eeeeee;
+  --product-detail-text-color-2: #ffffff;
+  --product-detail-text-color-3: #F86624;
+  --product-detail-text-color-dark:#fff;
   --primary-color: #ef9059;
-  --nav-color: #171c28;
-  --background-color-1: #000000;
+  --product-detail-background-color-1: #000000;
   --background-color: #6C6C72;
-  --background-color-2: #292e39;
-  --background-color-3: #171C28;
+  --product-detail-background-color-3: #171C28;
 }
 
 body {
   font-size: 1.6rem;
   font-family: Quicksand, sans-serif;
-  background-color: var(--background-color-3);
+  background-color: var(--product-detail-background-color-3);
 }
 a {
   text-decoration: none;
 }
 label{
-  color: var(--text-color-dark);
+  color: var(--product-detail-text-color-dark);
 }
 .btn {
   display: inline-block;
@@ -52,7 +49,7 @@ label{
 /* ======= Header ====== */
 .fixed-header {
   position: relative;
-  background-color: var(--background-color-1);
+  background-color: var(--product-detail-background-color-1);
   padding: 10px 0px;
 }
 
@@ -94,7 +91,7 @@ label{
   margin-left: 15px;
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--text-color-1);
+  color: var(--product-detail-text-color-1);
   padding: 8px 10px;
 }
 
@@ -165,7 +162,7 @@ label{
   padding: 0 76px;
 }
 .frame-img{
-  background-color: var(--background-color-1);
+  background-color: var(--product-detail-background-color-1);
   width: 75%;
   margin-left: 76px;
   margin-bottom: 30px;
@@ -207,7 +204,7 @@ label{
   margin-left: 20px;
 }
 .product-inf__title {
-  color: var(--text-color-3);
+  color: var(--product-detail-text-color-3);
   text-transform: capitalize;
   margin-top: 10px;
   font-weight: 700;
@@ -216,7 +213,7 @@ label{
 }
 .product-inf__title__1 {
   text-align: center;
-  color: var(--text-color-3);
+  color: var(--product-detail-text-color-3);
   text-transform: capitalize;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -252,26 +249,26 @@ label{
   text-decoration: line-through;
 }
 .product-inf__text {
-  color: var(--text-color-dark);
+  color: var(--product-detail-text-color-dark);
   font-style: italic;
   font-weight: 300;
   margin-top: 26px;
 }
 
 .underline {
-  background-color: var(--text-color-dark);
+  background-color: var(--product-detail-text-color-dark);
   margin-top: 24px;
   height: 1px;
 }
 
 .product-inf__text1 {
-  color: var(--text-color-dark);
+  color: var(--product-detail-text-color-dark);
   font-weight: 300;
   margin-top: 18px;
 }
 
 .sales-promotion {
-  color: var(--text-color-dark);
+  color: var(--product-detail-text-color-dark);
   display: flex;
   margin-top: 37px;
   justify-content: space-between;
@@ -309,7 +306,7 @@ label{
   gap: 9px;
 }
 .payment1{
-  color: var(--background-color-1);
+  color: var(--product-detail-background-color-1);
 }
 .quantity {
   display: flex;
@@ -338,7 +335,7 @@ label{
   gap: 20px;
   font-size: 2.4rem;
   line-height: 130%;
-  color: var(--text-color-3);
+  color: var(--product-detail-text-color-3);
   font-weight: 700;
 }
 
@@ -352,7 +349,7 @@ label{
 }
 
 .text-ring {
-  color: var(--text-color-dark);
+  color: var(--product-detail-text-color-dark);
   align-self: stretch;
   font-weight: 700;
   font-size: 2.2rem;
@@ -370,7 +367,7 @@ label{
 .product-des__img {
   border-radius: 20px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background-color: var(--background-color-1);
+  background-color: var(--product-detail-background-color-1);
   display: flex;
   flex-direction: column;
   line-height: normal;
@@ -402,8 +399,8 @@ table{
   width: 132px;
 }
 tr, td{
-  border: 1px solid var(--text-color-dark);
-  color: var(--text-color-dark);
+  border: 1px solid var(--product-detail-text-color-dark);
+  color: var(--product-detail-text-color-dark);
   text-align: center;
   padding: 14px;
 }
@@ -449,7 +446,7 @@ td{
 
 .review-read {
   width: 100%;
-  background-color: var(--background-color-3);
+  background-color: var(--product-detail-background-color-3);
   gap: 50px;
   display: flex;
   padding-left: 15px;
@@ -465,14 +462,14 @@ td{
 }
 
 .customer-review {
-  color: var(--text-color-3);
+  color: var(--product-detail-text-color-3);
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 150%;
 }
 
 .review-quantity {
-  color: var(--text-color-dark);
+  color: var(--product-detail-text-color-dark);
   margin-top: 34px;
   font-weight: 600;
   font-size: 18px;
@@ -502,7 +499,7 @@ td{
 }
 
 .star-quality {
-  color: var(--text-color-dark);
+  color: var(--product-detail-text-color-dark);
   white-space: nowrap;
   font: 400 18px/167%;
 }
@@ -596,7 +593,7 @@ form input[type="text"] {
   border-width: 1px;
   background-color: var(--Shapes-Color-White, #fff);
 
-  color: var(--Text-Color-Dark, #131717);
+  color: var(--product-detail-Text-Color-Dark, #131717);
   padding: 32px 27px;
   line-height: normal;
 
@@ -652,14 +649,14 @@ form input[type="text"] {
   height: 100%;
   padding: 16px;
   border-radius: 20px;
-  background: var(--background-color-1);
+  background: var(--product-detail-background-color-1);
   box-shadow: 0px 60px 20px 0px rgba(237, 237, 246, 0.2);
 }
 
 .product-card__img-wrap {
   position: relative;
   padding-top: 100%;
-  background-color: var(--background-color-1);
+  background-color: var(--product-detail-background-color-1);
   border-radius: 20px;
 }
 
@@ -686,7 +683,7 @@ form input[type="text"] {
 .product-card__title a {
   display: inline-block;
   margin-top: 16px;
-  color: var(--text-color-2);
+  color: var(--product-detail-text-color-2);
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 150%;
