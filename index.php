@@ -29,12 +29,17 @@
           <button class="hamburger-menu" onclick="burgerFunction()">
             <img src="./icon/burger.svg" alt="" />
           </button>
-          <script src="./js/scripts.js"></script>
           <!-- Logo -->
           <a href="./" class="logo-nav">
             <img src="./icon/Logo.svg" alt="Luxe" />
             <h1 class="logo-title">Luxe</h1>
           </a>
+          <!-- Search button -->
+          <div class="top-act-group mobile">
+            <button class="top-act-btn">
+              <img src="./icon/search.svg" name="search-btn" class="searchBtn" onclick="search()"/>
+            </button>
+          </div> 
           <!-- nav = navigation giống div nhưng có ngữ nghĩa -->
           <!-- Navigation -->
           <nav class="navbar">
@@ -52,7 +57,7 @@
           <div class="top-act">
             <div class="top-act-group">
               <button class="top-act-btn">
-                <img src="./icon/search.svg" alt="" />
+                <img src="./icon/search.svg" name="search-btn" class="searchBtn" onclick="search()"/>
               </button>
             </div>
             <div class="top-act-group">
@@ -75,8 +80,13 @@
               </button>
             </div>
           </div>
-        </div>
+        </div>    
+        <div class="search-box">
+            <input type="text" placeholder="Tìm kiếm sản phẩm...">
+            <img src="./icon/delete.svg" name="close-btn" class="closeBtn" onclick="closeSearch()"/>
+          </div>
       </div>
+      
     </header>
     <!-- Mobile Header -->
     <header class="mobile-header">
@@ -104,9 +114,6 @@
         <!-- Action -->
         <div class="top-act">
             <button class="top-act-btn">
-              <img src="./icon/search.svg" alt="" />
-            </button>
-            <button class="top-act-btn">
               <img src="./icon/heart.svg" alt="" />
               <span class="top-act-title"> 03 </span>
             </button>
@@ -123,6 +130,10 @@
         </div>
       </div>
     </header>
+    <script>
+      
+      
+    </script>  
     <!--  Slider section -->
     <section id="slider">  
          <!-- aspect-ratio-169 -->

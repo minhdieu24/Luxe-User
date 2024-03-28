@@ -65,6 +65,7 @@ a {
   position: relative;
   background-color: var(--background-color-1);
   padding: 10px 0px;
+  overflow: hidden;
 }
 
 /* ======== Navigation ======== */
@@ -86,6 +87,7 @@ a {
   display: flex;
   /* Căn giữa theo chiều dọc */
   align-items: center;
+  justify-content: space-between;
 }
 
 .top-bar ul {
@@ -111,6 +113,7 @@ a {
 
 .top-bar .top-act {
   gap: 30px;
+  position: relative;
 }
 
 .top-bar .top-act-group {
@@ -148,6 +151,44 @@ a {
 .navbar ul a:hover {
   text-decoration: underline;
   color: var(--primary-color);
+}
+
+/* Search box */
+
+.search-box {
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  transition: 0.5s ease-in-out;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 50px;
+  color: #333;
+  font-size: 1.6rem;
+  font-family: Quicksand;
+  font-weight: 600;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.search-box.active {
+  left: 0;
+}
+
+.search-box img {
+  padding: 10px 10px 2px;
+  cursor: pointer;
 }
 
 /* ========= Slider Section ======== */

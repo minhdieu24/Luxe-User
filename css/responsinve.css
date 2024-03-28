@@ -4,6 +4,10 @@
     display: none;
   }
 
+  .top-bar .top-act-group.mobile {
+    display: none;
+  }
+
   .menu-drawer {
     display: none;
   }
