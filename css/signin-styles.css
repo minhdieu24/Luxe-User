@@ -199,17 +199,13 @@
     z-index: 99;
     position: sticky;
   }
-  .banner1-1-icon,
+
   .qc1-1-icon {
     height: 630px;
     position: relative;
     object-fit: cover;
-    display: none;
     max-width: 100%;
-  }
-  .banner1-1-icon {
-    width: 974px;
-    z-index: 2;
+    display: none;
   }
   .qc1-1-icon {
     width: 888px;
