@@ -190,7 +190,7 @@ a:visited {
 }
 /* =====================Phần của Kim ====================== */
 /* =================== Phần trang chủ/sản phẩm ======================== */
-.prod-long-line {
+.prod-longest-line {
   width: 100%;
   height: 5px;
   background: #ffbe98;
@@ -238,6 +238,13 @@ a:visited {
 }
 /* ========================Phần liên quan tới sản phẩm ========================== */
 /* ================ PRODUCT WRAP ============== */
+.catalog-list product-wrap--nav-links {
+  background-color: var(--background-color-3);
+  top: 0;
+  position: sticky;
+  z-index: 999999;
+  height: 185;
+}
 /* Tiêu đề "SẢN PHẨM" */
 .container__title-page-product {
   padding: 40px 0 15px 0;
@@ -316,7 +323,7 @@ a:visited {
 .product-wrap--nav-links li a:hover {
   color: var(--primary-color);
 }
-/*==== đi từ giữa ra ===== */
+/*================= đi từ giữa ra =============== */
 .product-wrap--nav-links li.center a:before {
   left: 50%;
   transform: translateX(-50%);
@@ -358,7 +365,12 @@ a:visited {
   padding: 0 35px;
   margin-bottom: 35px;
   justify-content: space-between; /* Để phần tử nằm bên trái và bên phải cách xa nhau */
-  position: relative;
+  /* position: relative; */
+  position: sticky;
+  background-color: var(--background-color-3);
+  top: 0px;
+  z-index: 999999;
+  height: 40px;
 }
 .toolbar-products-filter {
   display: flex;
@@ -419,6 +431,8 @@ a:visited {
   width: calc(100% - 250px);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px 0px,
     rgba(0, 0, 0, 0.1) 0px 1px 3px 1px;
+  height: 550px;
+  overflow: auto;
 }
 .clearfix:after {
   content: "";
@@ -754,7 +768,7 @@ input:checked + label::before {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px 28px;
+  gap: 30px 30px;
   padding: 0 10px;
   /* min-height: 1758px; ko cần */
 
@@ -892,7 +906,7 @@ input:checked + label::before {
 }
 .prod-list__item__info--masp {
   margin-right: -9px;
-  font-weight: 580;
+  font-weight: 650;
   color: #939090;
 }
 .prod-list__item__info--price-fb {
@@ -914,7 +928,7 @@ input:checked + label::before {
 .prod-list__item__info--price {
   font-size: 18px;
   margin-right: 7px;
-  font-weight: 580;
+  font-weight: 620;
 }
 .prod-list__item__info--price-sales {
   text-decoration: line-through;
@@ -1007,7 +1021,7 @@ input:checked + label::before {
 }
 /* ================PHẦN GỢI Ý SẢN PHẨM========= */
 
-.Suggest-for-you--text {
+.suggest-prod--text {
   font-size: 35px;
   color: var(--color-dimgray-300);
   text-align: center;
