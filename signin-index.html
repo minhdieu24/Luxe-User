@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" /> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-    <link rel="stylesheet" href="css/signin-global.css" />
-    <link rel="stylesheet" href="css/signin-styles.css" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./new.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
@@ -18,228 +19,199 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap"
     />
-  </head>
-  <body>
-    <div class="signin-1">
-      <div class="bg"></div>
-      <div class="top-bar-wrapper">
-        <header class="top-bar">
-          <div class="top-bar1">
-            <div class="frame-parent">
-              <div class="icon-parent">
+</head>
+<body>
+    <header class="header">
+        <!--Logo-left-->
+        
+        <div class="logo-left">
+            <img class="logo1" loading="lazy"
+            alt=""
+            src="./public/icon@2x.png"
+            />
+            <h1 class="logo1-text">Luxe</h1>    
+        </div>
+
+        <!--Info-Right-->
+        <div class="frame-right">
+            <div class="asking">Bạn chưa có tài khoản?</div>
+                <button class="btn-signup">
+                  <b class="btn-signup-text">Đăng ký</b>
+                </button>
+            <div class="dark">
                 <img
-                  class="icon"
-                  loading="lazy"
-                  alt=""
-                  src="signin-public/icon@2x.png"
+                class="moon-icon"
+                loading="lazy"
+                alt=""
+                src="./public/moon.svg"
                 />
-
-                <div class="sign-in-button">
-                  <h1 class="luxe">Luxe</h1>
-                </div>
-              </div>
-              <div class="frame-wrapper">
-                <div class="email-input-container-parent">
-                  <div class="email-input-container">
-                    <div class="bn-cha-c">Bạn chưa có tài khoản?</div>
-                  </div>
-                  <button class="signin">
-                    <div class="signin-child"></div>
-                    <b class="ng-k">Đăng ký</b>
-                  </button>
-                  <div class="dark">
-                    <div class="dark-child"></div>
-                    <img
-                      class="moon-icon"
-                      loading="lazy"
-                      alt=""
-                      src="signin-public/moon.svg"
-                    />
-                  </div>
-                </div>
-              </div>
             </div>
-            <div class="forgot-password-link"></div>
-          </div>
-        </header>
-      </div>
+        </div>
+    </header>
+    <div class="line1"></div>
 
-      <main class="button-sign-up">
-        <section class="ring-q-c-circle-container-parent">
-          <div class="ring-q-c-circle-container">
-            <div class="bg-qc">
-              <img class="qc1-1-icon" alt="" src="signin-public/qc1-1@2x.png" />
-
-              <b class="ring-qc">Nhẫn cưới 2024</b>
-              <div class="circles-wrapper">
-                <img
-                  class="circles-icon"
-                  loading="lazy"
+    <main class="main">
+        <div class="main-inner">
+        <!--ads-left-->
+            <div class="ads-left">
+              <b class="ads-title">Nhẫn cưới 2024</b>
+              <div class="circles">
+                <img loading="lazy"
                   alt=""
-                  src="signin-public/2circles.svg"
+                  src="./public/2circles.svg"
                 />
               </div>
             </div>
-            <form class="signup-info">
-              <div class="button-sign-up-instance">
-                <h1 class="ng-nhp">Đăng nhập</h1>
-              </div>
-              <div class="gmail-login">
-                <div class="gmail-logo-container">
+        <!--signin-right-->
+            <form class="signin-info">
+                <h1 class="signin-title">Đăng nhập</h1>
+              <div class="signin-input">
+                <!--Email-->
+                <div class="email-container">
                   <b class="email-text">Email</b>
                   <input class="email-box" type="text" />
                 </div>
-                <div class="logo-container">
-                  <div class="trang-chu-parent">
-                    <b class="trang-chu">
-                      <span class="mt-khu">Mật khẩu</span>
+                <!--Pass-->
+                <div class="pass-container">
+                  <div class="pass">
+                    <b>
+                      <span class="pass-text">Mật khẩu</span>
                       <span class="span"> *</span>
                     </b>
-                    <div class="san-pham">
-                      <div class="password-box"></div>
-                      <img
-                        class="hide-icon1"
+                    <div class="pass2">
+                      <div class="password-box-container"></div>
+                      <input class="password-box" type="password" />
+                      <!--<img class="hide-icon1"
                         alt=""
-                        src="signin-public/hideicon1.svg"
-                      />
+                        src="./public/hideicon1.svg"
+                      />-->
                     </div>
                   </div>
-                  <div class="forget-ps">Quên mật khẩu</div>
+                  <div class="forget-pass">
+                    <a href="http://">Quên mật khẩu</a>
+                </div>
                 </div>
               </div>
-              <div class="button-su-parent">
-                <button class="button-su">
-                  <b class="button-sign-up1">Đăng nhập</b>
+              <div class="button">
+                <button class="button-signin">
+                  <b class="button-signin-text">Đăng nhập</b>
                 </button>
-                <div class="divider-instance">
-                  <div class="divider">
-                    <div class="divider-1-wrapper">
-                      <div class="divider-1"></div>
-                    </div>
+                
+                <div class="divider">
+                    <div class="divider-1"></div>
                     <div class="or">Hoặc</div>
-                    <div class="divider2-wrapper">
-                      <div class="divider2"></div>
-                    </div>
-                  </div>
+                    <div class="divider2"></div>
                 </div>
-                <button class="signupgmail">
-                  <div class="signupgmail-box"></div>
-                  <div class="logo-footer">
-                    <img
-                      class="gmail-logo-icon"
+
+                <button class="signingmail">
+                  <div class="signingmail-box"></div>
+                    <img class="gmail-logo-icon"
                       alt=""
-                      src="signin-public/gmail-logo.svg"
+                      src="./public/gmail-logo.svg"
                     />
+                    <b class="signin-text">Đăng nhập bằng gmail</b>
                   </div>
-                  <b class="copyright-area">Đăng nhập bằng gmail</b>
                 </button>
               </div>
             </form>
-          </div>
-          <div class="forgot-password-link"></div>
-          <div class="frame-footer-wrapper">
-            <footer class="frame-footer">
-              <div class="logo">
-                <img class="icon1" alt="" src="signin-public/icon-1@2x.png" />
+        </div>
+    </main>
+    <div class="line2"></div>
 
-                <div class="luxe-wrapper">
-                  <h1 class="luxe1">Luxe</h1>
-                </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-row">
+        <div class="container">
+          <div class="footer-column-1">
+            <!-- Logo -->
+            <a href="./" class="logo-foot">
+              <img src="./icon/Logo.svg" alt="Luxe" />
+              <h1 class="logo-title">Luxe</h1>
+            </a>
+            <!-- Download app -->
+            <div class="download-container">
+              <p class="download-title"> Tải ngay Luxe app </p>
+              <div class="download-method">
+                <a href="https://play.google.com/store/apps" class="ch-store">
+                <img src="./icon/ch-play.svg" alt="" />
+              </a>
+              <a href="https://www.apple.com/vn/app-store" class="app-store">
+                <img src="./icon/app-store.svg" alt="" />
+              </a>
               </div>
-              <div class="danhmuc">
-                <b class="danh-mc">Danh mục</b>
-                <div class="trang-ch-parent">
-                  <div class="trang-ch">Trang chủ</div>
-                  <div class="sn-phm">Sản phẩm</div>
-                  <div class="v-chng-ti">Về chúng tôi</div>
-                  <div class="h-tr">Hỗ trợ</div>
-                  <div class="lin-h">Liên hệ</div>
-                </div>
-              </div>
-              <div class="download">
-                <b class="ti-ngay-luxe">Tải ngay Luxe app!</b>
-                <div class="frame-group">
-                  <img
-                    class="frame-icon"
-                    loading="lazy"
-                    alt=""
-                    src="signin-public/frame.svg"
-                  />
-
-                  <img class="frame-icon1" alt="" src="signin-public/frame-1.svg" />
-                </div>
-              </div>
-              <div class="lienhe">
-                <b class="thng-tin-lin">Thông tin liên hệ</b>
-                <div class="nguyn-tri-phng-container">
-                  <p class="nguyn-tri-phng">
-                    279 Nguyễn Tri Phương, Phường 5, Quận 10, TP.HCM
-                  </p>
-                  <p class="p">(+84) 046 990 809</p>
-                  <p class="infoexamplecom">info@example.com</p>
-                </div>
-              </div>
-
-              <div class="theo-di">
-                <b class="theo-di1">Theo dõi</b>
-                <div class="frame-container">
-                  <div class="rectangle-parent">
-                    <div class="frame-child"></div>
-                    <img
-                      class="not-applicable-icon"
-                      loading="lazy"
-                      alt=""
-                      src="signin-public/vector.svg"
-                    />
-                  </div>
-                  <div class="rectangle-group">
-                    <div class="frame-item"></div>
-                    <img
-                      class="vector-icon"
-                      alt=""
-                      src="signin-public/vector-1.svg"
-                    />
-                  </div>
-                  <div class="rectangle-container">
-                    <div class="frame-inner"></div>
-                    <img
-                      class="vector-icon1"
-                      alt=""
-                      src="signin-public/vector-2.svg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </footer>
-          </div>
-        </section>
-      </main>
-      <div class="bg-parent">
-        <div class="bg1"></div>
-        <div class="not-applicable">
-          <div class="not-applicable1">
-            <img
-              class="not-applicable-icon1"
-              loading="lazy"
-              alt=""
-              src="signin-public/frame-17748.svg"
-            />
-
-            <div class="not-applicable2">
-              <img class="frame-icon2" alt="" src="signin-public/frame-2.svg" />
             </div>
-            <img
-              class="not-applicable-icon2"
-              loading="lazy"
-              alt=""
-              src="signin-public/frame-17749.svg"
-            />
+          </div>
+          <div class="footer-column-2">
+            <h3 class="footer__heading">Danh mục</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#!" class="footer__link">
+                      Trang chủ
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#!" class="footer__link">
+                      Sản phẩm
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#!" class="footer__link"> Về chúng tôi </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#!" class="footer__link">
+                      Hỗ trợ
+                    </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">
+                    Liên hệ
+                  </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column-3">
+            <h3 class="footer__heading">Thông tin liên hệ</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                  279 Nguyễn Tri Phương, Phường 5, Quận 10, TP.HCM
+                </li>
+                <li class="footer__item">
+                  (+84) 046 990 809
+                </li>
+                <li class="footer__item">
+                  info@example.com
+                </li>
+            </ul>
+          </div>
+          <div class="footer-column-4">
+            <h3 class="footer__heading">Theo dõi</h3>
+            <div class="footer__social">
+                <a href="#!" class="footer__social-btn">
+                    <img src="./icon/facebook.svg" alt="">
+                </a>
+                <a href="#!" class="footer__social-btn">
+                    <img src="./icon/insta.svg" alt="">
+                </a>
+                <a href="#!" class="footer__social-btn">
+                    <img src="./icon/twitter.svg" alt="">
+                </a>
+            </div>
           </div>
         </div>
-        <div class="copyright-2022">
-          Copyright © 2022 UIHUT All Rights Reserved
-        </div>
-      </div>
     </div>
-  </body>
+
+    <div class="footer-copyright">
+        <div class="container">
+          <div class="payment-method">
+            <img src="./icon/paypal.svg" alt="">
+            <img src="./icon/visa.svg" alt="">
+            <img src="./icon/master-card.svg" alt="">
+          </div>
+          <p class="footer__copyright-text">
+            Copyright © 2023 UIHUT All Rights Reserved
+          </p>
+        </div>
+    </div>
+    </footer>
+</body>
 </html>
