@@ -199,11 +199,6 @@
     font-size: 28px;
   }
 }
-
-/*====== Tablet: width ≥ 740px and width < 1024px ===========*/
-/* @media screen and (min-width: 740px) and (max-width: 1049px) {
-} */
-
 /*==================== Mobile ========================*/
 @media screen and (max-width: 739px) {
   .prod-list__pagination {
@@ -225,6 +220,15 @@
 }
 @media screen and (max-width: 480px) {
   .prod-dropdown--left {
+    display: none;
+  }
+}
+/* Kích thước mobile */
+@media screen and (max-width: 300px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
     display: none;
   }
 }
