@@ -215,7 +215,6 @@
   .body-bg-icon {
     position: relative;
     object-fit: cover;
-    display: none;
   }
   .bodybg {
     display: flex;
@@ -223,11 +222,6 @@
     align-items: flex-start;
     justify-content: flex-start;
     background-image: url(./signup-public/bodybg@2x.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    min-width: 597px;
-    z-index: 1;
   }
   .ng-k {
     margin: 0;
