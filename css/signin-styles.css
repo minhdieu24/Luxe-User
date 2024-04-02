@@ -155,7 +155,7 @@ body {
     justify-content: center;
     padding: 450px 20px 45px;
     /*gap: 49px;*/
-    background-image: url(./public/qc1-1@2x.png);
+    background-image: url(/public/qc1-1@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
