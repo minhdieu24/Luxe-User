@@ -12,7 +12,25 @@ function burgerFunction() {
     const element = document.body;
     element.classList.toggle("dark-mode");
   }
+  
+  //Ẩn hiện nội dung câu hỏi FAQ
+  document.addEventListener('DOMContentLoaded', function() {
+    const faqQuestions = document.querySelectorAll('.faq-question');
 
+    faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+    const answer = question.nextElementSibling;
+  
+    if (answer.style.display === 'none' || !answer.style.display) {
+    answer.style.display = 'block';
+         } else {
+         answer.style.display = 'none';
+         }
+        });
+      });
+    });
+  
+  
   
   
   

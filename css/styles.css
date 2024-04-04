@@ -186,7 +186,7 @@
   
   
   /* ========= Slider Section ======== */
-
+  /*======= PAGE Liên hệ =========*/
   /*  Thông tin liên hệ  */
   .contact-container {
     display: flex;
@@ -553,11 +553,11 @@
     border: 0;
   }
 
-  /*== PAGE FAQ ==*/
+  /*======= PAGE FAQ =========*/
   .faq-section {
     background-color: var(--faq-background);
     display: flex;
-    padding: 80px 0;
+    padding: 30px 0;
     flex-direction: column;
     align-items: center;
   }
@@ -567,16 +567,16 @@
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     -webkit-text-stroke-color: #000;
-    margin-top: 20px;
-    margin-bottom: 80px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     font: 700 58px/117% Quicksand, sans-serif;
   }
 
   @media (max-width: 991px) {
     .faq-title {
       max-width: 100%;
-      margin-top: 40px;
-      font-size: 40px;
+      margin-top: 10px;
+      font-size: 30px;
     }
   }
 
@@ -629,12 +629,11 @@
     margin: auto 0;
     display: none;
     background-color: #EF9059;
-    display: flex;
     width: 1170px;
     max-width: 100%;
     gap: 20px;
     font-size: 20px;
-    color: whitesmoke;
+    color: black;
     font-weight: 500;
     letter-spacing: -0.13px;
     line-height: 115%;
@@ -770,3 +769,5 @@
     margin-right: 27px;
   }
    
+  
+    
