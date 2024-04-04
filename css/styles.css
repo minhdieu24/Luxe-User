@@ -693,6 +693,7 @@ input[type="radio"] {
 }
 .prod-dropdown__input-box:empty::after {
   content: "Tùy chọn";
+  font-family: Quicksand;
 }
 
 .prod-dropdown__list {
