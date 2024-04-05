@@ -692,6 +692,7 @@ form input[type="text"] {
 .product-card__price,
 .product-card__price-sales,
 .product-card__score {
+  color: var(--product-detail-text-color-dark);
   font-size: 1.5rem;
   font-weight: 500;
 }
