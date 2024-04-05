@@ -42,13 +42,13 @@ function darkFunction() {
   }
 
   }
-  function openPopup() {
-    var popup = document.getElementById("popup");
-    popup.style.display = "block";
+  function openModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "block";
   }
 
-  function closePopup() {
-    var popup = document.getElementById("popup");
-    popup.style.display = "none";
+  function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
   }
 
