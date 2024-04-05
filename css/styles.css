@@ -332,9 +332,10 @@ label{
   position: relative;
   display: inline-block;
   font-family: Arial, sans-serif;
-  justify-content: center;
 }
-
+.size-quantity, .selected-size{
+  color: var(--product-detail-text-color-dark);
+}
 .size-dropdown select {
   display: none;
 }
