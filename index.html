@@ -112,7 +112,16 @@
             Giá tham khảo, có thể thay đổi theo trọng lượng, size tay và giá vàng theo thời điểm
           </p>
           <div class="underline"></div>
-          <p class="product-inf__text1">Hướng dẫn chọn size</p>
+          <p class="product-inf__text1" onclick="openPopup()">Hướng dẫn chọn size</p>
+
+          <!-- Popup -->
+          <div id="popup" class="popup-overlay">
+            <div class="popup-content">
+              <h2>Cách đo size nhẫn</h2>
+              <p>Đo size nhẫn là quan trọng để đảm bảo vừa vặn và thoải mái khi đeo. Bạn có thể sử dụng dụng cụ đo size nhẫn hoặc tham khảo hướng dẫn trên website của chúng tôi.</p>
+              <button onclick="closePopup()">Đóng</button>
+            </div>
+          </div>
           <div class="sales-promotion">
             <div class="sales-promotion1">
               <div class="return">
