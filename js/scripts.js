@@ -51,4 +51,26 @@ function darkFunction() {
     var modal = document.getElementById("myModal");
     modal.style.display = "none";
   }
+  function toggleSizeList() {
+    var sizeList = document.getElementById("sizeList");
+    sizeList.style.display = sizeList.style.display === "none" ? "block" : "none";
+  }
+
+  function selectSize() {
+    var sizeSelect = document.getElementById("sizeSelect");
+    var selectedSize = sizeSelect.value;
+    displaySelectedSize(selectedSize);
+  }
+
+  function setSize(size) {
+    var sizeSelect = document.getElementById("sizeSelect");
+    sizeSelect.value = size;
+    displaySelectedSize(size);
+    toggleSizeList();
+  }
+
+  function displaySelectedSize(size) {
+    var selectedSizeElement = document.querySelector(".selected-size");
+    selectedSizeElement.textContent = size !== "" ? size : "Chọn size";
+  }
 
