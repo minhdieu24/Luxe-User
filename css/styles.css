@@ -459,13 +459,14 @@ td{
   width: 44px;
 }
 .frame {
+  justify-content: center;
   align-items: center;
   border-radius: 20px;
   background-color: #ffbe98;
   flex-grow: 1;
   padding: 74px 80px 74px 0;
-  margin-left: 15px;
-  gap: 80px;
+  margin: 0 5%;
+  gap: 20px;
   display: flex;
 }
 

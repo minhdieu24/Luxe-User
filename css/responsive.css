@@ -24,11 +24,13 @@
     }
     .frame-img {
       max-width: 70%;
-      margin-left: 40px;
+      margin: 0 50%;
+      transform: translateX(-50%);
     }
     .product-inf__image {
       width: 100%;
-      margin-left: 70px;
+      transform: translateX(-50%);
+      margin: 0 50%;
     }
     .product-inf__image1 {
       margin-left: 60px;
@@ -42,11 +44,13 @@
       width: 100%;
     }
     .img-pro {
-        width: 100%;
-        display: flex;
-        gap: 10px;
-        padding: 0 76px;
-        margin-left: 60px;
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      padding: 0 76px;
+      margin: 2% 50%;
+      transform: translateX(-50%);
+      justify-content: center;
     }
     .img-8 {
       max-width: 100%;
@@ -92,9 +96,9 @@
       gap: 0px;
     }
     .product-des__img {
-        align-self: stretch;
-        margin-left: 250px;
-        margin-top: 40px;
+      align-self: stretch;
+      margin: 0 50%;
+      transform: translateX(-50%);
     }
     .product-des__text {
       width: 100%;
@@ -195,10 +199,10 @@
     .review-form{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 50px;
+      gap: 30px;
     }
     .form-group{
-      width: 150%;
+      width: 70%;
     }
     textarea{
       width: 250px;
@@ -207,7 +211,7 @@
       width: 250px; 
     }
     .btn.submit{
-      margin-left: 200px;
+      margin: 0 60%;
     }
     .customer{
         max-width: 70%;
@@ -216,7 +220,8 @@
         margin: 50px 50%;
     }
     .btn.home-product__Load{
-      margin: 0px 0px 40px 49%;
+      margin: 0 50%;
+      transform: translateX(-50%);
     }
     .img-25 {
       max-width: 100%;
