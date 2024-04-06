@@ -124,29 +124,6 @@
               <button onclick="closeModal()">Đóng</button>
             </div>
           </div>
-          <div class="size">
-            <p style="color: var(--product-detail-text-color-dark);">Size: </p>
-            <div class="size-dropdown">
-              <div class="selected-size" onclick="toggleSizeList()">Size</div>
-              <select id="sizeSelect" onchange="selectSize()">
-                <option value="">Chọn size</option>
-                <option value="S">S</option>
-                <option value="M">M</option>
-              </select>
-              <div class="size-list" id="sizeList">
-                <div class="size-list-item" onclick="setSize('S')">S</div>
-                <div class="size-list-item" onclick="setSize('M')">M</div>
-              </div>
-            </div>
-            <p class="size-quantity">Số lượng:</p>
-            <table class="table">
-              <tr>
-                <td class ="dec-ins" onclick="Decrease()">-</td>
-                <td id="count" class="dec-ins count">1</td>
-                <td class ="dec-ins" onclick="Increase()">+</td>
-              </tr>
-            </table>
-          </div>
           <div class="sales-promotion">
             <div class="sales-promotion1">
               <div class="return">
@@ -168,6 +145,21 @@
                 <p class="return__text"> Miễn phí giao hàng toàn quốc </p>
               </div>
             </div>
+          </div>
+          <div class="size">
+            <p style="color: var(--product-detail-text-color-dark);">Size: </p>
+            <div class="size-dropdown">
+              <div class="selected-size" onclick="toggleSizeList()">Size</div>
+              <select id="sizeSelect" onchange="selectSize()">
+                <option value="">Chọn size</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+              </select>
+              <div class="size-list" id="sizeList">
+                <div class="size-list-item" onclick="setSize('S')">S</div>
+                <div class="size-list-item" onclick="setSize('M')">M</div>
+              </div>
+            </div>           
           </div>
 
           <!-- Decrease or Increase quantity -->
