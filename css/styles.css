@@ -198,6 +198,7 @@
       flex-direction: column;
       align-items: stretch;
       gap: 0;
+      max-width: 100%;
     }
   }
 
@@ -223,7 +224,7 @@
     color: #ef9059;
     font-weight: 500;
     justify-content: center;
-    width: 100%;
+
     padding: 60px 60px;
   }
 
@@ -236,8 +237,8 @@
 
   .contact-info-wrapper {
     display: flex;
-    width: 80%;
-    max-width: 100%;
+    margin-top: 0px;
+    width: 100%;
     flex-direction: column;
   }
 
@@ -294,6 +295,7 @@
   @media (max-width: 991px) {
     .contact-subtitle {
       margin-top: 15px;
+      text-align: center;
     }
   }
 
@@ -367,17 +369,19 @@
   }
 
   .g-map {
-    margin-top: 50px;
-    margin-left: 60%;
+    margin-top: 30px;
+    margin-left: 50%;
     margin-bottom: 30px;
     transform: translateX(-50%);
-    width: 100%;
+    width: 450px; 
+    height: 300px;
   }
   @media (max-width: 991px) {
     .g-map {
-      max-width: 100%;
-      margin-top: 40px;
+      margin-top: 10px;
       margin-left: 50%;
+      width: 350px; 
+      height: 200px;
     }
   }
 /*  Form liên hệ  */
