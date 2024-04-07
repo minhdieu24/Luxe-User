@@ -29,6 +29,24 @@ function burgerFunction() {
         });
       });
     });
+  //Chuyển đổi icon + sang - khi click vào câu hỏi
+  document.addEventListener("DOMContentLoaded", function() {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+  
+    faqQuestions.forEach(question => {
+        const faqIcon = question.querySelector('.faq-icon');
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            if (answer.style.display === 'none' || !answer.style.display) {
+                faqIcon.src = "./icon/hotro-add.svg";
+            } else {
+                faqIcon.src = "./icon/hotro-minus.svg";
+            }
+        });
+    });
+});
+
+  
   
   
   

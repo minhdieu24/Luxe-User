@@ -614,13 +614,20 @@
       font-size: 20px;
     }
   }
+  .faq-icon {
+    aspect-ratio: 1.08;
+    object-fit: auto;
+    object-position: center;
+    width: 40px;
+     margin-left: auto;
+  }
   .faq-answer{
     font-family: Quicksand, sans-serif;
     flex-grow: 1;
     flex-basis: auto;
     margin: auto 0;
     display: none;
-    background-color: #EF9059;
+    background-color: #FFDAC4;
     width: 1170px;
     max-width: 100%;
     gap: 20px;
