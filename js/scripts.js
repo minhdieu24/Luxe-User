@@ -24,18 +24,18 @@ function darkFunction() {
   //Đổi màu shadow của imgWrap khi qua dark mode
   const imgWrapShadows = document.querySelectorAll(".product-card");
   if (element.classList.contains("dark-mode")) {
-    imageReturn.src = "./icon/return-dark.svg";
-    imagePayment.src = "./icon/payment-dark.svg";
-    imageGuarantee.src = "./icon/guarantee-dark.svg";
-    imageDelivery.src = "./icon/delivery-dark.svg";
+    imageReturn.src = "./icon/sanpham-return-dark.svg";
+    imagePayment.src = "./icon/sanpham-payment-dark.svg";
+    imageGuarantee.src = "./icon/sanpham-guarantee-dark.svg";
+    imageDelivery.src = "./icon/sanpham-delivery-dark.svg";
     imgWrapShadows.forEach((element) => {
       element.style.boxShadow = "0px 20px 60px 0px rgba(0, 0, 0, 0.2)";
     });
   } else {
-    imageReturn.src = "./icon/return.svg";
-    imagePayment.src = "./icon/payment.svg";
-    imageGuarantee.src = "./icon/guarantee.svg";
-    imageDelivery.src = "./icon/delivery.svg";
+    imageReturn.src = "./icon/sanpham-return.svg";
+    imagePayment.src = "./icon/sanpham-payment.svg";
+    imageGuarantee.src = "./icon/sanpham-guarantee.svg";
+    imageDelivery.src = "./icon/sanpham-delivery.svg";
     imgWrapShadows.forEach((element) => {
       element.style.boxShadow = "0px 60px 20px 0px rgba(237, 237, 246, 0.20)";
     });
