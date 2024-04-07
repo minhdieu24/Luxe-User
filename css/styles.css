@@ -164,9 +164,8 @@ a {
 
 .favorites-list {
   background-color: var(--wishlist-mainbackgr-color);  display: flex;
-  margin-top: 43px;
+  padding: 43px 20px 50px;
   width: 100%;
-  max-width: 1155px;
   gap: 20px;
   font-weight: 700;
   justify-content: space-between;
@@ -176,7 +175,6 @@ a {
   .favorites-list {
     max-width: 100%;
     flex-wrap: wrap;
-    margin-top: 40px;
   }
 }
 
@@ -219,7 +217,6 @@ a {
 }
 
 .add-to-cart-container {
-  align-self: start;
   display: flex;
   flex-direction: column;
   font-size: 18px;
@@ -235,7 +232,7 @@ a {
   background-color: #ffbe98;
   align-items: center;
   justify-content: center;
-  padding: 16px 60px;
+  padding: 20px 60px;
   border: none;
   transition: background-color 0.3s, border-color 0.3s; /* Tạo hiệu ứng chuyển đổi màu nền và màu viền */
 }
@@ -254,14 +251,14 @@ a {
 /* List Product */
 .product-list {
   background-color: var(--wishlist-mainbackgr-color);
-  margin: 51px auto 0;
+  padding: 51px auto 0;
   max-width: 1374px;
   padding: 8px 20px 0;
 }
 
 @media (max-width: 991px) {
   .product-list {
-    margin-top: 40px;
+    padding-top: 40px;
   }
 }
 
@@ -283,12 +280,12 @@ a {
 
 @media (max-width: 991px) {
   .product-column {
-    margin-top: 40px;
+    padding-top: 40px;
   }
 }
 
 .delete-icon {
-  display: flex;
+  display: center;
   align-items: center;
   gap: 10px;
   font-size: 18px;
@@ -312,7 +309,7 @@ a {
 }
 
 .product-card {
-  margin-top: 26px;
+  padding-top: 26px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -343,26 +340,26 @@ a {
 
 .product-name {
   color: var(--wishlist-text-header1-color);
-  margin: 19px 16px 0;
+  padding: 19px 16px 0;
   font: 600 16px/24px Quicksand, sans-serif;
   font-weight: bold;
 }
 
 @media (max-width: 991px) {
   .product-name {
-    margin: 0 10px;
+    padding: 0 10px;
   }
 }
 
 .product-DM {
   color: #717171;
-  margin: 8px 16px 0;
+  padding: 8px 16px 0;
   font: 500 15px/160% Quicksand, sans-serif;
 }
 
 @media (max-width: 991px) {
   .product-DM {
-    margin: 0 10px;
+    padding: 0 10px;
   }
 }
 
@@ -370,12 +367,12 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  margin: 6px 17px 0;
+  padding: 6px 17px 0;
 }
 
 @media (max-width: 991px) {
   .product-info {
-    margin: 0 10px;
+    padding: 0 10px;
   }
 }
 
@@ -393,7 +390,7 @@ a {
 }
 .product-rating .star-icon {
   color: #FFB700; /* Màu của biểu tượng ngôi sao */
-  margin-right: 3px; 
+  padding-right: 3px; 
   font-size: 25px;
 }
 
@@ -446,7 +443,6 @@ a {
 .button-container {
   background-color: var(--wishlist-mainbackgr-color);
   display: flex;
-  margin: 55px auto;
   width: 100%;
   max-width: 1234px;
   gap: 20px;
@@ -456,7 +452,7 @@ a {
   text-align: center;
   line-height: 167%;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 20px 20px 50px;
 }
 .view-more-btn {
   flex: 0 0 auto; /* Không co dãn, giữ kích thước ban đầu */
