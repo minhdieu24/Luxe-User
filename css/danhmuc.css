@@ -695,7 +695,7 @@ input[type="radio"] {
   content: "expand_less";
 }
 .prod-dropdown__input-box:empty::after {
-  content: "Tùy chọn";
+  content: "Mặc định";
   font-family: Quicksand;
 }
 
@@ -1095,9 +1095,10 @@ input:checked + label::before {
   word-spacing: 5px;
   color: #522a28;
   line-height: 1.5;
+  margin-bottom: 8px;
 }
 .explore-dm--content {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .explore-dm--content p {
