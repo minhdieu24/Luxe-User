@@ -21,12 +21,12 @@ function burgerFunction() {
     element.classList.toggle("dark-mode");
    //Đổi ảnh icon xóa //chưa chạy được
    const imageDelete = document.querySelector(".delete img");
-   if (element.classList.contains("dark-mode")) {
+   if (element.classList.contains("dark-mode")) 
     imageDelete.src = "./icon/delete-dark.svg";
-  } else {
+   else 
     imageDelete.src = "./icon/delete.svg";
   }
-}
+
 // Lấy modal
 var modal = document.getElementById("cartModal");
 

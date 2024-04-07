@@ -175,6 +175,7 @@ a {
   .favorites-list {
     max-width: 100%;
     flex-wrap: wrap;
+    padding: 43px 20px 0px;
   }
 }
 
@@ -200,6 +201,7 @@ a {
 @media (max-width: 991px) {
   .favorites-title {
     max-width: 100%;
+    font-size: 30px;;
   }
 }
 
@@ -213,6 +215,7 @@ a {
 @media (max-width: 991px) {
   .favorites-count {
     max-width: 100%;
+    font-size: 13px;
   }
 }
 
@@ -244,7 +247,12 @@ a {
 
 @media (max-width: 991px) {
   .add-to-cart-button {
-    padding: 0 20px;
+    padding: 15px 20px 15px 20px ;
+  }
+}
+@media (max-width: 991px) {
+  .add-to-cart-container {
+    margin: 0 5% 10px auto; /* auto sẽ đặt margin-right là giá trị phần trăm tự động */
   }
 }
 
@@ -258,7 +266,7 @@ a {
 
 @media (max-width: 991px) {
   .product-list {
-    padding-top: 40px;
+    padding-top: 0px;
   }
 }
 
@@ -280,7 +288,7 @@ a {
 
 @media (max-width: 991px) {
   .product-column {
-    padding-top: 40px;
+    padding-top: 20px;
   }
 }
 
@@ -299,6 +307,8 @@ a {
 @media (max-width: 991px) {
   .delete-icon {
     white-space: initial;
+    margin-left: 0px;
+    text-align: center;
   }
 }
 
@@ -444,7 +454,7 @@ a {
   background-color: var(--wishlist-mainbackgr-color);
   display: flex;
   width: 100%;
-  max-width: 1234px;
+  max-width: 100%;
   gap: 20px;
   font-size: 18px;
   color: #000;
@@ -461,15 +471,22 @@ a {
 @media (max-width: 991px) {
   .button-container {
     max-width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 40px;
+    display: flex; /* Sử dụng flexbox layout */
+    flex-direction: column; /* Hiển thị các nút theo chiều dọc */
+    align-items: center; /* Căn giữa các nút theo chiều dọc */
   }
   
-  .continue-shopping-btn,
   .view-more-btn,
+  .continue-shopping-btn,
   .clear-list-btn {
-    padding: 0 20px;
+    flex: 0 0 48%; /* Sử dụng khoảng 48% chiều rộng của container */
+    padding: 10px 20px; /* Điều chỉnh padding cho các nút */
+    margin: 5px 0; /* Tạo khoảng cách giữa các nút */
+    width: 50%; /* Đặt chiều rộng của nút là 100% để chúng nằm trên cùng một hàng */
+  }
+  
+  .view-more-btn {
+    order: -1; /* Di chuyển nút xem thêm lên trên cùng */
   }
 }
 
