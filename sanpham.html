@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="vn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Chỉnh biểu tượng web -->
+    <link href="./icon/sanpham-logo.svg" rel="shortcut icon" />
+    <title>Luxe - Trang sức cao cấp</title>
+    <!-- GG Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Scripts -->
+    <script src="./js/scripts.js"></script>
+  </head>
+<body>
+    <!-- PC Header -->
+    <header class="fixed-header">
+      <div class="container">
+        <div class="top-bar">
+          <!-- Mobile menu -->
+          <button class="hamburger-menu" onclick="burgerFunction()">
+            <img src="./icon/burger.svg" alt="" />
+          </button>
+          <script src="./js/scripts.js"></script>
+          <!-- Logo -->
+          <a href="./" class="logo-nav">
+            <img src="./icon/sanpham-logo.svg" alt="Luxe" />
+            <h1 class="logo-title">Luxe</h1>
+          </a>
+          <!-- nav = navigation giống div nhưng có ngữ nghĩa -->
+          <!-- Navigation -->
+          <nav class="navbar">
+            <ul>
+              <li><a href="#!">Trang chủ</a></li>
+              <li><a href="#!">Sản phẩm</a></li>
+              <li><a href="#!">Về chúng tôi</a></li>
+              <li><a href="#!">Hỗ trợ</a></li>
+              <li><a href="#!">Liên hệ</a></li>
+            </ul>
+          </nav>
+
+          <!-- Action -->
+          <div class="top-act">
+            <div class="top-act-group">
+              <button class="top-act-btn">
+                <img src="./icon/sanpham-search.svg" alt="" />
+              </button>
+            </div>
+            <div class="top-act-group">
+              <button class="top-act-btn">
+                <img src="./icon/sanpham-heart.svg" alt="" />
+                <span class="top-act-title"> 03 </span>
+              </button>
+              <div class="top-act-separate"></div>
+              <button class="top-act-btn">
+                <img src="./icon/sanpham-cart.svg" alt="" />
+                <span class="top-act-title"> 03 </span>
+              </button>
+              <div class="top-act-separate"></div>
+              <button class="top-act-btn">
+                <img src="./icon/sanpham-user.svg" alt="" />
+              </button>
+              <div class="top-act-separate"></div>
+              <button class="top-act-btn" onclick="darkFunction()">
+                <img src="./icon/sanpham-moon.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="cross-bar"></div>
+
+    <!-- Product detail -->
+    <div class="product-detail">
+      <div class="product-inf">
+
+        <!-- Product image -->
+        <div class="product-inf__image">
+          <div class="frame-img">
+            <img src="img/nhẫn vàng.webp" alt="" class="product-inf__image1" />
+          </div>
+          <div class="img-pro">
+            <img src="img/nhẫn 1.webp" alt="" class="product-inf__image3" />
+            <img src="img/nhẫn 2.jpg" alt="" class="product-inf__image3" />
+            <img src="img/nhẫn 3.jpg" alt="" class="product-inf__image3" />
+          </div>
+        </div>
+
+        <!-- Product information -->
+        <div class="product-inf__word">
+          <p class="product-card__collection">Nhẫn</p>
+          <p class="product-inf__title">Nhẫn cưới Kim cương NC 795KC</p>
+          <div class="product-inf__star">
+            <img src="./icon/sanpham-star.svg" alt="" />
+            <p style="color: var(--product-detail-text-color-dark);"> 4.9 (77) </p>
+          </div>
+          <!--<p class="product-inf__price">2.549.000 VNĐ</p>-->
+          <div class="product-price">
+            <span class="product-inf__price">1.000.000đ</span>
+            <span class="product-inf__price-sales">1.500.000đ</span>
+          </div>
+          <p class="product-inf__text">
+            Giá tham khảo, có thể thay đổi theo trọng lượng, size tay và giá vàng theo thời điểm
+          </p>
+          <div class="underline"></div>
+          <p class="product-inf__text1" onclick="openModal()">Hướng dẫn chọn size</p>
+          <!-- Cửa sổ modal -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <h2 style="font-weight: bold; text-align: center; font-size: 22px;">Cách đo size nhẫn</h2><br>
+              <p>1. Dùng chỉ hoặc giấy bản nhỏ đo quấn quanh khớp tay, đánh dấu vị trí cắt nhau</p><br>
+              <p>2. Dùng thước đo chiều dài đoạn dây vừa đo được (đơn vị cm)</p><br>
+              <p>3. Từ 4.6cm đến 5.6cm: size S</p>
+              <p style="margin-left: 15px;">Từ 5.6cm đến 6.4cm: size M</p><br>
+              <button onclick="closeModal()">Đóng</button>
+            </div>
+          </div>
+          <div class="sales-promotion">
+            <div class="sales-promotion1">
+              <div class="return">
+                <img src="./icon/sanpham-return.svg" alt="" class="img-return" />
+                <p class="return__text"> Đổi trả miễn phí trong 72 giờ </p>
+              </div>
+              <div class="payment">
+                <img src="./icon/sanpham-payment.svg" alt="" class="img-return" />
+                <p class="return__text"> Trả góp 0% </p>
+              </div>
+            </div>
+            <div class="sales-promotion1">
+              <div class="guarantee">
+                <img src="./icon/sanpham-guarantee.svg" alt="" class="img-return" />
+                <p class="return__text"> Bảo hành trọn đời </p>
+              </div>
+              <div class="delivery">
+                <img src="./icon/sanpham-delivery.svg" alt="" class="img-return" />
+                <p class="return__text"> Miễn phí giao hàng toàn quốc </p>
+              </div>
+            </div>
+          </div>
+          <div class="size">
+            <p style="color: var(--product-detail-text-color-dark);">Size: </p>
+            <div class="size-dropdown">
+              <div class="selected-size" onclick="toggleSizeList()">Size</div>
+              <select id="sizeSelect" onchange="selectSize()">
+                <option value="">Chọn size</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+              </select>
+              <div class="size-list" id="sizeList">
+                <div class="size-list-item" onclick="setSize('S')">S</div>
+                <div class="size-list-item" onclick="setSize('M')">M</div>
+              </div>
+            </div>           
+          </div>
+
+          <!-- Decrease or Increase quantity -->
+          <div class="quantity">
+            <table class="table">
+              <tr>
+                <td class ="dec-ins" onclick="Decrease()">-</td>
+                <td id="count" class="dec-ins count">1</td>
+                <td class ="dec-ins" onclick="Increase()">+</td>
+              </tr>
+            </table>
+            
+            <!-- Button THÊM VÀO GIỎ HÀNG -->
+            <a href="#!" class="btn them">THÊM VÀO GIỎ HÀNG</a>    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product description -->
+    <p class="product-text"> Chi tiết sản phẩm</p>
+    <div class="product-description">
+      <p class="text-ring">Nhẫn nữ</p>
+      <div class="product-des">
+        <div class="product-des__img">
+          <img src="img/nhẫn vàng.webp" alt="" class="img-product" />
+        </div>
+        <div class="product-des__text">
+          <div class="frame">
+            <div class="inf-text">Thông tin nhẫn</div>  
+            <div class="des-text">
+              Chất liệu:
+              <br />
+              Trọng lượng:
+              <br />
+              Loại đá:
+              <br />
+              Kích thước đá:
+            </div>
+            <div class="des-text">
+              Bạc
+              <br />
+              3.0g
+              <br />
+              Zirconia
+              <br />
+              1.25mm
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review -->
+    <div class="review">
+      <div class="review-read">
+
+        <!-- Review statistics -->
+        <div class="review-statistics">
+          <p class="customer-review">Đánh giá sản phẩm</p>
+          <p class="review-quantity">77 Reviews</p>
+          <div class="product-inf__star">
+            <img src="./icon/sanpham-star.svg" alt="" />
+            <p style="color: var(--product-detail-text-color-dark);"> 4.9 </p>
+          </div>
+          <div class="star">
+            <p class="star-quality">5 sao</p>
+            <div class="cross-bar__star"><div class="cross-quantity1"></div></div>
+            <p class="star-quality">37</p>
+          </div>
+          <div class="star">
+            <p class="star-quality">4 sao</p>
+            <div class="cross-bar__star"><div class="cross-quantity2"></div></div>
+            <p class="star-quality">20</p>
+          </div>
+          <div class="star">
+            <p class="star-quality">3 sao</p>
+            <div class="cross-bar__star"><div class="cross-quantity3"></div></div>
+            <p class="star-quality">12</p>
+          </div>
+          <div class="star">
+            <p class="star-quality">2 sao</p>
+            <div class="cross-bar__star"><div class="cross-quantity4"></div></div>
+            <p class="star-quality">8</p>
+          </div>
+          <div class="star">
+            <p class="star-quality">1 sao</p>
+            <div class="cross-bar__star"><div class="cross-quantity5"></div></div>
+            <p class="star-quality">0</p>
+          </div>
+        </div>
+
+        <!-- Writing review -->
+        <div class="review-writing">
+          <p class="customer-review">Đánh giá của bạn về sản phẩm này</p>
+          <img src="./icon/sanpham-5star.svg" alt="" class="img-star" />
+          <form id="reviewForm">
+            <div class="review-form">
+              <div class="form-group">
+                  <label for="reviewTitle">Tiêu đề</label> <br>
+                  <input class="write-headline" type="text" id="reviewTitle" name="reviewTitle">
+              </div>
+              <div class="form-group">
+                  <label for="reviewDetails">Đánh giá chi tiết</label> <br>
+                  <textarea class="write-detail" id="reviewDetails" name="reviewDetails" rows="4"></textarea>
+              </div>
+            </div>
+            <button style="border: none; margin-top: 15px;" class="btn submit" type="submit">Gửi</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+      <!-- Customer review -->
+      <div class="container">
+      <div class="review-customer">
+        <div class="customer">
+          <img src="img/nhẫn 2.jpg" alt="" class="ava-img" />
+          <p class="review-tittle">Thu Hiền</p>
+          <img src="./icon/sanpham-5star.svg" alt="" class="star-img" />
+          <p class="review-tittle">Nhẫn quá đẹp</p>
+          <p class="review-detail">
+            Chưa bao giờ tôi mua một chiếc nhẫn đẹp như dị. Happy new yearrr. Chúc mọi người năm mới vui vẻ.
+          </p>
+        </div>
+        <div class="customer">
+          <img src="img/nhẫn 2.jpg" alt="" class="ava-img" />
+          <div class="review-tittle">Minh Diệu</div>
+          <img src="./icon/sanpham-5star.svg" alt="" class="star-img" />
+          <div class="review-tittle">Nhẫn quá đẹp</div>
+          <div class="review-detail">
+            Chưa bao giờ tôi mua một chiếc nhẫn đẹp như dị. Happy new yearrr. Chúc mọi người năm mới vui vẻ.
+          </div>
+        </div>
+        <div class="customer">
+          <img src="img/nhẫn 2.jpg" alt="" class="ava-img" />
+          <div class="review-tittle">Bảo Ngọc</div>
+          <img src="./icon/sanpham-5star.svg" alt="" class="star-img" />
+          <div class="review-tittle">Nhẫn quá đẹp</div>
+          <div class="review-detail">
+            Chưa bao giờ tôi mua một chiếc nhẫn đẹp như dị. Happy new yearrr. Chúc mọi người năm mới vui vẻ.
+          </div>
+        </div>
+      </div>
+      <!-- Button Load more -->
+      <a href="#!" class="btn home-product__Load">Xem thêm</a>
+    </div>
+
+    <!-- Similar products -->
+    <div class="container">
+      <p class="product-inf__title__1">SẢN PHẨM TƯƠNG TỰ, THAM KHẢO NGAY!</p>
+      <div class="product-home">
+
+        <!-- Product 1 -->
+        <div class="product-item">
+            <div class="product-card">
+                <div class="product-card__img-wrap">
+                    <a href="./product-detail.html">
+                        <img src="./img/nhẫn 1.webp" alt="" class="product-card__thumb" />
+                    </a>
+                    <button class="like-btn">
+                        <img src="./icon/sanpham-heart.svg" alt="" class="like-icon icon" />
+                    </button>
+                </div>
+                <h3 class="product-card__title">
+                    <a href="./product-detail.html">Nhẫn Vàng Đá Trang Sức NLF 453 </a>
+                </h3>
+                <p class="product-card__collection">Nhẫn cưới</p>
+                <div class="product-card__row">
+                  <span class="product-card__price">1.000.000đ</span>
+                  <span class="product-card__price-sales">1.500.000đ</span>
+                  <img src="./icon/sanpham-star.svg" alt="" class="product-card__star" />
+                  <span class="product-card__score">4.3</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-item">
+          <div class="product-card">
+              <div class="product-card__img-wrap">
+                  <a href="./product-detail.html">
+                      <img src="./img/nhẫn 1.webp" alt="" class="product-card__thumb" />
+                  </a>
+                  <button class="like-btn">
+                    <img src="./icon/sanpham-heart.svg" alt="" class="like-icon icon" />
+                  </button>
+              </div>
+              <h3 class="product-card__title">
+                  <a href="./product-detail.html">Nhẫn Vàng Đá Trang Sức NLF 453 </a>
+              </h3>
+              <p class="product-card__collection">Nhẫn cưới</p>
+              <div class="product-card__row">
+                <span class="product-card__price">1.000.000đ</span>
+                <span class="product-card__price-sales">1.500.000đ</span>
+                <img src="./icon/sanpham-star.svg" alt="" class="product-card__star" />
+                <span class="product-card__score">4.3</span>
+              </div>
+          </div>
+        </div>
+
+          <!-- Product 3 -->
+        <div class="product-item">
+            <div class="product-card">
+                <div class="product-card__img-wrap">
+                    <a href="./product-detail.html">
+                        <img src="./img/nhẫn 1.webp" alt="" class="product-card__thumb" />
+                    </a>
+                    <button class="like-btn">
+                      <img src="./icon/sanpham-heart.svg" alt="" class="like-icon icon" />
+                    </button>
+                </div>
+                <h3 class="product-card__title">
+                    <a href="./product-detail.html">Nhẫn Vàng Đá Trang Sức NLF 453 </a>
+                </h3>
+                <p class="product-card__collection">Nhẫn cưới</p>
+                <div class="product-card__row">
+                  <span class="product-card__price">1.000.000đ</span>
+                  <span class="product-card__price-sales">1.500.000đ</span>
+                  <img src="./icon/sanpham-star.svg" alt="" class="product-card__star" />
+                  <span class="product-card__score">4.3</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-item">
+          <div class="product-card">
+            <div class="product-card__img-wrap">
+                <a href="./product-detail.html">
+                    <img src="./img/nhẫn 1.webp" alt="" class="product-card__thumb" />
+                </a>
+                <button class="like-btn">
+                  <img src="./icon/sanpham-heart.svg" alt="" class="like-icon icon" />
+                </button>
+              </div>
+              <h3 class="product-card__title">
+                  <a href="./product-detail.html">Nhẫn Vàng Đá Trang Sức NLF 453 </a>
+              </h3>
+              <p class="product-card__collection">Nhẫn cưới</p>
+              <div class="product-card__row">
+              <span class="product-card__price">1.000.000đ</span>
+              <span class="product-card__price-sales">1.500.000đ</span>
+              <img src="./icon/sanpham-star.svg" alt="" class="product-card__star" />
+              <span class="product-card__score">4.3</span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button xem thêm -->
+    <a href="#!" class="btn home-product">Xem thêm</a>
+
+  <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-row">
+        <div class="container">
+          <div class="footer-column">
+
+            <!-- Logo -->
+            <a href="./" class="logo-foot">
+              <img src="./icon/sanpham-logo.svg" alt="Luxe" />
+              <h1 class="logo-title">Luxe</h1>
+            </a>
+            
+            <!-- Download app -->
+            <div class="download-container">
+              <p class="download-title">
+                Tải ngay Luxe app
+              </p>
+              <div class="download-method">
+                <a href="https://play.google.com/store/apps" class="ch-store">
+                <img src="./icon/sanpham-ggplay.svg" alt="" />
+              </a>
+              <a href="https://www.apple.com/vn/app-store" class="app-store">
+                <img src="./icon/sanpham-appstore.svg" alt="" />
+              </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer__heading">Danh mục</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#!" class="footer__link">
+                      Trang chủ
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#!" class="footer__link">
+                      Sản phẩm
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#!" class="footer__link"> Về chúng tôi </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#!" class="footer__link">
+                      Hỗ trợ
+                    </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">
+                    Liên hệ
+                  </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer__heading">Thông tin liên hệ</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                  279 Nguyễn Tri Phương, Phường 5, Quận 10, TP.HCM
+                </li>
+                <li class="footer__item">
+                  (+84) 046 990 809
+                </li>
+                <li class="footer__item">
+                  info@example.com
+                </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer__heading">Theo dõi</h3>
+            <div class="footer__social">
+                <a href="#!" class="footer__social-btn">
+                    <img src="./icon/sanpham-facebook.svg" alt="">
+                </a>
+                <a href="#!" class="footer__social-btn">
+                    <img src="./icon/sanpham-insta.svg" alt="">
+                </a>
+                <a href="#!" class="footer__social-btn">
+                    <img src="./icon/sanpham-twitter.svg" alt="">
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="footer-copyright">
+        <div class="container">
+          <div class="payment-method">
+            <img src="./icon/sanpham-paypal.svg" alt="">
+            <img src="./icon/sanpham-visa.svg" alt="">
+            <img src="./icon/sanpham-master-card.svg" alt="">
+          </div>
+          <p class="footer__copyright-text">
+            Copyright © 2023 UIHUT All Rights Reserved
+          </p>
+        </div>
+    </div>
+    </footer>
+</body>
