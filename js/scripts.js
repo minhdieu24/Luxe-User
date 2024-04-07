@@ -15,7 +15,7 @@ function darkFunction() {
   //Đổi màu shadow của imgWrap khi qua dark mode
   const imgWrapShadows = document.querySelectorAll(".product-card");
   if (element.classList.contains("dark-mode")) {
-    imageMarquee.src = "./img/marquee-dark.png";
+    imageMarquee.src = "./img/index-marquee-dark.png";
     imgWrapShadows.forEach((element) => {
       element.style.boxShadow = "0px 20px 60px 0px rgba(0, 0, 0, 0.2)";
     });
@@ -96,4 +96,10 @@ function search() {
 function closeSearch() {
   const searchBoxActive = document.querySelector(".search-box.active");
   searchBoxActive.classList.remove("active");
+}
+
+// Click SẢN PHẨM
+function megaFunction() {
+  const megamenu = document.querySelector(".mega-menu");
+  megamenu.classList.toggle("active");
 }
