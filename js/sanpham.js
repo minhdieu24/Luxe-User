@@ -81,8 +81,8 @@ function Decrease(){
       var starValue = parseFloat(starInput);
   
       // Kiểm tra xem giá trị có nằm trong khoảng từ 1 đến 5 không
-      if (starValue < 1 || starValue > 5 || isNaN(starValue)) {
-          starError.textContent = "Số sao phải nằm trong khoảng từ 1 đến 5";
+      if (starValue < 1 || starValue > 5 || !Number.isInteger(parseFloat(starValue))) {
+        starError.textContent = "Vui lòng nhập một số nguyên từ 1 đến 5";
       } else {
           starError.textContent = ""; // Xóa thông báo lỗi nếu hợp lệ
       }
