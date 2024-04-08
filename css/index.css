@@ -202,6 +202,49 @@ a {
   cursor: pointer;
 }
 
+/* Mega menu */
+.mega-menu {
+  position: absolute;
+  z-index: 1;
+  width: 100%; /* Chiều rộng menu */
+  background-color: var(--background-color-2); /* Màu nền menu */
+  left: -100%;
+}
+
+.mega-menu.active {
+  left: 0;
+}
+
+.mega-menu ul {
+  display: flex;
+  justify-content: space-around;
+  /* display: inline-block; */
+  list-style: none; /* Bỏ dấu chấm đầu dòng */
+  padding: 0;
+  margin: 0;
+}
+
+.mega-menu ul li {
+  /* display: inline-block;  */
+  padding: 10px 5% 30px;
+  text-align: center;
+}
+
+.mega-menu ul li a {
+  text-decoration: none; /* Bỏ gạch chân liên kết */
+  color: var(--text-color-2); /* Màu sắc liên kết */
+}
+
+.mega-menu ul li a img {
+  display: block;
+  width: 200px; /* Chiều rộng hình ảnh */
+  height: 200px; /* Chiều cao hình ảnh */
+}
+
+.mega-menu ul li:hover {
+  background-color: var(--background-color-3); /* Màu nền khi di chuột qua */
+}
+
 /* ========= Slider Section ======== */
 .main {
   background: var(--background-color-2);
@@ -777,49 +820,6 @@ a {
 
 .footer-copyright .payment-method img {
   margin-right: 27px;
-}
-
-/* Mega menu */
-.mega-menu {
-  position: absolute;
-  z-index: 1;
-  width: 100%; /* Chiều rộng menu */
-  background-color: var(--background-color-2); /* Màu nền menu */
-  left: -100%;
-}
-
-.mega-menu.active {
-  left: 0;
-}
-
-.mega-menu ul {
-  display: flex;
-  justify-content: space-around;
-  /* display: inline-block; */
-  list-style: none; /* Bỏ dấu chấm đầu dòng */
-  padding: 0;
-  margin: 0;
-}
-
-.mega-menu ul li {
-  /* display: inline-block;  */
-  padding: 10px 5% 30px;
-  text-align: center;
-}
-
-.mega-menu ul li a {
-  text-decoration: none; /* Bỏ gạch chân liên kết */
-  color: var(--text-color-2); /* Màu sắc liên kết */
-}
-
-.mega-menu ul li a img {
-  display: block;
-  width: 200px; /* Chiều rộng hình ảnh */
-  height: 200px; /* Chiều cao hình ảnh */
-}
-
-.mega-menu ul li:hover {
-  background-color: var(--background-color-3); /* Màu nền khi di chuột qua */
 }
 
 /* ========= Responsive ========= */
