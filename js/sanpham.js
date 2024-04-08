@@ -73,4 +73,18 @@ function Decrease(){
       var selectedSizeElement = document.querySelector(".selected-size");
       selectedSizeElement.textContent = size !== "" ? size : "Chọn size";
     }
+    function validateStar() {
+      var starInput = document.getElementById("reviewStar").value;
+      var starError = document.getElementById("starError");
+  
+      // Chuyển đổi giá trị nhập vào thành số
+      var starValue = parseFloat(starInput);
+  
+      // Kiểm tra xem giá trị có nằm trong khoảng từ 1 đến 5 không
+      if (starValue < 1 || starValue > 5 || isNaN(starValue)) {
+          starError.textContent = "Số sao phải nằm trong khoảng từ 1 đến 5";
+      } else {
+          starError.textContent = ""; // Xóa thông báo lỗi nếu hợp lệ
+      }
+    } 
   

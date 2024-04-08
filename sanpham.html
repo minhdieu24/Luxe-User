@@ -85,12 +85,12 @@
         <!-- Product image -->
         <div class="product-inf__image">
           <div class="frame-img">
-            <img src="img/nhẫn vàng.webp" alt="" class="product-inf__image1" />
+            <img src="img/3H0-1.webp" alt="" class="product-inf__image1" />
           </div>
           <div class="img-pro">
-            <img src="img/nhẫn 1.webp" alt="" class="product-inf__image3" />
-            <img src="img/nhẫn 2.jpg" alt="" class="product-inf__image3" />
-            <img src="img/nhẫn 3.jpg" alt="" class="product-inf__image3" />
+            <img src="img/3H0-1.webp" alt="" class="product-inf__image3" />
+            <img src="img/3H0-2.webp" alt="" class="product-inf__image3" />
+            <img src="img/3H0-3.webp" alt="" class="product-inf__image3" />
           </div>
         </div>
 
@@ -184,11 +184,11 @@
       <p class="text-ring">Nhẫn nữ</p>
       <div class="product-des">
         <div class="product-des__img">
-          <img src="img/nhẫn vàng.webp" alt="" class="img-product" />
+          <img src="img/3H0-1.webp" alt="" class="img-product" />
         </div>
         <div class="product-des__text">
           <div class="frame">
-            <div class="inf-text">Thông tin nhẫn</div>  
+            <div class="inf-text">Thông tin</div>  
             <div class="des-text">
               Chất liệu:
               <br />
@@ -219,7 +219,7 @@
         <!-- Review statistics -->
         <div class="review-statistics">
           <p class="customer-review">Đánh giá sản phẩm</p>
-          <p class="review-quantity">77 Reviews</p>
+          <p class="review-quantity">77 lượt đánh giá</p>
           <div class="product-inf__star">
             <img src="./icon/sanpham-star.svg" alt="" />
             <p style="color: var(--product-detail-text-color-dark);"> 4.9 </p>
@@ -258,6 +258,11 @@
           <form id="reviewForm">
             <div class="review-form">
               <div class="form-group">
+                <label for="reviewStar">Số sao (Điền từ 1 đến 5)</label> <br>
+                <input class="write-star" type="number" id="reviewStar" name="reviewStar" onblur="validateStar()"><br>
+                <span id="starError" style="color: red;"></span> <!-- Thông báo lỗi -->
+              </div>
+              <div class="form-group">
                   <label for="reviewTitle">Tiêu đề</label> <br>
                   <input class="write-headline" type="text" id="reviewTitle" name="reviewTitle">
               </div>
@@ -276,7 +281,7 @@
       <div class="container">
       <div class="review-customer">
         <div class="customer">
-          <img src="img/nhẫn 2.jpg" alt="" class="ava-img" />
+          <img src="icon/sanpham-logo.svg" alt="" class="ava-img" />
           <p class="review-tittle">Thu Hiền</p>
           <img src="./icon/sanpham-5star.svg" alt="" class="star-img" />
           <p class="review-tittle">Nhẫn quá đẹp</p>
@@ -285,7 +290,7 @@
           </p>
         </div>
         <div class="customer">
-          <img src="img/nhẫn 2.jpg" alt="" class="ava-img" />
+          <img src="icon/sanpham-logo.svg" alt="" class="ava-img" />
           <div class="review-tittle">Minh Diệu</div>
           <img src="./icon/sanpham-5star.svg" alt="" class="star-img" />
           <div class="review-tittle">Nhẫn quá đẹp</div>
@@ -294,7 +299,7 @@
           </div>
         </div>
         <div class="customer">
-          <img src="img/nhẫn 2.jpg" alt="" class="ava-img" />
+          <img src="icon/sanpham-logo.svg" alt="" class="ava-img" />
           <div class="review-tittle">Bảo Ngọc</div>
           <img src="./icon/sanpham-5star.svg" alt="" class="star-img" />
           <div class="review-tittle">Nhẫn quá đẹp</div>
@@ -317,7 +322,7 @@
             <div class="product-card">
                 <div class="product-card__img-wrap">
                     <a href="./product-detail.html">
-                        <img src="./img/nhẫn 1.webp" alt="" class="product-card__thumb" />
+                        <img src="./img/3H0-1.webp" alt="" class="product-card__thumb" />
                     </a>
                     <button class="like-btn">
                         <img src="./icon/sanpham-heart.svg" alt="" class="like-icon icon" />
@@ -341,7 +346,7 @@
           <div class="product-card">
               <div class="product-card__img-wrap">
                   <a href="./product-detail.html">
-                      <img src="./img/nhẫn 1.webp" alt="" class="product-card__thumb" />
+                      <img src="./img/3H0-1.webp" alt="" class="product-card__thumb" />
                   </a>
                   <button class="like-btn">
                     <img src="./icon/sanpham-heart.svg" alt="" class="like-icon icon" />
@@ -365,7 +370,7 @@
             <div class="product-card">
                 <div class="product-card__img-wrap">
                     <a href="./product-detail.html">
-                        <img src="./img/nhẫn 1.webp" alt="" class="product-card__thumb" />
+                        <img src="./img/3H0-1.webp" alt="" class="product-card__thumb" />
                     </a>
                     <button class="like-btn">
                       <img src="./icon/sanpham-heart.svg" alt="" class="like-icon icon" />
@@ -389,7 +394,7 @@
           <div class="product-card">
             <div class="product-card__img-wrap">
                 <a href="./product-detail.html">
-                    <img src="./img/nhẫn 1.webp" alt="" class="product-card__thumb" />
+                    <img src="./img/3H0-1.webp" alt="" class="product-card__thumb" />
                 </a>
                 <button class="like-btn">
                   <img src="./icon/sanpham-heart.svg" alt="" class="like-icon icon" />
