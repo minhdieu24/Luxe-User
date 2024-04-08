@@ -7,7 +7,6 @@
     <!-- Chỉnh biểu tượng web -->
     <link href="./icon/Logo.svg" rel="shortcut icon" />
     <title>Luxe - Trang sức cao cấp</title>
-    <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./css/signin-styles.css" />
     <link
       rel="stylesheet"
@@ -15,211 +14,189 @@
     />
 </head>
 <body>
-    <header class="header">
-        <!--Logo-left-->
-        
-        <div class="logo-left">
-            <img class="logo1" loading="lazy"
-            alt=""
-            src="./public/icon@2x.png"
-            />
-            <h1 class="logo1-text">Luxe</h1>    
-        </div>
+  <header class="header">
+    <!--Logo-left-->
+    
+    <div class="logo-left">
+        <img class="logo1" loading="lazy"
+        alt=""
+        src="./public/icon@2x.png"
+        />
+        <h1 class="logo1-text">Luxe</h1>    
+    </div>
 
-        <!--Info-Right-->
-        <div class="frame-right">
-            <div class="asking">Bạn chưa có tài khoản?</div>
-                <button class="btn-signup">
-                  <b class="btn-signup-text">Đăng ký</b>
-                </button>
-                <button class="dark" onclick="darkFunction()">
-                  <img class="moon-icon" alt="" src="./public/moon.svg" alt="" />
-                </button>
-        </div>
-    </header>
-    <div class="line1"></div>
+    <!--Info-Right-->
+    <div class="frame-right">
+        <div class="asking">Bạn chưa có tài khoản?</div>
+            <button class="btn-signup">
+              <b class="btn-signup-text">Đăng ký</b>
+            </button>
+            <button class="dark" onclick="darkFunction()">
+              <img class="moon-icon" alt="" src="./public/moon.svg" alt="" />
+            </button>
+    </div>
+</header>
+<div class="line1"></div>
 
-    <main class="main">
-        <div class="main-inner">
-        <!--ads-left--> 
-        <!--  Slider section -->
-          <div class="ads-left">
-            <div class="slider">
-              <div class="list">
-                  <div class="item">
-                      <img src="./public/img1.png" alt="" />
-                  </div>
-                  <div class="item">
-                      <img src="/public/img2.png" alt="" />
-                  </div>
-                  <div class="item">
-                      <img src="./public/img3.png" alt="" />
-                  </div>
+<main class="main">
+    <div class="main-inner">
+    <!--ads-left--> 
+    <!--  Slider section -->
+      <div class="ads-left">
+        <div class="slider">
+          <div class="list">
+              <div class="item">
+                  <img src="./public/img1.png" alt="" />
               </div>
-              <!--button prev and next-->
-                <div class="buttons">
-                  <button id="prev"><</button>
-                  <button id="next">></button>
+              <div class="item">
+                  <img src="/public/img2.png" alt="" />
               </div>
-              <!--dots-->
-              <ul class="dots">
-                  <li class="active"></li>
-                  <li class="active"></li>
-                  <li class="active"></li>
-              </ul>
+              <div class="item">
+                  <img src="./public/img3.png" alt="" />
+              </div>
           </div>
-           <!-- Scripts -->
-           <script src="./jvs.js"></script>
-          </div>        
-        <!--signin-right-->
-            <form class="signin-info">
-                <h1 class="signin-title">Đăng nhập</h1>
-              <div class="signin-input">
-                <!--Email-->
-                <div class="email-container">
-                  <b class="email-text">Email</b>
-                  <input class="email-box" type="text" />
-                </div>
-                <!--Pass-->
-                <div class="pass-container">
-                  <div class="pass">
-                    <b>
-                      <span class="pass-text">Mật khẩu</span>
-                      <span class="span"> *</span>
-                    </b>
-                    <div class="pass2">
-                      <div class="password-box-container"></div>
-                      <input class="password-box" type="password" />
-                      <!--<img class="hide-icon1"
-                        alt=""
-                        src="./public/hideicon1.svg"
-                      />-->
-                    </div>
-                  </div>
-                  <div class="forget-pass">
-                    <a href="http://">Quên mật khẩu</a>
-                </div>
-                </div>
-              </div>
-              <div class="button">
-                <button class="button-signin">
-                  <b class="button-signin-text">Đăng nhập</b>
-                </button>
-                
-                <div class="divider">
-                    <div class="divider-1"></div>
-                    <div class="or">Hoặc</div>
-                    <div class="divider2"></div>
-                </div>
+          <!--button prev and next-->
+            <div class="buttons">
+              <button id="prev"><</button>
+              <button id="next">></button>
+          </div>
+          <!--dots-->
+          <ul class="dots">
+              <li class="active"></li>
+              <li class="active"></li>
+              <li class="active"></li>
+          </ul>
+      </div>
+       <!-- Scripts -->
+       <script src="./jvs.js"></script>
+      </div>        
+    <!--signin-right-->
+        <form class="signin-info">
+            <h1 class="signin-title">Đăng nhập</h1>
+          <div class="signin-input">
+            <!--Email-->
+            <div class="email-container">
+              <b>
+                <span class="email-text">Email</span>
+                <span class="span"> *</span>
+              </b>
+              <input class="email-box" type="text" required/>
+            </div>
+            <!--Pass-->
+            <div class="password-container">
+                <b>
+                  <span class="pass-text">Mật khẩu</span>
+                  <span class="span"> *</span>
+                </b>
+                  <input class="password-box" type="password" required/>
+              <div class="forget-pass">
+                <a href="http://">Quên mật khẩu</a>
+            </div>
+            </div>
+          </div>
+          <div class="button">
+            <button class="button-signin">
+              <b class="button-signin-text">Đăng nhập</b>
+            </button>
+        </form>
+    </div>
+</main>
+<div class="line2"></div>
 
-                <button class="signingmail">
-                  <div class="signingmail-box"></div>
-                    <img class="gmail-logo-icon"
-                      alt=""
-                      src="./public/gmail-logo.svg"
-                    />
-                    <b class="signin-text">Đăng nhập bằng gmail</b>
-                  </div>
-                </button>
-            </form>
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-row">
+    <div class="container">
+      <div class="footer-column-1">
+        <!-- Logo -->
+        <a href="./" class="logo-foot">
+          <img src="./icon/Logo.svg" alt="Luxe" />
+          <h1 class="logo-title">Luxe</h1>
+        </a>
+        <!-- Download app -->
+        <div class="download-container">
+          <p class="download-title"> Tải ngay Luxe app </p>
+          <div class="download-method">
+            <a href="https://play.google.com/store/apps" class="ch-store">
+            <img src="./icon/ch-play.svg" alt="" />
+          </a>
+          <a href="https://www.apple.com/vn/app-store" class="app-store">
+            <img src="./icon/app-store.svg" alt="" />
+          </a>
+          </div>
         </div>
-    </main>
-    <div class="line2"></div>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-row">
-        <div class="container">
-          <div class="footer-column-1">
-            <!-- Logo -->
-            <a href="" class="logo-foot">
-              <img src="./icon/Logo.svg" alt="Luxe" />
-              <h1 class="logo-title">Luxe</h1>
+      </div>
+      <div class="footer-column-2">
+        <h3 class="footer__heading">Danh mục</h3>
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="#!" class="footer__link">
+                  Trang chủ
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="#!" class="footer__link">
+                  Sản phẩm
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="#!" class="footer__link"> Về chúng tôi </a>
+            </li>
+            <li class="footer__item">
+                <a href="#!" class="footer__link">
+                  Hỗ trợ
+                </a>
+            </li>
+            <li class="footer__item">
+              <a href="#!" class="footer__link">
+                Liên hệ
+              </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-column-3">
+        <h3 class="footer__heading">Thông tin liên hệ</h3>
+        <ul class="footer__list">
+            <li class="footer__item">
+              279 Nguyễn Tri Phương, Phường 5, Quận 10, TP.HCM
+            </li>
+            <li class="footer__item">
+              (+84) 046 990 809
+            </li>
+            <li class="footer__item">
+              info@example.com
+            </li>
+        </ul>
+      </div>
+      <div class="footer-column-4">
+        <h3 class="footer__heading">Theo dõi</h3>
+        <div class="footer__social">
+            <a href="#!" class="footer__social-btn">
+                <img src="./icon/facebook.svg" alt="">
             </a>
-            <!-- Download app -->
-            <div class="download-container">
-              <p class="download-title"> Tải ngay Luxe app </p>
-              <div class="download-method">
-                <a href="https://play.google.com/store/apps" class="ch-store">
-                <img src="./icon/ch-play.svg" alt="" />
-              </a>
-              <a href="https://www.apple.com/vn/app-store" class="app-store">
-                <img src="./icon/app-store.svg" alt="" />
-              </a>
-              </div>
-            </div>
-          </div>
-          <div class="footer-column-2">
-            <h3 class="footer__heading">Danh mục</h3>
-            <ul class="footer__list">
-                <li class="footer__item">
-                    <a href="#!" class="footer__link">
-                      Trang chủ
-                    </a>
-                </li>
-                <li class="footer__item">
-                    <a href="#!" class="footer__link">
-                      Sản phẩm
-                    </a>
-                </li>
-                <li class="footer__item">
-                    <a href="#!" class="footer__link"> Về chúng tôi </a>
-                </li>
-                <li class="footer__item">
-                    <a href="#!" class="footer__link">
-                      Hỗ trợ
-                    </a>
-                </li>
-                <li class="footer__item">
-                  <a href="#!" class="footer__link">
-                    Liên hệ
-                  </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-column-3">
-            <h3 class="footer__heading">Thông tin liên hệ</h3>
-            <ul class="footer__list">
-                <li class="footer__item">
-                  279 Nguyễn Tri Phương, Phường 5, Quận 10, TP.HCM
-                </li>
-                <li class="footer__item">
-                  (+84) 046 990 809
-                </li>
-                <li class="footer__item">
-                  info@example.com
-                </li>
-            </ul>
-          </div>
-          <div class="footer-column-4">
-            <h3 class="footer__heading">Theo dõi</h3>
-            <div class="footer__social">
-                <a href="#!" class="footer__social-btn">
-                    <img src="./icon/facebook.svg" alt="">
-                </a>
-                <a href="#!" class="footer__social-btn">
-                    <img src="./icon/insta.svg" alt="">
-                </a>
-                <a href="#!" class="footer__social-btn">
-                    <img src="./icon/twitter.svg" alt="">
-                </a>
-            </div>
-          </div>
+            <a href="#!" class="footer__social-btn">
+                <img src="./icon/insta.svg" alt="">
+            </a>
+            <a href="#!" class="footer__social-btn">
+                <img src="./icon/twitter.svg" alt="">
+            </a>
         </div>
+      </div>
     </div>
+</div>
 
-    <div class="footer-copyright">
-        <div class="container">
-          <div class="payment-method">
-            <img src="./icon/paypal.svg" alt="">
-            <img src="./icon/visa.svg" alt="">
-            <img src="./icon/master-card.svg" alt="">
-          </div>
-          <p class="footer__copyright-text">
-            Copyright © 2023 UIHUT All Rights Reserved
-          </p>
-        </div>
+<div class="footer-copyright">
+    <div class="container">
+      <div class="payment-method">
+        <img src="./icon/paypal.svg" alt="">
+        <img src="./icon/visa.svg" alt="">
+        <img src="./icon/master-card.svg" alt="">
+      </div>
+      <p class="footer__copyright-text">
+        Copyright © 2023 UIHUT All Rights Reserved
+      </p>
     </div>
-    </footer>
+</div>
+</footer>
 </body>
 </html>

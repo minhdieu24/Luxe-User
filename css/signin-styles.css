@@ -10,12 +10,13 @@
     --text-color-2: #696969;
     --primary-color: #ffbe984d;
     --nav-color: #717171;
-    --outline-color: #ffbe984d transparent;
-    --background-color: #fff;
+    --outline-color: none;
+    --background-color: #ffbe984d;
+    --background-color-0: #fff;
+    --background-color-1: #fff;
     --background-color-2: #f6f6f6;
     --background-color-3:#ffbe984d;
 }
-  
   .dark-mode {
     --text-color: #eeeeee;
     --text-color-1: #eeeeee;
@@ -23,7 +24,9 @@
     --primary-color: #ffbe98;
     --nav-color: #171c28;
     --outline-color: #ffbe984d;
-    --background-color: #171c28;
+    --background-color: #292e39;
+    --background-color-0: #292e39;
+    --background-color-1: #171c28;
     --background-color-2: #292e39;
     --background-color-3:#171c28;
 }
@@ -37,14 +40,14 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color:var(--background-color);
+    background-color:var(--background-color-1);
 }
 
 .header {
     display: flex;
     justify-content: space-between; /* Phân chia không gian giữa các phần tử con */
     align-items: center; /* Căn chỉnh các phần tử con theo chiều dọc */
-    background-color:var(--background-color); /* Màu nền của header */
+    background-color:var(--background-color-1); /* Màu nền của header */
     position: sticky;
     top: 0;
     z-index: 99;
@@ -104,7 +107,7 @@ body {
     cursor: pointer;
     border: 1px solid #ffbe98;
     padding: 5px 15px 5px;
-    background-color: var(--background-color);
+    background-color: var(--background-color-1);
     box-sizing: border-box;
     border-radius: 7px;
 }
@@ -251,36 +254,29 @@ body {
 .signin-info {
     display: flex;
     box-sizing: border-box;
-    justify-content: center;
     max-width: 35%;
-    flex: 1;
+    width: 100%;
     border-radius: 0 9px 9px 0;
-    background-color: var(--background-color-3);
-    border: 2px solid var(--outline-color);
+    background-color: var(--background-color);
+    border: 2px solid #ffbe984d;
     flex-direction: column;
-    padding: 60px 20px 60px;
+    padding: 115px 20px 115px;
     align-items: center;
-    justify-content: center;
     z-index: 1;
-    gap: 35.9px;
-    max-height: 100%; /* Đảm bảo rằng chiều cao không vượt quá chiều cao của cửa sổ */
-    overflow: hidden; /* Sử dụng cuộn nếu nội dung vượt quá kích thước của phần tử */
+    gap: 40px;
+    /* max-height: 100%; Đảm bảo rằng chiều cao không vượt quá chiều cao của cửa sổ */
+    /* overflow: hidden; Sử dụng cuộn nếu nội dung vượt quá kích thước của phần tử */
 }
 .signin-title {
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 0 35px;
     box-sizing: border-box;
-    flex: 1;
-    position: relative;
     font-size: 45px;
     font-weight: 700;
     font-family: quicksand;
     color: #ef9059;
     text-align: center;
-    gap: 10px;
 }
 .signin-input {
     display: flex;
@@ -289,14 +285,13 @@ body {
     justify-content: center;
     justify-content: flex-start;
 }
-.email-container {
+.email-container, .password-container {
+    flex-direction: column;
+    justify-content: flex-start;
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
 }
-.email-text {
+.email-text, .pass-text, .span {
     position: relative;
     font-size: 17px;
     display: inline-block;
@@ -304,11 +299,10 @@ body {
     color: var(--text-color-2);
     text-align: left;
 }
-.email-box {
+.email-box, .password-box {
     border: 2.5px solid #ffbe98;
     outline: none;
-    background-color:var(--background-color);
-    align-self: stretch;
+    background-color:var(--background-color-0);
     position: relative;
     border-radius: 10px;
     box-sizing: border-box;
@@ -320,60 +314,22 @@ body {
     color: var(--text-color-1);
     padding: 12px 15px 12px 15px;
 }
-.pass-container {
-    
+.email-box {
+    margin: 5px 0 30px;
 }
-.pass {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-}
-.pass1 {
-
-}
-.pass-text,
 .span {
     position: relative;
     font-size: 17px;
     display: inline-block;
     font-family: quicksand;
     text-align: left;
+    color:red;
 }
 .pass-text {
     color: var(--text-color-2);
 }
-.span {
-    color:red;
-}
-.pass2 {
-
-}
-.password-box-container {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-self: stretch;
-    display: flex;
-    align-items: flex-start;
-}
 .password-box {
-    border: 2.5px solid #ffbe98;
-    outline: none;
-    background-color:var(--background-color);
-    align-self: stretch;
-    position: relative;
-    border-radius: 10px;
-    box-sizing: border-box; /*????????????????????????????*/
-    width: 100%;
-    min-width: 350px;
-    height: 40%;
     margin: 5px 0 3px;
-    font-size: 15px;
-    color: var(--text-color-1);
-    padding: 12px 15px 12px 15px;
-}
-.hide-icon1 { 
 }
 .forget-pass a{
     position: relative;
@@ -395,14 +351,14 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 23px;
+    /*gap: 23px;*/
 }
 .button-signin {
     cursor: pointer;
     border: 0;
     width: 100%;
     min-width: 350px;
-    height: 40%;
+    height: 100%;
     padding: 14px 15px 14px 15px;
     align-self: stretch;
     border-radius: 10px;
@@ -423,87 +379,6 @@ body {
     color: white;
     text-align: center;
 }
-                
-.divider {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-self: stretch; /*???*/
-    padding: 0 15px 0 15px;
-    flex: 1;
-    justify-content: center;
-    gap: 23px;
-}
-.divider-1 {
-    position: relative;
-    height: 2px;
-    background-color: #9e9da8;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    box-sizing: border-box;
-}
-.or {
-    position: relative;
-    font-size: 16px;
-    font-family: quicksand;
-    color: #9e9da8;
-    text-align: left;
-    display: inline-block;
-}
-.divider2 {
-    position: relative;
-    height: 2px;
-    background-color: #9e9da8;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    box-sizing: border-box;
-}
-.signingmail {
-    cursor: pointer;
-    border: 0;
-    width: 100%;
-    min-width: 350px;
-    height: 40%;
-    padding: 14px 15px 14px 15px;
-    align-self: stretch;
-    border-radius: 10px;
-    border: 2px solid #ffbe98;
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-}
-.signingmail-box {
-
-}
-.gmail-logo-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    box-sizing: border-box;
-}
-.signin-text {
-    position: relative;
-    font-size: 16px;
-    display: inline-block;
-    font-family: quicksand;
-    color: var(--text-color-2);
-    text-align: center;
-    flex-shrink: 0; /*???*/
-    z-index: 1;
-}
-.signin-text:hover {
-    color: #ef9059;
-}
 .line2 {
     align-self: stretch;
     height: 3px;
@@ -511,6 +386,45 @@ body {
     border-top: 3px solid #ffbe98;
     box-sizing: border-box;
     margin: 14px 23px 14px;
+}
+@media (max-width: 900px) {
+    .frame-right .dark {
+        height: 50px;
+        width: 70px;
+    }
+    .main-inner {
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .ads-left {
+        max-width: 100%;
+        border-radius: 9px 9px 0 0;
+    }
+    .signin-info {
+        border-radius: 0 0 9px 9px;
+        max-width: 100%;
+        max-height: 100%;
+        padding: 5%;
+    }
+    .signin-title {
+        margin: 0;
+    }
+    .signin-input .email-box {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .signin-input .password-box{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .signin-input{
+        margin-top: 0;
+        max-height: 100%;
+        overflow-y: scroll;
+    }
+    .signin-input::-webkit-scrollbar{
+        width: 0;
+    }
 }
 
 /* ===== Footer ===== */

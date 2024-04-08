@@ -10,8 +10,10 @@
   --text-color-2: #696969;
   --primary-color: #ffbe984d;
   --nav-color: #717171;
-  --outline-color: #ffbe984d transparent;
-  --background-color: #fff;
+  --outline-color: none;
+  --background-color: #ffbe984d;
+  --background-color-0: #fff;
+  --background-color-1: #fff;
   --background-color-2: #f6f6f6;
   --background-color-3:#ffbe984d;
 }
@@ -23,7 +25,9 @@
   --primary-color: #ffbe98;
   --nav-color: #171c28;
   --outline-color: #ffbe984d;
-  --background-color: #171c28;
+  --background-color: #292e39;
+  --background-color-0: #292e39;
+  --background-color-1: #171c28;
   --background-color-2: #292e39;
   --background-color-3:#171c28;
 }
@@ -37,14 +41,14 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color:var(--background-color);
+  background-color:var(--background-color-1);
 }
 
 .header {
   display: flex;
   justify-content: space-between; /* Phân chia không gian giữa các phần tử con */
   align-items: center; /* Căn chỉnh các phần tử con theo chiều dọc */
-  background-color:var(--background-color); /* Màu nền của header */
+  background-color:var(--background-color-1); /* Màu nền của header */
   position: sticky;
   top: 0;
   z-index: 99;
@@ -103,7 +107,7 @@ body {
   cursor: pointer;
   border: 1px solid #ffbe98;
   padding: 5px 15px 5px;
-  background-color: var(--background-color);
+  background-color: var(--background-color-1);
   box-sizing: border-box;
   border-radius: 7px;
 }
@@ -176,7 +180,7 @@ body {
   flex: 1;
   border-radius: 9px 0 0 9px;
   padding: 310px 0;
-  background-image: url(./public/bodybg@2x.png);
+  background-image: url(./);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -188,8 +192,9 @@ body {
   max-width: 60%;
   width: 100%;
   box-sizing: border-box;
-  background-color: var(--background-color-3);
-  padding: 25px;
+  background-color: var(--background-color);
+  border: 2px solid var(--outline-color);
+  padding: 35px 25px 30px;
   border-radius: 0 9px 9px 0;
   font-family: quicksand;
 }
@@ -205,35 +210,45 @@ body {
   display: flex;
   flex-wrap: wrap; /*2 columns*/
   justify-content: space-between;
-  margin: 15px 30px 10px;
+  margin: 30px 30px 20px;
 }
 form .user-details .input-box{
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   width: calc(100%/2 - 20px);
 }
-.user-details .input-box .text{
+.user-details .input-box .text {
   margin-bottom: 5px;
   position: relative;
   font-size: 15px;
   display: inline-block;
   color: var(--text-color-2);
 }
-.user-details .input-box .span {
+.check-box {
+  margin-bottom: 33px;
+}
+.check-box .text{
+  position: relative;
+  font-size: 15px;
+  color: var(--text-color-2);
+}
+.user-details .input-box .span, .check-box .span {
   color:red;
 }
-form .user-details .input-box input{
+form .user-details .input-box input, .user-details .input-box .box {
   height: auto;
   width: 100%;
   outline: none;
   border-radius: 7px;
   border: 2px solid #ffbe98;
-  background-color:var(--background-color);
+  background-color:var(--background-color-0);
   color: var(--text-color-1);
-  padding: 10px 10px 10px 10px;
-  font-size: 12px;
+  padding: 9px 12px;
+  font-size: 14px;
+  font-family: quicksand;
   border-bottom-width: 2px;
   transition: all 0.3s ease;
 }
+
 form .button-signin{
   height: 100%;
   width: 100%;
@@ -274,83 +289,7 @@ form .button {
 form .button-signup:hover{
   background-color: #ef9059;
 }
-.divider {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-self: stretch; /*???*/
-  padding: 0 15px 0 15px;
-  margin: 10px;
-  flex: 1;
-  justify-content: center;
-  gap: 23px;
-}
-.divider-1 {
-  position: relative;
-  height: 2px;
-  background-color: #9e9da8;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  box-sizing: border-box;
-}
-.or {
-  position: relative;
-  font-size: 16px;
-  font-family: quicksand;
-  color: #9e9da8;
-  text-align: left;
-  display: inline-block;
-}
-.divider2 {
-  position: relative;
-  height: 2px;
-  background-color: #9e9da8;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  box-sizing: border-box;
-}
-.signupgmail {
-  cursor: pointer;
-  border: 0;
-  width: 100%;
-  height: 100%;
-  padding: 12px 15px;
-  align-self: stretch;
-  border-radius: 10px;
-  border: 2px solid #ffbe98;
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-}
-.gmail-logo-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  box-sizing: border-box;
-}
-.signup-text {
-  position: relative;
-  font-size: 16px;
-  display: inline-block;
-  font-family: quicksand;
-  color: var(--text-color-2);
-  text-align: center;
-  flex-shrink: 0; /*???*/
-  z-index: 1;
-}
-.signup-text:hover {
-  color: #ef9059;
-}
+
 .line2 {
   align-self: stretch;
   height: 3px;
@@ -360,9 +299,22 @@ form .button-signup:hover{
   margin: 14px 23px 14px;
 }
 
-@media (max-width: 584px) {
+@media (max-width: 900px) {
+  .frame-right .dark {
+      height: 50px;
+      width: 70px;
+  }
+  .main-inner {
+      max-width: 100%;
+      flex-direction: column;
+  }
+  .ads-left {
+      max-width: 700px;
+      border-radius: 9px 9px 0 0;
+  }
   .container {
       max-width: 700px;
+      border-radius: 0 0 9px 9px;
   }
   form .user-details .input-box{
       margin-bottom: 15px;
