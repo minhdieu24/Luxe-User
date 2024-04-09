@@ -20,7 +20,7 @@ function darkFunction() {
       element.style.boxShadow = "0px 20px 60px 0px rgba(0, 0, 0, 0.2)";
     });
   } else {
-    imageMarquee.src = "./img/marquee-light.png";
+    imageMarquee.src = "./img/index-marquee-light.png";
     imgWrapShadows.forEach((element) => {
       element.style.boxShadow = "0px 60px 20px 0px rgba(237, 237, 246, 0.20)";
     });
