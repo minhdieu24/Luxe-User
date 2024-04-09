@@ -88,18 +88,3 @@ function loadReview() {
   }
   setInterval(rvSlide, 5000);
 }
-
-function search() {
-  const searchBox = document.querySelector(".search-box");
-  searchBox.classList.add("active");
-}
-function closeSearch() {
-  const searchBoxActive = document.querySelector(".search-box.active");
-  searchBoxActive.classList.remove("active");
-}
-
-// Click SẢN PHẨM
-function megaFunction() {
-  const megamenu = document.querySelector(".mega-menu");
-  megamenu.classList.toggle("active");
-}
