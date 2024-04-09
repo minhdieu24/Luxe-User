@@ -20,7 +20,7 @@ function burgerFunction() {
     const element = document.body;
     element.classList.toggle("dark-mode");
    //Đổi ảnh icon xóa //chưa chạy được
-   const imageDelete = document.querySelector(".yeuthich-delete img");
+   const imageDelete = document.querySelector(".delete-icon img");
    if (element.classList.contains("dark-mode")) 
     imageDelete.src = "./icon/yeuthich-delete-dark.svg";
    else 
