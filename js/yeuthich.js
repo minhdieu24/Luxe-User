@@ -20,11 +20,11 @@ function burgerFunction() {
     const element = document.body;
     element.classList.toggle("dark-mode");
    //Đổi ảnh icon xóa //chưa chạy được
-   const imageDelete = document.querySelector(".delete img");
+   const imageDelete = document.querySelector(".yeuthich-delete img");
    if (element.classList.contains("dark-mode")) 
-    imageDelete.src = "./icon/delete-dark.svg";
+    imageDelete.src = "./icon/yeuthich-delete-dark.svg";
    else 
-    imageDelete.src = "./icon/delete.svg";
+    imageDelete.src = "./icon/yeuthich-delete.svg";
   }
 
 // Lấy modal
