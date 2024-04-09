@@ -1021,7 +1021,7 @@ input:checked + label::before {
 }
 .slide-container {
   max-width: 1380px;
-  padding: 35px 0 50px 0;
+  padding: 32px 0 50px 0;
   margin-bottom: 10px;
 }
 .slide-content {
@@ -1081,7 +1081,7 @@ input:checked + label::before {
 .explore-dm {
   text-align: center;
   padding-bottom: 45px;
-  padding-top: 18px;
+  padding-top: 13px;
   background-color: var(--prod-love-bg-color);
 }
 .explore-dm--text {
@@ -1090,8 +1090,9 @@ input:checked + label::before {
   font-family: Prata;
   font-size: 35px;
   word-spacing: 5px;
-  color: #522a28;
+  color: #f98542;
   line-height: 1.5;
+  margin-bottom: 5px;
 }
 .explore-dm--content {
   margin-bottom: 28px;
