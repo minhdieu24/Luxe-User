@@ -13,109 +13,269 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/vechungtoi.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-
-    <!-- JS -->
-    <script src="./js/header.js"></script>
-    <script src="js/vechungtoi.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
   </head>
   <body>
-    <!-- Header -->
-    <header id="header"></header>
-    <script>
-      load("#header", "./template/header.html");
-    </script>
-    <div class="content-wrapper">
-      <div class="content1">
-        <div class="ve-chung-toi-wrap">
-          <div class="ve-chung-toi">
-            <div style="color: black !important">
-              <h1><b>Về chúng tôi</b></h1>
-              <p>
-                Luxe là nhà sản xuất trang sức hàng đầu tại Việt Nam. Với đội
-                ngũ nội bộ có tay nghề cao, công ty chúng tôi cung cấp nhiều sản
-                phẩm và dịch vụ khác nhau đáp ứng nhu cầu của khách hàng. Tận
-                dụng đội ngũ bán hàng hùng hậu với hơn 20 năm kinh nghiệm hoạt
-                động xuất khẩu, chúng tôi chiếm được lòng tin của khách hàng
-                trên toàn cầu nhờ nguồn lực đáng tin cậy cũng như hệ thống kiểm
-                soát chất lượng nghiêm ngặt.
-              </p>
-            </div>
-            <img src="img/ring1.jpg" />
+  <header class="fixed-header">
+    <div class="container">
+      <div class="top-bar">
+        <!-- Mobile menu -->
+        <button class="hamburger-menu" onclick="burgerFunction()">
+          <img src="icon/burger.svg" alt="" />
+        </button>
+        <!-- Logo -->
+        <a href="" class="logo-nav">
+          <img src="icon/Logo.svg" alt="Luxe" />
+          <h1 class="logo-title">Luxe</h1>
+        </a>
+        <!-- nav = navigation giống div nhưng có ngữ nghĩa -->
+        <!-- Navigation -->
+        <nav class="navbar">
+          <ul> 
+            <li><a href="#!">Trang chủ</a></li>
+            <li><a href="#!">Sản phẩm</a></li>
+            <li><a href="#!">Về chúng tôi</a></li>
+            <li><a href="#!">Hỗ trợ</a></li>
+            <li><a href="#!">Liên hệ</a></li>
+          </ul>
+        </nav>
+
+        <!-- Action -->
+        <div class="top-act">
+          <div class="top-act-group">
+            <button class="top-act-btn">
+              <img src="./icon/search1.svg" alt="" />
+            </button>
           </div>
-        </div>
-        <div class="su-menh">
-          <img src="img/ring2.jpg" />
-          <div>
-            <h1><b>Sứ mệnh</b></h1>
-            <p>
-              Chúng tôi tin rằng mỗi mảnh trang sức không chỉ là một sản phẩm mà
-              còn là một câu chuyện, là biểu tượng của cái đẹp, cái tinh túy và
-              cái đặc biệt trong từng người. Chúng tôi cam kết mang đến cho
-              khách hàng những trải nghiệm mua sắm tuyệt vời nhất, từ quá trình
-              lựa chọn sản phẩm cho đến việc chăm sóc sau bán hàng. Chúng tôi
-              muốn trở thành đối tác đáng tin cậy của mọi người trong những
-              khoảnh khắc quan trọng của cuộc sống, từ những dịp đặc biệt như kỷ
-              niệm ngày cưới đến những buổi tiệc quan trọng khác.
-            </p>
-          </div>
-        </div>
-        <div class="tam-nhin">
-          <div>
-            <h1><b>Tầm nhìn</b></h1>
-            <p>
-              Tầm nhìn của chúng tôi là xây dựng một cộng đồng yêu trang sức,
-              nơi mọi người không chỉ đến để mua sắm mà còn để chia sẻ, cảm nhận
-              và tận hưởng cái đẹp từ những tác phẩm nghệ thuật nhỏ bé này.
-              Chúng tôi muốn trở thành điểm đến hàng đầu cho những người đam mê
-              trang sức, nơi họ có thể khám phá những xu hướng mới, những ý
-              tưởng sáng tạo và nhận được sự tư vấn chuyên nghiệp từ các chuyên
-              gia.
-            </p>
-          </div>
-          <img src="img/ring3.jpg" />
-        </div>
-      </div>
-      <div class="thanh-vien">
-        <h1><b>Các thành viên</b></h1>
-        <p>
-          Các thành viên làm nên một thương hiệu trang sức không chỉ là những
-          nhân viên, mà còn là những nghệ nhân tài năng, những nhà thiết kế sáng
-          tạo và cả những khách hàng trung thành. Dưới đây là một số loại thành
-          viên quan trọng:
-        </p>
-        <div class="ba-thanh-vien">
-          <div>
-            <img src="img/abus.img1.png" />
-            <div>
-              <h3>Nguyễn Ngọc Ngạn</h3>
-              <p>Giám đốc điều hành</p>
-            </div>
-          </div>
-          <div>
-            <img src="img/abus.img2.png" />
-            <div>
-              <h3>Trần Hòa Bình</h3>
-              <p>Giám đốc nghệ thuật</p>
-            </div>
-          </div>
-          <div>
-            <img src="img/abus.img3.png" />
-            <div>
-              <h3>Phan Duẩn</h3>
-              <p>Giám đốc thiết kế</p>
-            </div>
+          <div class="top-act-group">
+            <button class="top-act-btn">
+              <img src="./icon/heart.svg" alt="" />
+              <span class="top-act-title"> 03 </span>
+            </button>
+            <div class="top-act-separate"></div>
+            <button class="top-act-btn">
+              <img src="./icon/cart.svg" alt="" />
+              <span class="top-act-title"> 03 </span>
+            </button>
+            <div class="top-act-separate"></div>
+            <button class="top-act-btn">
+              <img src="./icon/user.svg" alt="" />
+            </button>
+            <div class="top-act-separate"></div>
+            <button class="top-act-btn"  onclick="darkFunction()">
+              <svg xmlns="http://www.w3.org/2000/svg" id="moon" width="24" height="24" viewBox="0 0 24 24" >
+                <path d="M2.03009 12.42C2.39009 17.57 6.76009 21.76 11.9901 21.99C15.6801 22.15 18.9801 20.43 20.9601
+                 17.72C21.7801 16.61 21.3401 15.87 19.9701 16.12C19.3001 16.24 18.6101 16.29 17.8901 16.26C13.0001 16.06
+                  9.00009 11.97 8.98009 7.13996C8.97009 5.83996 9.24009 4.60996 9.73009 3.48996C10.2701 2.24996 9.62009
+                   1.65996 8.37009 2.18996C4.41009 3.85996 1.70009 7.84996 2.03009 12.42Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer -->
-    <footer class="footer" id="footer"></footer>
-    <script>
-      load("#footer", "./template/footer.html");
-    </script>
-  </body>
-</html>
+  </header>
+
+  <div class="content-wrapper">
+    <div class="content1">
+    <div class="ve-chung-toi-wrap">
+        <div class="ve-chung-toi">
+            <div style="color: black !important;">        
+                <h1><b>Về chúng tôi</b></h1>
+                <p>Luxe là nhà sản xuất trang sức hàng đầu tại Việt Nam. Với đội ngũ nội bộ có tay nghề cao, công ty chúng tôi cung cấp nhiều sản phẩm và dịch vụ khác nhau đáp ứng nhu cầu của khách hàng. Tận dụng đội ngũ bán hàng hùng hậu với hơn 20 năm kinh nghiệm hoạt động xuất khẩu, chúng tôi chiếm được lòng tin của khách hàng trên toàn cầu nhờ nguồn lực đáng tin cậy cũng như hệ thống kiểm soát chất lượng nghiêm ngặt.</p>
+            </div>
+            <img src="img/ring1.jpg">
+        </div>
+    </div>
+    <div class="su-menh">
+        <img src="img/ring2.jpg">
+        <div>
+            <h1><b>Sứ mệnh</b></h1>
+            <p>Chúng tôi tin rằng mỗi mảnh trang sức không chỉ là một sản phẩm mà còn là một câu chuyện, là biểu tượng của cái đẹp, cái tinh túy và cái đặc biệt trong từng người. Chúng tôi cam kết mang đến cho khách hàng những trải nghiệm mua sắm tuyệt vời nhất, từ quá trình lựa chọn sản phẩm cho đến việc chăm sóc sau bán hàng. Chúng tôi muốn trở thành đối tác đáng tin cậy của mọi người trong những khoảnh khắc quan trọng của cuộc sống, từ những dịp đặc biệt như kỷ niệm ngày cưới đến những buổi tiệc quan trọng khác.</p>
+        </div>
+    </div>
+    <div class="tam-nhin">
+        <div>
+            <h1><b>Tầm nhìn</b></h1>
+            <p>Tầm nhìn của chúng tôi là xây dựng một cộng đồng yêu trang sức, nơi mọi người không chỉ đến để mua sắm mà còn để chia sẻ, cảm nhận và tận hưởng cái đẹp từ những tác phẩm nghệ thuật nhỏ bé này. Chúng tôi muốn trở thành điểm đến hàng đầu cho những người đam mê trang sức, nơi họ có thể khám phá những xu hướng mới, những ý tưởng sáng tạo và nhận được sự tư vấn chuyên nghiệp từ các chuyên gia.</p>           
+        </div>
+        <img src="img/ring3.jpg">
+    </div>
+    </div>
+    <div class="thanh-vien">
+        <h1><b>Các thành viên</b></h1>
+        <p>Các thành viên làm nên một thương hiệu trang sức không chỉ là những nhân viên, mà còn là những nghệ nhân tài năng, những nhà thiết kế sáng tạo và cả những khách hàng trung thành. Dưới đây là một số loại thành viên quan trọng:</p>        
+       <div class="thanh-vien-gr">
+        <img src="icon/arrow-left.svg" class="arrow-left" onclick="prev()">
+        <div class="ba-thanh-vien">
+            <div class="mot-thanh-vien">
+                <img src="img/MinhDiệu.png">
+                <div>
+                    <h3>Nguyễn Thị Minh Diệu</h3>
+                    <p>Project Manager</p>
+                </div>
+            </div>          
+            <div class="mot-thanh-vien">
+                <img src="img/BảoNgọc.png">
+                <div>
+                    <h3>Đào Bảo Ngọc</h3>
+                    <p>QA/QC</p>
+                </div>
+            </div>
+            <div class="mot-thanh-vien">
+                <img src="img/ThuHiền.png">
+                <div>
+                    <h3>Nguyễn Lương Thu Hiền</h3>
+                    <p>Bussiness Analyst</p>
+                </div>
+              </div>
+          <div class="mot-thanh-vien">
+              <img src="img/NhưÝ.png">
+              <div>
+                  <h3>Nguyễn Hữu Như Ý</h3>
+                  <p>Developer</p>
+              </div>
+          </div>          
+          <div class="mot-thanh-vien">
+              <img src="img/KimNgoc.png">
+              <div>
+                  <h3>Phạm Thị Kim Ngọc</h3>
+                  <p>Developer</p>
+              </div>
+          </div>
+          <div class="mot-thanh-vien">
+              <img src="img/ThienKim.png">
+              <div>
+                  <h3>Lê Ngọc Thiên Kim</h3>
+                  <p>QA/QC</p>
+              </div>
+          </div>
+          <div class="mot-thanh-vien">
+            <img src="img/YếnVy.png">
+            <div>
+                <h3>Hồ Thị Yến Vy</h3>
+                <p>Bussiness Analyst</p>
+            </div>
+        </div>
+        <div class="mot-thanh-vien">
+            <img src="img/DongNghi.png">
+            <div>
+                <h3>Nguyễn Đông Nghi</h3>
+                <p>Tester</p>
+            </div>
+        </div>
+        <div class="mot-thanh-vien" style="opacity: 0;">
+          <img src="img/DongNghi.png">
+      </div>
+      </div>
+      <img src="icon/arrow-right.svg" class="arrow-right" onclick="next()">
+      <div class="img-index-dot">
+          <div class="img-index img-index-0 active"></div>
+          <div class="img-index img-index-1"></div>
+          <div class="img-index img-index-2"></div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-row">
+          <div class="container">
+            <div class="footer-column">
+  
+              <!-- Logo -->
+              <a href="./" class="logo-foot">
+                <img src="./icon/Logo.svg" alt="Luxe" />
+                <h1 class="logo-title">Luxe</h1>
+              </a>
+              
+              <!-- Download app -->
+              <div class="download-container">
+                <p class="download-title">
+                  Tải ngay Luxe app
+                </p>
+                <div class="download-method">
+                  <a href="https://play.google.com/store/apps" target="_blank" class="ch-store">
+                  <img src="./icon/ch-play.svg" alt="" />
+                </a>
+                <a href="https://www.apple.com/vn/app-store" target="_blank" class="app-store">
+                  <img src="./icon/app-store.svg" alt="" />
+                </a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer__heading">Danh mục</h3>
+              <ul class="footer__list">
+                  <li class="footer__item">
+                      <a href="#!" class="footer__link">
+                        Trang chủ
+                      </a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#!" class="footer__link">
+                        Sản phẩm
+                      </a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#!" class="footer__link"> Về chúng tôi </a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#!" class="footer__link">
+                        Hỗ trợ
+                      </a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#!" class="footer__link">
+                      Liên hệ
+                    </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer__heading">Thông tin liên hệ</h3>
+              <ul class="footer__list">
+                  <li class="footer__item">
+                    279 Nguyễn Tri Phương, Phường 5, Quận 10, TP.HCM
+                  </li>
+                  <li class="footer__item">
+                    (+84) 046 990 809
+                  </li>
+                  <li class="footer__item">
+                    info@example.com
+                  </li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer__heading">Theo dõi</h3>
+              <div class="footer__social">
+                  <a href="#!" class="footer__social-btn">
+                      <img src="./icon/facebook.svg" alt="">
+                  </a>
+                  <a href="#!" class="footer__social-btn">
+                      <img src="./icon/insta.svg" alt="">
+                  </a>
+                  <a href="#!" class="footer__social-btn">
+                      <img src="./icon/twitter.svg" alt="">
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      <div class="footer-copyright">
+          <div class="container">
+            <div class="payment-method">
+              <img src="./icon/paypal.svg" alt="">
+              <img src="./icon/visa.svg" alt="">
+              <img src="./icon/master-card.svg" alt="">
+            </div>
+            <p class="footer__copyright-text" >
+              Copyright © 2023 UIHUT All Rights Reserved
+            </p>
+          </div>
+      </div>
+      </footer>
+</body>
