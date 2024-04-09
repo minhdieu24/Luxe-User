@@ -636,3 +636,21 @@ td {
 .footer-copyright .payment-method img {
   margin-right: 27px;
 }
+
+/* Responsive */
+/* Mobile */
+@media screen and (max-width: 780px) {
+  .frame-img {
+    max-width: 70%;
+    margin: 0 50%;
+    transform: translateX(-50%);
+  }
+
+  .product-inf__image {
+    max-width: 80%;
+  }
+
+  .product-inf__image1 {
+    max-width: 50%;
+  }
+}

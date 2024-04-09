@@ -19,14 +19,21 @@ function burgerFunction() {
   function darkFunction() {
     const element = document.body;
     element.classList.toggle("dark-mode");
-   //Đổi ảnh icon xóa //chưa chạy được
-   const imageDelete = document.querySelector(".delete-icon img");
-   if (element.classList.contains("dark-mode")) 
-    imageDelete.src = "./icon/yeuthich-delete-dark.svg";
-   else 
-    imageDelete.src = "./icon/yeuthich-delete.svg";
+   //Đổi ảnh icon xóa 
   }
-
+  
+  const imageDelete = document.querySelectorALL(".delete-icon img");
+  if (element.classList.contains("dark-mode")) {
+   imageDelete.forEach((element) => {
+      element.src = "./icon/yeuthich-delete-dark.svg";
+    });
+  } else {
+    element.src = "./icon/yeuthich-delete.svg";
+    imageDelete.forEach((element) => {
+      element.src = "./icon/yeuthich-delete.svg";
+    });
+  }
+   
 // Lấy modal
 var modal = document.getElementById("cartModal");
 
