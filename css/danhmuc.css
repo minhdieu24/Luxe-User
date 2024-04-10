@@ -882,7 +882,7 @@ input:checked + label::before {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  height: 67px;
+  max-height: 67px;
 }
 .prod-list__item__info--title,
 .prod-list__item__info--masp {
