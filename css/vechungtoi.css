@@ -1,4 +1,13 @@
 :root {
+  /* Header */
+  --index-text-color-1: hsl(0, 0%, 44%);
+  --index-text-color-2: #1a162e;
+  --index-primary-color: #ef9059;
+  --index-background-color-1: #fff;
+  --index-background-color-2: #fff;
+  --index-background-color-3: #f0f0f0;
+  --index-second-color: #fff5f0;
+  /* ============= */
   --text-color-1: #717171;
   /* product-card__title */
   --text-color-2: #1a162e;
@@ -17,24 +26,21 @@ body {
   font-family: Quicksand, sans-serif;
 }
 
-.container {
-  max-width: calc(100% - 50px);
-  margin-left: auto;
-  margin-right: auto;
-}
 .container a {
   text-decoration: none;
 }
 
-/* .fixed-header {
-  position: relative;
-  background-color: var(--background-color-1);
-  padding: 10px 0px;
-  overflow: hidden;
-} */
-
 /* DARK - MODE */
 body.dark {
+  /* Header */
+  --index-text-color-1: #eeeeee;
+  --index-text-color-2: #ffffff;
+  --index-primary-color: #ef9059;
+  --index-background-color-1: #171c28;
+  --index-background-color-2: #292e39;
+  --index-background-color-3: #171c28;
+  --index-second-color: #e6c299;
+  /* ============= */
   background-color: #292e39;
   color: var(--background-color-1);
 }

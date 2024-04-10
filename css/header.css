@@ -7,7 +7,7 @@
 /* ======= Header ====== */
 .fixed-header {
   position: relative;
-  background-color: var(--background-color-1);
+  background-color: var(--index-background-color-1);
   padding: 10px 0px;
   overflow: hidden;
 }
@@ -20,7 +20,7 @@
 }
 
 .logo-nav .logo-title {
-  color: var(--primary-color);
+  color: var(--index-primary-color);
   margin-left: 14px;
   color: #ffbe98;
   font-size: 40px;
@@ -51,7 +51,7 @@
   margin-left: 15px;
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--text-color-1);
+  color: var(--index-text-color-1);
   padding: 8px 10px;
 }
 
@@ -65,7 +65,7 @@
   align-items: center;
   min-width: 50px;
   height: 50px;
-  background: var(--second-color);
+  background: var(--index-second-color);
   border-radius: 8px;
 }
 
@@ -74,7 +74,7 @@
   align-items: center;
   padding: 10px;
   border: none;
-  background: var(--second-color);
+  background: var(--index-second-color);
   border-radius: 8px;
   cursor: pointer;
 }
@@ -94,7 +94,7 @@
 
 .navbar ul a:hover {
   text-decoration: underline;
-  color: var(--primary-color);
+  color: var(--index-primary-color);
 }
 
 /* Search box */
@@ -140,7 +140,7 @@
   position: absolute;
   z-index: 1;
   width: 100%; /* Chiều rộng menu */
-  background-color: var(--background-color-2); /* Màu nền menu */
+  background-color: var(--index-background-color-2); /* Màu nền menu */
   left: -100%;
 }
 
@@ -165,7 +165,7 @@
 
 .mega-menu ul li a {
   text-decoration: none; /* Bỏ gạch chân liên kết */
-  color: var(--text-color-2); /* Màu sắc liên kết */
+  color: var(--index-text-color-2); /* Màu sắc liên kết */
 }
 
 .mega-menu ul li a img {
@@ -175,7 +175,9 @@
 }
 
 .mega-menu ul li:hover {
-  background-color: var(--background-color-3); /* Màu nền khi di chuột qua */
+  background-color: var(
+    --index-background-color-3
+  ); /* Màu nền khi di chuột qua */
 }
 
 /* ========= Responsive ========= */
@@ -240,7 +242,7 @@
   .menu-drawer {
     position: fixed;
     inset: 0 40% 0 0;
-    background: var(--background-color-1);
+    background: var(--index-background-color-1);
     z-index: 2;
     transform: translateX(-100%);
     transition: 0.5s;
@@ -269,13 +271,13 @@
     display: inline-block;
     font-size: 1.6rem;
     font-weight: 700;
-    color: var(--text-color-1);
+    color: var(--index-text-color-1);
     padding: 5px 10px 5px 0px;
   }
 
   .navbar-mobile ul a:hover {
     text-decoration: underline;
-    color: var(--primary-color);
+    color: var(--index-primary-color);
   }
 
   .menu-drawer .top-act {
