@@ -4,6 +4,10 @@
   margin-right: auto;
   /* không để margin: auto vì nếu vậy sẽ mặc định margin top+bottom = 0 > sau này sẽ ghi đè*/
 }
+
+.container a {
+  text-decoration: none;
+}
 /* ======= Header ====== */
 .fixed-header {
   position: relative;

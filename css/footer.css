@@ -1,3 +1,13 @@
+.container {
+  max-width: calc(100% - 50px);
+  margin-left: auto;
+  margin-right: auto;
+  /* không để margin: auto vì nếu vậy sẽ mặc định margin top+bottom = 0 > sau này sẽ ghi đè*/
+}
+
+.container a {
+  text-decoration: none;
+}
 /* ===== Footer ===== */
 .footer-row {
   padding: 55px 0;
@@ -31,7 +41,7 @@
 .download-title {
   margin-top: 57px;
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -45,7 +55,7 @@
 
 .footer__heading {
   color: #fff;
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -55,13 +65,13 @@
 
 .footer__item {
   margin-bottom: 16px;
-  font-size: 1.6rem;
+  font-size: 16px;
   color: #cecdd7;
   line-height: 162.5%;
 }
 
 .footer__link {
-  font-size: 1.6rem;
+  font-size: 16px;
   color: #cecdd7;
 }
 
