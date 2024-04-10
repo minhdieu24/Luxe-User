@@ -747,7 +747,7 @@ input:checked + label::before {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  height: 67px;
+  max-height: 67px;
 }
 .prod-list__item__info--title,
 .prod-list__item__info--masp {
@@ -761,7 +761,7 @@ input:checked + label::before {
 }
 .prod-list__item__info--masp {
   margin-right: -9px;
-  font-weight: 650;
+  font-weight: 600;
   color: #939090;
 }
 .prod-list__item__info--price-fb {
