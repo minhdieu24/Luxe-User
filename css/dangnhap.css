@@ -40,13 +40,12 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+  font-family: quicksand;
   background-color: var(--background-color-1);
 }
 
 .header {
   display: flex;
-  justify-content: space-between; /* Phân chia không gian giữa các phần tử con */
-  align-items: center; /* Căn chỉnh các phần tử con theo chiều dọc */
   background-color: var(--background-color-1); /* Màu nền của header */
   position: sticky;
   top: 0;
@@ -118,6 +117,7 @@ body {
   font-family: quicksand;
   position: relative;
   font-size: 20px;
+  font-weight: 600;
   color: #ffbe98;
 }
 .frame-right .btn-signup-text:hover {
@@ -138,10 +138,7 @@ body {
   height: 20px;
   top: 50%; /* Di chuyển lên 50% từ phía trên của .dark */
   left: 50%; /* Di chuyển sang trái 50% từ phía trái của .dark */
-  transform: translate(
-    -50%,
-    -50%
-  ); /* Dịch chuyển ngược lại 50% của kích thước của chính nó */
+  transform: translate(-50%,-50%); /* Dịch chuyển ngược lại 50% của kích thước của chính nó */
 }
 
 .line1 {
@@ -167,9 +164,9 @@ body {
 .main-inner {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   max-width: 100%;
-  align-self: stretch;
+  align-self: stretch; /* Đảm bảo các phần tử con sẽ căng ra để phù hợp với chiều cao của main-inner */
   flex-direction: row;
   align-items: center;
   flex: 1;
@@ -178,7 +175,6 @@ body {
   display: flex;
   box-sizing: border-box;
   max-width: 65%;
-  flex: 1;
   border-radius: 9px 0 0 9px;
   align-items: center;
   justify-content: center;
@@ -188,7 +184,7 @@ body {
 .slider {
   width: 924.81px;
   max-width: 100vw;
-  height: 616px;
+  height: 595.2px;
   margin: auto; /*can le tu dong*/
   position: relative;
   overflow: hidden;
@@ -267,8 +263,8 @@ body {
   align-items: center;
   z-index: 1;
   gap: 40px;
-  /* max-height: 100%; Đảm bảo rằng chiều cao không vượt quá chiều cao của cửa sổ */
-  /* overflow: hidden; Sử dụng cuộn nếu nội dung vượt quá kích thước của phần tử */
+  max-height: 100%; /* Sử dụng 50% chiều cao của viewport */
+  overflow: hidden;
 }
 .signin-title {
   display: flex;
@@ -300,6 +296,7 @@ body {
 .span {
   position: relative;
   font-size: 17px;
+  font-weight: 600;
   display: inline-block;
   font-family: quicksand;
   color: var(--text-color-2);
@@ -381,6 +378,7 @@ body {
 .button-signin-text {
   position: relative;
   font-size: 18px;
+  font-weight: 600;
   display: inline-block;
   font-family: quicksand;
   color: white;
