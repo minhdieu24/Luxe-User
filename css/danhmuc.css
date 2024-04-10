@@ -231,7 +231,7 @@ a:visited {
   position: sticky;
   background-color: var(--background-color-3);
   top: 0px;
-  z-index: 99;
+  z-index: 9;
   height: 40px;
 }
 .toolbar-products-filter {

@@ -592,7 +592,7 @@ a {
     position: fixed;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    z-index: 10;
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
@@ -602,7 +602,7 @@ a {
     position: fixed;
     inset: 0 40% 0 0;
     background: var(--background-color-1);
-    z-index: 2;
+    z-index: 999;
     transform: translateX(-100%);
     transition: 0.5s;
   }
