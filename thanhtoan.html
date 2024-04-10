@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Chỉnh biểu tượng web -->
-    <link href="icon/Logo.svg" rel="shortcut icon">
+    <link href="icon/Logo.svg" rel="shortcut icon" />
     <title>Luxe - Trang sức cao cấp</title>
     <!-- GG Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,205 +13,107 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/scripts.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/thanhtoan.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <!-- JS -->
+    <script src="js/header.js"></script>
+    <script src="js/thanhtoan.js"></script>
   </head>
   <body>
-    <header class="fixed-header">
-      <div class="container">
-        <div class="top-bar">
-          <!-- Mobile menu -->
-          <button class="hamburger-menu" onclick="burgerFunction()">
-            <img src="icon/burger.svg" alt="" />
-          </button>
-          <script src="./js/scripts.js"></script>
-          <!-- Logo -->
-          <a href="" class="logo-nav">
-            <img src="icon/Logo.svg" alt="Luxe" />
-            <h1 class="logo-title">Luxe</h1>
-          </a>
-          <!-- nav = navigation giống div nhưng có ngữ nghĩa -->
-          <!-- Navigation -->
-          <nav class="navbar">
-            <ul>
-              <li><a href="#!">Trang chủ</a></li>
-              <li><a href="#!">Sản phẩm</a></li>
-              <li><a href="#!">Về chúng tôi</a></li>
-              <li><a href="#!">Hỗ trợ</a></li>
-              <li><a href="#!">Liên hệ</a></li>
-            </ul>
-          </nav>
-  
-          <!-- Action -->
-          <div class="top-act">
-            <div class="top-act-group">
-              <button class="top-act-btn">
-                <img src="./icon/search1.svg" alt="" />
-              </button>
-            </div>
-            <div class="top-act-group">
-              <button class="top-act-btn">
-                <img src="./icon/heart.svg" alt="" />
-                <span class="top-act-title"> 03 </span>
-              </button>
-              <div class="top-act-separate"></div>
-              <button class="top-act-btn">
-                <img src="./icon/cart.svg" alt="" />
-                <span class="top-act-title"> 03 </span>
-              </button>
-              <div class="top-act-separate"></div>
-              <button class="top-act-btn">
-                <img src="./icon/user.svg" alt="" />
-              </button>
-              <div class="top-act-separate"></div>
-              <button class="top-act-btn" onclick="darkFunction()">
-                <svg xmlns="http://www.w3.org/2000/svg" id="moon" width="24" height="24" viewBox="0 0 24 24" >
-                  <path d="M2.03009 12.42C2.39009 17.57 6.76009 21.76 11.9901 21.99C15.6801 22.15 18.9801 20.43 20.9601
-                   17.72C21.7801 16.61 21.3401 15.87 19.9701 16.12C19.3001 16.24 18.6101 16.29 17.8901 16.26C13.0001 16.06
-                    9.00009 11.97 8.98009 7.13996C8.97009 5.83996 9.24009 4.60996 9.73009 3.48996C10.2701 2.24996 9.62009
-                     1.65996 8.37009 2.18996C4.41009 3.85996 1.70009 7.84996 2.03009 12.42Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+    <!-- Header -->
+    <header id="header"></header>
+    <script>
+      load("#header", "./template/header.html");
+    </script>
     <!--Hóa đơn-->
     <div class="wrapper">
-    <div class="thong-tin-hoa-don"> 
-        <h2> Thông tin hóa đơn</h2>
+      <div class="thong-tin-hoa-don">
+        <h2>Thông tin hóa đơn</h2>
         <div class="info">
-        <input type="text" placeholder="Email"  class="email" disabled="disabled" readonly="readonly" />
-        <input type="text" placeholder="Họ tên"  class="hoten" disabled="disabled" readonly="readonly"/>
-       <input type="text" placeholder="SĐT"  class="sdt" disabled="disabled" readonly="readonly"/>
-       </div>
-        <h3> Giao đến</h3>
-        <input type="text" placeholder="Địa chỉ bạn muốn giao đến"/>
-        <h3>Ghi chú:<i style="font-size: smaller;">(nếu có)</i></h3>
-        <div class="ghichu"><input type="text" placeholder="Nói cho chúng tôi biết bạn đang nghĩ gì!" /></div>
-    </div>
-    <div class="hoa-don-cua-ban">
+          <input
+            type="text"
+            placeholder="Email"
+            class="email"
+            disabled="disabled"
+            readonly="readonly"
+          />
+          <input
+            type="text"
+            placeholder="Họ tên"
+            class="hoten"
+            disabled="disabled"
+            readonly="readonly"
+          />
+          <input
+            type="text"
+            placeholder="SĐT"
+            class="sdt"
+            disabled="disabled"
+            readonly="readonly"
+          />
+        </div>
+        <h3>Giao đến</h3>
+        <input type="text" placeholder="Địa chỉ bạn muốn giao đến" />
+        <h3>Ghi chú:<i style="font-size: smaller">(nếu có)</i></h3>
+        <div class="ghichu">
+          <input
+            type="text"
+            placeholder="Nói cho chúng tôi biết bạn đang nghĩ gì!"
+          />
+        </div>
+      </div>
+      <div class="hoa-don-cua-ban">
         <h2>Hóa đơn của bạn</h2>
         <div class="hd">
-        <div>Tổng giá <span><b>1,500,000<sup>đ</sup></b></span></div>
-        <div>Mã khuyến mãi <input type="text" placeholder="Nhập mã khuyến mãi" class="coupon" /></div>
-        <div>Giảm giá <span> <b>0<sup>đ</sup></b></span></div>
+          <div>
+            Tổng giá
+            <span
+              ><b>1,500,000<sup>đ</sup></b></span
+            >
+          </div>
+          <div>
+            Mã khuyến mãi
+            <input
+              type="text"
+              placeholder="Nhập mã khuyến mãi"
+              class="coupon"
+            />
+          </div>
+          <div>
+            Giảm giá
+            <span>
+              <b>0<sup>đ</sup></b></span
+            >
+          </div>
         </div>
-        <div>Tổng thanh toán<span> <b>1,500,000<sup>đ</sup></b></span></div>
+        <div>
+          Tổng thanh toán<span>
+            <b>1,500,000<sup>đ</sup></b></span
+          >
+        </div>
         <h3>Thanh toán bằng</h3>
         <div class="phuong-thuc-thanh-toan">
-                <input type="radio" id="opt1" name="opt" value="opt1"/>
-                <label for="opt1">Thanh toán khi nhận hàng</label>
-                <br>
-                <br>
-            <div class="momo">
-                <input type="radio" id="opt2" name="opt" value="opt2"/>
-                <label for="opt2">Cổng thanh toán MOMO</label>
-                <img src="img/Logo MoMo.png" />
-            </div>
-        </div>
-       <button type="submit" onclick=""><b>Thanh toán</b></button>
-       <button type="reset" onclick=""><b>Về giỏ hàng</b></button>
-    </div>
-    </div>
-       <!-- Footer -->
-       <footer class="footer">
-        <div class="footer-row">
-          <div class="container">
-            <div class="footer-column">
-  
-              <!-- Logo -->
-              <a href="./" class="logo-foot">
-                <img src="./icon/Logo.svg" alt="Luxe" />
-                <h1 class="logo-title">Luxe</h1>
-              </a>
-              
-              <!-- Download app -->
-              <div class="download-container">
-                <p class="download-title">
-                  Tải ngay Luxe app
-                </p>
-                <div class="download-method">
-                  <a href="https://play.google.com/store/apps" target="_blank" class="ch-store">
-                  <img src="./icon/ch-play.svg" alt="" />
-                </a>
-                <a href="https://www.apple.com/vn/app-store" target="_blank" class="app-store">
-                  <img src="./icon/app-store.svg" alt="" />
-                </a>
-                </div>
-              </div>
-            </div>
-            <div class="footer-column">
-              <h3 class="footer__heading">Danh mục</h3>
-              <ul class="footer__list">
-                  <li class="footer__item">
-                      <a href="#!" class="footer__link">
-                        Trang chủ
-                      </a>
-                  </li>
-                  <li class="footer__item">
-                      <a href="#!" class="footer__link">
-                        Sản phẩm
-                      </a>
-                  </li>
-                  <li class="footer__item">
-                      <a href="#!" class="footer__link"> Về chúng tôi </a>
-                  </li>
-                  <li class="footer__item">
-                      <a href="#!" class="footer__link">
-                        Hỗ trợ
-                      </a>
-                  </li>
-                  <li class="footer__item">
-                    <a href="#!" class="footer__link">
-                      Liên hệ
-                    </a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h3 class="footer__heading">Thông tin liên hệ</h3>
-              <ul class="footer__list">
-                  <li class="footer__item">
-                    279 Nguyễn Tri Phương, Phường 5, Quận 10, TP.HCM
-                  </li>
-                  <li class="footer__item">
-                    (+84) 046 990 809
-                  </li>
-                  <li class="footer__item">
-                    info@example.com
-                  </li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h3 class="footer__heading">Theo dõi</h3>
-              <div class="footer__social">
-                  <a href="#!" class="footer__social-btn">
-                      <img src="./icon/facebook.svg" alt="">
-                  </a>
-                  <a href="#!" class="footer__social-btn">
-                      <img src="./icon/insta.svg" alt="">
-                  </a>
-                  <a href="#!" class="footer__social-btn">
-                      <img src="./icon/twitter.svg" alt="">
-                  </a>
-              </div>
-            </div>
+          <input type="radio" id="opt1" name="opt" value="opt1" />
+          <label for="opt1">Thanh toán khi nhận hàng</label>
+          <br />
+          <br />
+          <div class="momo">
+            <input type="radio" id="opt2" name="opt" value="opt2" />
+            <label for="opt2">Cổng thanh toán MOMO</label>
+            <img src="img/Logo MoMo.png" />
           </div>
         </div>
-  
-      <div class="footer-copyright">
-          <div class="container">
-            <div class="payment-method">
-              <img src="./icon/paypal.svg" alt="">
-              <img src="./icon/visa.svg" alt="">
-              <img src="./icon/master-card.svg" alt="">
-            </div>
-            <p class="footer__copyright-text">
-              Copyright © 2023 UIHUT All Rights Reserved
-            </p>
-          </div>
+        <button type="submit" onclick=""><b>Thanh toán</b></button>
+        <button type="reset" onclick=""><b>Về giỏ hàng</b></button>
       </div>
-      </footer>
+    </div>
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <script>
+      load("#footer", "./template/footer.html");
+    </script>
   </body>
+</html>
