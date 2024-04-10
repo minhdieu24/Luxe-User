@@ -756,7 +756,7 @@ input:checked + label::before {
   font-weight: 650;
   font-size: 16px;
 }
-.prod-list__item__info--title {
+.prod-list__item__info--title a {
   color: var(--text-color-2);
 }
 .prod-list__item__info--masp {
