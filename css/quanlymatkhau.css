@@ -226,6 +226,13 @@
     display: flex;
     flex-direction: column;
 }
+.side-bar a {
+  color: var(--secondary-color-secondary-1); /* Đặt màu chữ cho liên kết */
+  text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+}
+.side-bar a:visited {
+  color: var(--secondary-color-secondary-1); /* Giữ màu chữ nguyên thủy sau khi liên kết đã được truy cập */
+}
 .arrow {
     cursor: pointer;
     display: flex;
@@ -280,8 +287,10 @@ background-color: #fff5f0;
 .right-bar {
     width: 70%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    align-self: center;
 }
 .pass-info {
     width: 50%;
@@ -290,7 +299,7 @@ background-color: #fff5f0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
 }
 .title {
     display: flex;
@@ -315,6 +324,7 @@ background-color: #fff5f0;
 .text, .span {
     position: relative;
     font-size: 17px;
+    font-weight: 600;
     display: inline-block;
     font-family: quicksand;
     color: var(--text-color-2);
@@ -330,7 +340,7 @@ background-color: #fff5f0;
     border-radius: 8px;
     box-sizing: border-box;
     width: 100%;
-    margin: 5px 0 30px;
+    margin: 5px 0 25px;
     font-size: 15px;
     color: var(--text-color-1);
     padding: 10px 13px 10px 13px;
@@ -383,6 +393,7 @@ background-color: #fff5f0;
 .button-save-text {
     position: relative;
     font-size: 18px;
+    font-weight: 600;
     display: inline-block;
     font-family: quicksand;
     color: white;

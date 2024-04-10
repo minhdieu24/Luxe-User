@@ -51,7 +51,13 @@ body {
   top: 0;
   z-index: 99;
 }
-
+.header a {
+  color: #ffbe98;
+  text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+}
+.header a:visited {
+  color: #ffbe98; /* Giữ màu chữ nguyên thủy sau khi liên kết đã được truy cập */
+}
 .logo-left {
   position: sticky; /* Đặt vị trí cố định */
   justify-content: space-between;
@@ -109,6 +115,13 @@ body {
   background-color: var(--background-color-1);
   box-sizing: border-box;
   border-radius: 7px;
+}
+.frame-right a {
+  color: #ffbe98;
+  text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+}
+.frame-righ a:visited {
+  color: #ffbe98; /* Giữ màu chữ nguyên thủy sau khi liên kết đã được truy cập */
 }
 .frame-right .btn-signup:hover {
   border: 1px solid #ef9059;

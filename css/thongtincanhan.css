@@ -226,6 +226,14 @@
     display: flex;
     flex-direction: column;
 }
+.side-bar a {
+  color: var(--secondary-color-secondary-1); /* Đặt màu chữ cho liên kết */
+  text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+}
+.side-bar a:visited {
+  color: var(--secondary-color-secondary-1); /* Giữ màu chữ nguyên thủy sau khi liên kết đã được truy cập */
+}
+
 .arrow {
     cursor: pointer;
     display: flex;
@@ -313,6 +321,8 @@ label {
     color: #fff;
     border: 2px solid #ffbe98;
     color: #ffbe98;
+    font-size: 17px;
+    font-weight: 600;
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
@@ -347,6 +357,7 @@ form .user-details .input-box{
     margin-bottom: 5px;
     position: relative;
     font-size: 15px;
+    font-weight: 600;
     display: inline-block;
     color: var(--text-color-2);
 }
@@ -363,7 +374,7 @@ form .user-details .input-box input, .user-details .input-box .box {
     color: var(--text-color-1);
     padding: 9px 12px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 480;
     font-family: quicksand;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
