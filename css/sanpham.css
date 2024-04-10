@@ -232,13 +232,13 @@ label {
 }
 .product-inf__title__1 {
   text-align: center;
-  color: var(--product-detail-text-color-3);
-  text-transform: capitalize;
-  margin-top: 10px;
+  color: #ef9059;
+  margin-top: 20px;
   margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 42px;
+  font-weight: 400;
+  font-size: 5.5rem;
   line-height: 100%;
+  font-family: "Prata";
 }
 
 .product-inf__star {
@@ -396,6 +396,11 @@ label {
 .btn.submit:hover {
   cursor: pointer;
 }
+.btn.submit{
+    font-family: Quicksand, sans-serif;
+    outline: none;
+    text-decoration: none;
+}
 .btn.them {
   position: absolute;
   width: 30%;
@@ -410,7 +415,7 @@ label {
   gap: 20px;
   font-size: 2.4rem;
   line-height: 130%;
-  color: var(--product-detail-text-color-3);
+  color: #ef9059;
   font-weight: 700;
 }
 
@@ -500,7 +505,7 @@ td {
   line-height: normal;
   color: #000;
   white-space: nowrap;
-  margin: 0 2% 0 5%;
+  margin: 0 2% 0 1%;
   font-weight: 700;
   font: 2.2rem/130%;
 }
@@ -563,7 +568,7 @@ td {
 }
 
 .customer-review {
-  color: var(--product-detail-text-color-3);
+  color: #ef9059;
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 150%;
@@ -734,31 +739,35 @@ form input[type="text"] {
 
 /* ======= Similar products ====== */
 .product-home {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 0 76px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px 30px;
 }
 
-.product-item {
-  flex: 1 0;
-  margin: 5px;
-}
+
 
 .product-card {
+  width: 295px;
+  height: fit-content;
   display: flex;
+  border-radius: 18px;
+  border: 1px solid #ededed;
   flex-direction: column;
-  height: 100%;
-  padding: 16px;
-  border-radius: 20px;
-  background: var(--product-detail-background-color-1);
-  box-shadow: 0px 60px 20px 0px rgba(237, 237, 246, 0.2);
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 15px;
+  gap: 15px;
+  box-shadow: 0px 4px 10px 0px rgba(255, 255, 255, 0.18);
 }
 
 .product-card__img-wrap {
-  position: relative;
-  padding-top: 100%;
-  background-color: var(--product-detail-background-color-1);
-  border-radius: 20px;
+  align-self: stretch;
+    height: 269px;
+    border-radius: 16px 16px 0 0;
+    background-color: #fafafa;
+    position: relative;
+    overflow: hidden;
 }
 
 .product-card__thumb {
@@ -772,6 +781,30 @@ form input[type="text"] {
 
 .product-card__thumb:hover {
   transform: scale(1.2);
+}
+.button-heart-cart-hover {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 8px;
+  gap: 15px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  right: -10px;
+  top: 10px;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+
+  /* animation: buttonChay 1s forwards; */
+}
+.product-card__img-wrap:hover .button-heart-cart-hover {
+  opacity: 1;
+  right: 8px;
+  transition: all 0.4s ease-in;
+}
+.prod-list__item__inner {
+  align-self: stretch;
+  padding: 0 15px;
 }
 .like-btn {
   position: absolute;
@@ -794,7 +827,7 @@ form input[type="text"] {
 .product-card__price-sales,
 .product-card__score {
   color: var(--product-detail-text-color-dark);
-  font-size: 1.5rem;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -809,7 +842,12 @@ form input[type="text"] {
   font-weight: 700;
   color: #f98542;
 }
-
+.prod-list__item__info--star-icon {
+  display: flex;
+  align-items: center;
+  gap: 0 3px;
+  text-align: center;
+}
 .product-card__collection {
   margin: 16px 0;
   color: #9e9da8;
@@ -823,7 +861,10 @@ form input[type="text"] {
 }
 
 .product-card__star {
-  margin: 0 6px 0 auto;
+  margin-left: 10px;
+  height: 28px;
+  width: 28px;
+  position: relative;
 }
 
 .product-container {
@@ -1058,6 +1099,7 @@ form input[type="text"] {
   .inf-text {
     width: 80%;
     white-space: initial;
+    margin: 0 2% 0 5%;
   }
   .des-text {
     width: 70%;
@@ -1161,6 +1203,11 @@ form input[type="text"] {
   }
   .btn.submit {
     margin: 0 60%;
+    /* font-weight: 100; */
+    font-family: Quicksand, sans-serif;
+    /* border: none; */
+    outline: none;
+    text-decoration: none;
   }
   .customer {
     max-width: 70%;
@@ -1177,7 +1224,8 @@ form input[type="text"] {
     margin: 40px 10px 0 0;
   }
   .product-home {
-    gap: 30px;
+    padding: 0 10px 0 30px;
+    gap: 30px 30px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
