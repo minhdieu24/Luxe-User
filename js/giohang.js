@@ -170,3 +170,14 @@ function displaySelectedSize4(size) {
   var selectedSize4Element = document.querySelector(".selected-size");
   selectedSize4Element.textContent = size !== "" ? size : "Chọn size";
 }
+
+// Click heart icon
+function heart(hinhDuocClick) {
+  hinhDuocClick.classList.toggle("active");
+
+  if (hinhDuocClick.classList.contains("active")) {
+    hinhDuocClick.src = "./icon/heart-red.svg";
+  } else {
+    hinhDuocClick.src = "./icon/heart.svg";
+  }
+}

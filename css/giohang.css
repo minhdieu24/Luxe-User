@@ -43,10 +43,10 @@
   --text-color-dark: #fff;
   --product-detail-text-color-dark: #fff;
   --primary-color: #ef9059;
-  --line-color: #000000;
+  --line-color: #171c28;
   --nav-color: #171c28;
-  --background-color-1: #000000;
-  --background-color: #6c6c72;
+  --background-color-1: #171c28;
+  --background-color: #292e39;
   --background-color-2: #292e39;
   --background-color-3: #171c28;
 }
@@ -83,6 +83,7 @@ a {
   text-align: center;
   color: #522a28;
   padding: 15px 35px;
+  margin-top: 10px;
 }
 
 .btn:hover {
@@ -436,6 +437,9 @@ td {
   position: absolute;
   right: 6%;
   text-align: right;
+}
+.total-tong p {
+  margin: 5px;
 }
 .total-tam {
   display: flex;
