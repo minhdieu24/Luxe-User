@@ -1,18 +1,5 @@
-<svg width="40" height="38" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_38_879)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M10.8719 14.5983C9.79887 11.2483 11.0529 7.41932 14.5699 6.28632C16.4199 5.68932 18.4619 6.04132 19.9999 7.19832C21.4549 6.07332 23.5719 5.69332 25.4199 6.28632C28.9369 7.41932 30.1989 11.2483 29.1269 14.5983C27.4569 19.9083 19.9999 23.9983 19.9999 23.9983C19.9999 23.9983 12.5979 19.9703 10.8719 14.5983Z" fill="#F94545"/>
-</g>
-<path d="M24 9.70001C25.07 10.046 25.826 11.001 25.917 12.122" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<defs>
-<filter id="filter0_d_38_879" x="0.5" y="0" width="38.9971" height="37.9983" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="5"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.976471 0 0 0 0 0.270588 0 0 0 0 0.270588 0 0 0 0.2 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_38_879"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_38_879" result="shape"/>
-</filter>
-</defs>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="red" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2.87187 11.5983C1.79887 8.24832 3.05287 4.41932 6.56987 3.28632C8.41987 2.68932 10.4619 3.04132 11.9999 4.19832C13.4549 3.07332 15.5719 2.69332 17.4199 3.28632C20.9369 4.41932 22.1989 8.24832 21.1269 11.5983C19.4569 16.9083 11.9999 20.9983 11.9999 20.9983C11.9999 20.9983 4.59787 16.9703 2.87187 11.5983Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 6.70001C17.07 7.04601 17.826 8.00101 17.917 9.12201" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
+
