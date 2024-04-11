@@ -662,7 +662,7 @@ input:checked + label::before {
   width: 1434px; */
 }
 .prod-list__item {
-  width: 295px;
+  width: 300px;
   height: fit-content;
   display: flex;
   border-radius: 18px;
@@ -784,7 +784,7 @@ input:checked + label::before {
 .prod-list__item__info--price-fb {
   display: flex;
   justify-content: space-between;
-  font-size: 15px;
+  font-size: 14px;
   color: #fa8541;
   align-items: center;
   text-align: left;
@@ -796,15 +796,17 @@ input:checked + label::before {
 .prod-list__item__info--price-sales {
   line-height: 24px;
   font-weight: 600;
-  font-size: 14.8px;
 }
 .prod-list__item__info--price {
-  margin-right: 2px;
+  font-size: 15.5px;
+  margin-right: 3px;
+  font-weight: 680;
 }
 .prod-list__item__info--price-sales {
   text-decoration: line-through;
-  color: #f98542;
-  margin-right: 2px;
+  font-weight: 550;
+  font-size: 13.5px;
+  color: var(--text-color-1);
 }
 /* star-icon */
 .prod-list__item__info--star-icon {
@@ -815,8 +817,8 @@ input:checked + label::before {
   color: var(--text-color-2);
 }
 .info--star-icon {
-  height: 18px;
-  width: 18px;
+  height: 19px;
+  width: 21px;
   position: relative;
 }
 /* feedback sao */
@@ -1423,7 +1425,7 @@ input:checked + label::before {
   }
 
   .prod-list__item {
-    width: 280px;
+    width: 295px;
   }
   /* ================PHẦN GỢI Ý SẢN PHẨM========= */
   .Suggest-for-you--text {
