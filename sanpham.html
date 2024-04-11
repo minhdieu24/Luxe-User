@@ -153,7 +153,12 @@
             </table>
 
             <!-- Button THÊM VÀO GIỎ HÀNG -->
-            <a href="#!" class="btn them">THÊM VÀO GIỎ HÀNG</a>
+            <a
+              href="#!"
+              class="btn them"
+              onclick="alert('Thêm vào giỏ hàng thành công!')"
+              >THÊM VÀO GIỎ HÀNG</a
+            >
           </div>
         </div>
       </div>
@@ -245,7 +250,7 @@
         <div class="review-writing">
           <p class="customer-review">Đánh giá của bạn về sản phẩm này</p>
           <img src="./icon/sanpham-5star.svg" alt="" class="img-star" />
-          <form id="reviewForm">
+          <form id="reviewForm" method="get">
             <div class="review-form">
               <div class="form-group">
                 <label for="reviewStar">Số sao (Điền từ 1 đến 5)</label> <br />
@@ -282,6 +287,8 @@
               style="border: none; margin-top: 15px"
               class="btn submit"
               type="submit"
+              onclick='
+                alert("Gửi review thành công!");'
             >
               Gửi
             </button>
@@ -325,7 +332,7 @@
         </div>
       </div>
       <!-- Button Load more -->
-      <a href="#!" class="btn home-product__Load">Xem thêm</a>
+      <a href="./danhmuc.html" class="btn home-product__Load">Xem thêm</a>
     </div>
 
     <!-- Similar products -->
@@ -467,9 +474,7 @@
             </div>
             <div class="prod-list__item__inner">
               <h3 class="product-card__title">
-                <a href="./product-detail.html"
-                  >Nhẫn Vàng Đá Trang Sức NLF 453
-                </a>
+                <a href="./sanpham.html">Nhẫn Vàng Đá Trang Sức NLF 453 </a>
               </h3>
               <p class="product-card__collection">Nhẫn cưới</p>
               <div class="product-card__row">
@@ -520,9 +525,7 @@
             </div>
             <div class="prod-list__item__inner">
               <h3 class="product-card__title">
-                <a href="./product-detail.html"
-                  >Nhẫn Vàng Đá Trang Sức NLF 453
-                </a>
+                <a href="./sanpham.html">Nhẫn Vàng Đá Trang Sức NLF 453 </a>
               </h3>
               <p class="product-card__collection">Nhẫn cưới</p>
               <div class="product-card__row">
