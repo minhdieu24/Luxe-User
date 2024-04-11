@@ -52,7 +52,8 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
-  color: #522a28;
+  color: #fff;
+  /*color: #522a28;*/
   padding: 15px 35px;
 }
 
