@@ -22,7 +22,7 @@ html {
 }
 body {
   background: #f3f0f0;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-family: Quicksand, sans-serif;
 }
 
@@ -42,9 +42,9 @@ body.dark {
   --index-second-color: #e6c299;
 
   /* ============= */
-  
-    background-color: #292e39;
-    color: var(--background-color-1);
+
+  background-color: #292e39;
+  color: var(--background-color-1);
 }
 body.dark header {
   background-color: black;
@@ -190,12 +190,12 @@ td {
 }
 
 /* VỀ-CHÚNG-TÔI */
-.content-wrapper h1{
+.content-wrapper h1 {
   font-weight: bold;
   font-size: 2em;
   margin: 20px auto;
 }
-.content-wrapper p{
+.content-wrapper p {
   line-height: 1.3;
 }
 .content1 img {
@@ -212,7 +212,7 @@ td {
 
 .ve-chung-toi {
   display: flex;
-  position:absolute;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -262,58 +262,59 @@ td {
   max-width: 410px;
   border-radius: 10px;
 }
-.thanh-vien{
+.thanh-vien {
   max-width: auto;
-  margin: 70px 100px; 
+  margin: 70px 100px;
   text-align: center;
 }
-.ba-thanh-vien{
+.ba-thanh-vien {
   display: flex;
   margin: 40px 30px;
   overflow: hidden;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
-.ba-thanh-vien .mot-thanh-vien { 
-padding: 25px;
+.ba-thanh-vien .mot-thanh-vien {
+  padding: 25px;
 }
-.ba-thanh-vien .mot-thanh-vien div{ 
+.ba-thanh-vien .mot-thanh-vien div {
   margin: 20px auto;
   line-height: 1.5;
 }
-.ba-thanh-vien .mot-thanh-vien div h3{
+.ba-thanh-vien .mot-thanh-vien div h3 {
   font-weight: bold;
 }
-.thanh-vien-gr{
-position: relative;
+.thanh-vien-gr {
+  position: relative;
 }
-.arrow-left,.arrow-right{
-top: 50%; 
-position: absolute; 
-cursor: pointer;
-background: #FFBE98;
-border-radius: 999px;
-padding: 5px;
-transform: translateY(-50%);
+.arrow-left,
+.arrow-right {
+  top: 50%;
+  position: absolute;
+  cursor: pointer;
+  background: #ffbe98;
+  border-radius: 999px;
+  padding: 5px;
+  transform: translateY(-50%);
 }
-.arrow-left{
-left: -23px;
+.arrow-left {
+  left: -23px;
 }
-.arrow-right{
-right: -23px;
+.arrow-right {
+  right: -23px;
 }
-.img-index-dot{
-display: flex;
-position: absolute;
-bottom: 0%;
-right: 48%;
+.img-index-dot {
+  display: flex;
+  position: absolute;
+  bottom: 0%;
+  right: 48%;
 }
-.img-index{
-background-color: #bab9b9;
-padding: 5px;
-border-radius: 999px;
-width: 1px;
-margin: auto 3px;
+.img-index {
+  background-color: #bab9b9;
+  padding: 5px;
+  border-radius: 999px;
+  width: 1px;
+  margin: auto 3px;
 }
-.active{
-background-color: #fe823b ;
+.active {
+  background-color: #fe823b;
 }
