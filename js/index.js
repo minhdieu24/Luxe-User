@@ -88,3 +88,14 @@ function loadReview() {
   }
   setInterval(rvSlide, 5000);
 }
+
+// Click heart icon
+function heart(hinhDuocClick) {
+  hinhDuocClick.classList.toggle("active");
+
+  if (hinhDuocClick.classList.contains("active")) {
+    hinhDuocClick.src = "./icon/heart-red.svg";
+  } else {
+    hinhDuocClick.src = "./icon/heart.svg";
+  }
+}

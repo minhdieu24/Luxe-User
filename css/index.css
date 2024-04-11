@@ -3,26 +3,23 @@
 }
 
 :root {
-  --text-color-1: hsl(0, 0%, 44%);
-  /* product-card__title */
-  --text-color-2: #1a162e;
-  --primary-color: #ef9059;
-  --nav-color: #717171;
-  --background-color-1: #fff;
-  --background-color-2: #fff;
-  --background-color-3: #f0f0f0;
-  --second-color: #fff5f0;
+  --index-text-color-1: hsl(0, 0%, 44%);
+  --index-text-color-2: #1a162e;
+  --index-primary-color: #ef9059;
+  --index-background-color-1: #fff;
+  --index-background-color-2: #fff;
+  --index-background-color-3: #f0f0f0;
+  --index-second-color: #fff5f0;
 }
 
 .dark-mode {
-  --text-color-1: #eeeeee;
-  --text-color-2: #ffffff;
-  --primary-color: #ef9059;
-  --nav-color: #171c28;
-  --background-color-1: #171c28;
-  --background-color-2: #292e39;
-  --background-color-3: #171c28;
-  --second-color: #e6c299;
+  --index-text-color-1: #eeeeee;
+  --index-text-color-2: #ffffff;
+  --index-primary-color: #ef9059;
+  --index-background-color-1: #171c28;
+  --index-background-color-2: #292e39;
+  --index-background-color-3: #171c28;
+  --index-second-color: #e6c299;
 }
 
 /* Để sử dụng rem */
@@ -73,7 +70,7 @@ a {
 
 /* ========= Slider Section ======== */
 .main {
-  background: var(--background-color-2);
+  background: var(--index-background-color-2);
 }
 
 #slider {
@@ -120,7 +117,7 @@ a {
 
 /* ========= Marquee ======== */
 .mar {
-  background-color: var(--background-color-1);
+  background-color: var(--index-background-color-1);
 }
 
 /* ========= Product Sales ========= */
@@ -155,7 +152,7 @@ a {
     width: 1434px; */
 }
 .prod-list__item {
-  background-color: var(--background-color-1);
+  background-color: var(--index-background-color-1);
   width: 295px;
   height: fit-content;
   display: flex;
@@ -267,7 +264,7 @@ a {
   font-size: 16px;
 }
 .prod-list__item__info--title a {
-  color: var(--text-color-2);
+  color: var(--index-text-color-2);
 }
 .prod-list__item__info--masp {
   margin-right: -9px;
@@ -307,7 +304,7 @@ a {
   align-items: center;
   gap: 0 3px;
   text-align: center;
-  color: var(--text-color-2);
+  color: var(--index-text-color-2);
 }
 .info--star-icon {
   height: 18px;
@@ -342,7 +339,7 @@ a {
 
 .collection-desc {
   margin: 10px 0;
-  color: var(--text-color-2);
+  color: var(--index-text-color-2);
   text-align: center;
   font-size: 1.6rem;
   font-weight: 400;
@@ -410,12 +407,12 @@ a {
 }
 
 .review-title-2 {
-  color: var(--text-color-2);
+  color: var(--index-text-color-2);
 }
 
 .review-desc {
   margin-top: 15px;
-  color: var(--text-color-2);
+  color: var(--index-text-color-2);
   text-align: center;
   font-size: 1.6rem;
   font-weight: 400;
@@ -450,10 +447,10 @@ a {
 }
 
 .review-content .review-script {
-  color: var(--text-color-2);
+  color: var(--index-text-color-2);
   margin-top: 17px;
   padding: 15px;
-  border: 1px solid var(--text-color-2);
+  border: 1px solid var(--index-text-color-2);
   text-align: center;
   font-size: 1.8rem;
   font-weight: 500;
@@ -630,13 +627,13 @@ a {
     display: inline-block;
     font-size: 1.6rem;
     font-weight: 700;
-    color: var(--text-color-1);
+    color: var(--index-text-color-1);
     padding: 5px 10px 5px 0px;
   }
 
   .navbar-mobile ul a:hover {
     text-decoration: underline;
-    color: var(--primary-color);
+    color: var(--index-primary-color);
   }
 
   .menu-drawer .top-act {
