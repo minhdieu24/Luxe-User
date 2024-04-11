@@ -272,7 +272,7 @@ body {
   background-color: var(--background-color);
   border: 2px solid #ffbe984d;
   flex-direction: column;
-  padding: 115px 20px 115px;
+  padding: 128px 20px 123px;
   align-items: center;
   z-index: 1;
   gap: 40px;
@@ -297,14 +297,14 @@ body {
   justify-content: center;
   justify-content: flex-start;
 }
-.email-container,
+.username-container,
 .password-container {
   flex-direction: column;
   justify-content: flex-start;
   display: flex;
   align-items: flex-start;
 }
-.email-text,
+.username-text,
 .pass-text,
 .span {
   position: relative;
@@ -315,7 +315,7 @@ body {
   color: var(--text-color-2);
   text-align: left;
 }
-.email-box,
+.username-box,
 .password-box {
   border: 2.5px solid #ffbe98;
   outline: none;
@@ -331,7 +331,7 @@ body {
   color: var(--text-color-1);
   padding: 12px 15px 12px 15px;
 }
-.email-box {
+.username-box {
   margin: 5px 0 30px;
 }
 .span {
@@ -348,7 +348,7 @@ body {
 .password-box {
   margin: 5px 0 3px;
 }
-.forget-pass a {
+/*.forget-pass a {
   position: relative;
   font-size: 15px;
   color: #ef9059;
@@ -361,7 +361,7 @@ body {
 }
 .forget-pass a:hover {
   text-decoration: underline;
-}
+}*/
 
 .button {
   display: flex;
@@ -428,7 +428,7 @@ body {
   .signin-title {
     margin: 0;
   }
-  .signin-input .email-box {
+  .signin-input .username-box {
     margin-bottom: 30px;
     width: 100%;
   }

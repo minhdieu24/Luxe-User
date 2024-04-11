@@ -37,12 +37,6 @@
               <div class="account-text">Quản lý tài khoản</div>
           </div>
         </a>
-        <a href="quanlymatkhau.html">
-          <button class="wrapper-1">
-            <img class="pass-manage" src="./icon/QLmatkhau-iconpass.svg"/>
-            <div class="bar-text">Quản lý mật khẩu</div>
-        </button>
-        </a>
         <a href="thongtincanhan.html">
           <button class="wrapper-2">
             <img class="personal-info" src="./icon/QLmatkhau-iconpersonalinfo.svg"/>
@@ -59,20 +53,6 @@
         <!--Right-->
         <div class="right-bar">
             <div class="title">Thông tin cá nhân</div>
-            <div class="right1">
-                <div class="upload-container">
-                        <img src="./img/ttcn-default-avatar.jpg" id="profile-pic">
-                        <label for="image-upload"> <b>Tải lên ảnh của bạn</b></label>
-                        <input type="file" id="image-upload" accept=".png, .jpg, .jpeg" />
-                </div>
-                <script>
-                    let profilePic = document.getElementById("profile-pic");
-                    let inputFile = document.getElementById("image-upload");
-                    inputFile.onchange = function(){
-                        profilePic.src = URL.createObjectURL(inputFile.files[0]);
-                    }
-                </script>
-            </div>
             <div class="right2">
             <form action="#">
                 <div class="user-details">
@@ -126,6 +106,23 @@
                       </b>
                       <input type="text"/>
                   </div>
+                  <!--USERNAME-->
+                  <div class="input-box">
+                    <b>
+                    <span class="text">Tên đăng nhập</span>
+                    <span class="span"> *</span>
+                    </b>
+                    <input type="text" name="ten_dang_nhap" required/>
+                </div>
+                  <!--PASSWORD-->
+                  <div class="input-box">
+                  <b>
+                    <span class="text">Mật khẩu</span>
+                    <span class="span"> *</span>
+                    </b>
+                    <input type="password" name="mat_khau" required/>
+                </div>
+
         <!--signin-right
         <div class="right-bar">
             <form class="pass-info">
