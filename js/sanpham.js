@@ -97,7 +97,24 @@ function heart(hinhDuocClick) {
 
   if (hinhDuocClick.classList.contains("active")) {
     hinhDuocClick.src = "./icon/heart-red.svg";
+    IncreaseWL();
   } else {
     hinhDuocClick.src = "./icon/heart.svg";
+    DecreaseWL();
   }
+}
+
+// Click "-"
+function DecreaseWL() {
+  var count = parseInt(document.getElementById("wishlist").innerHTML);
+  if (count > 0) {
+    count--;
+    document.getElementById("wishlist").innerHTML = count;
+  }
+}
+//Click "+"
+function IncreaseWL() {
+  var count = parseInt(document.getElementById("wishlist").innerHTML);
+  count++;
+  document.getElementById("wishlist").innerHTML = count;
 }
