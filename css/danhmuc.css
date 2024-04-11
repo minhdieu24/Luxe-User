@@ -796,17 +796,15 @@ input:checked + label::before {
 .prod-list__item__info--price-sales {
   line-height: 24px;
   font-weight: 600;
+  font-size: 14.8px;
 }
 .prod-list__item__info--price {
-  font-size: 18px;
-  margin-right: 7px;
-  font-weight: 640;
+  margin-right: 2px;
 }
 .prod-list__item__info--price-sales {
   text-decoration: line-through;
-  font-weight: 550;
-  font-size: 16px;
-  color: var(--text-color-1);
+  color: #f98542;
+  margin-right: 2px;
 }
 /* star-icon */
 .prod-list__item__info--star-icon {
@@ -817,8 +815,8 @@ input:checked + label::before {
   color: var(--text-color-2);
 }
 .info--star-icon {
-  height: 21px;
-  width: 21px;
+  height: 18px;
+  width: 18px;
   position: relative;
 }
 /* feedback sao */

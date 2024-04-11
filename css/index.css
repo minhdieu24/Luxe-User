@@ -275,7 +275,7 @@ a {
   display: flex;
   justify-content: space-between;
   font-size: 15px;
-  color: /*var(--color-coral);*/ #fa8541;
+  color: #fa8541;
   align-items: center;
   text-align: left;
 }
