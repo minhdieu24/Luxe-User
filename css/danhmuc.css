@@ -187,33 +187,6 @@ a:visited {
 .container__product-wrap {
   margin-bottom: 25px;
 }
-/* cách 1
-.separator {
-  margin: 0 20px;
-}
-.list-product {
-  text-align: center; Căn giữa nội dung trong phần tử nav
-  line-height: 1.8;
-}
-
-.list-product a {
-  color: #1e1e1e;
-  font-family: Quicksand;
-  font-style: normal;
-  font-weight: 600;
-  padding: 6px 0;
-}
-.list-product a:hover {
-  color: var(--primary-color);
-}
-.list-product a:focus {
-  /* text-decoration: underline; 
-  color: var(--primary-color);
-  font-weight: 700;
-}
-*/
-
-/* cách 2 */
 .product-wrap--nav-links {
   display: flex;
   flex-wrap: wrap;
@@ -259,28 +232,8 @@ a:visited {
   color: var(--primary-color);
   font-weight: 700;
 }
-/* .product-wrap--nav-links li.upward a:before {
-  width: 100%;
-  bottom: -5px;
-  opacity: 0;
-}
-.product-wrap--nav-links li.upward a:hover:before {
-  bottom: 0px;
-  opacity: 1;
-}
-.product-wrap--nav-links li.forward a:before {
-  width: 100%;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.4s ease;
-}
-.product-wrap--nav-links li.forward a:hover:before {
-  transform: scaleX(1);
-  transform-origin: left;
-} */
-
 .prod-second-line {
-  margin: 0 35px 25px;
+  margin: 0 55px 25px;
   height: 2.5px;
   background: #ffbe98;
 }
@@ -292,11 +245,10 @@ a:visited {
   padding: 0 35px;
   margin-bottom: 35px;
   justify-content: space-between; /* Để phần tử nằm bên trái và bên phải cách xa nhau */
-  /* position: relative; */
   position: sticky;
   background-color: var(--background-color-3);
   top: 0px;
-  z-index: 999999;
+  z-index: 9;
   height: 40px;
 }
 .toolbar-products-filter {
@@ -812,7 +764,7 @@ input:checked + label::before {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  height: 67px;
+  max-height: 67px;
 }
 .prod-list__item__info--title,
 .prod-list__item__info--masp {
@@ -821,19 +773,19 @@ input:checked + label::before {
   font-weight: 650;
   font-size: 16px;
 }
-.prod-list__item__info--title {
+.prod-list__item__info--title a {
   color: var(--text-color-2);
 }
 .prod-list__item__info--masp {
   margin-right: -9px;
-  font-weight: 650;
+  font-weight: 600;
   color: #939090;
 }
 .prod-list__item__info--price-fb {
   display: flex;
   justify-content: space-between;
   font-size: 15px;
-  color: /*var(--color-coral);*/ #fa8541;
+  color: #fa8541;
   align-items: center;
   text-align: left;
 }
@@ -848,7 +800,7 @@ input:checked + label::before {
 .prod-list__item__info--price {
   font-size: 18px;
   margin-right: 7px;
-  font-weight: 620;
+  font-weight: 640;
 }
 .prod-list__item__info--price-sales {
   text-decoration: line-through;
@@ -860,13 +812,13 @@ input:checked + label::before {
 .prod-list__item__info--star-icon {
   display: flex;
   align-items: center;
-  gap: 0 3px;
+  gap: 0 6px;
   text-align: center;
   color: var(--text-color-2);
 }
 .info--star-icon {
-  height: 24px;
-  width: 24px;
+  height: 21px;
+  width: 21px;
   position: relative;
 }
 /* feedback sao */
@@ -1020,9 +972,9 @@ input:checked + label::before {
   font-family: Prata;
   font-size: 35px;
   word-spacing: 5px;
-  color: #522a28;
+  color: #f98542;
   line-height: 1.5;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 .explore-dm--content {
   margin-bottom: 30px;
@@ -1030,7 +982,7 @@ input:checked + label::before {
 
 .explore-dm--content p {
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.3;
   color: #000;
 }
@@ -1085,7 +1037,7 @@ input:checked + label::before {
 .listing-tile__content {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -4px;
   left: 0;
   padding: 10px;
 }
@@ -1100,6 +1052,7 @@ input:checked + label::before {
 }
 .listing-tile__content p {
   color: var(--text-color-2);
+  font-weight: 650;
 }
 .listing-tile__content p:hover {
   font-size: 16px;
@@ -1281,6 +1234,9 @@ input:checked + label::before {
   .menu-drawer {
     display: none;
   }
+  .mega-menu {
+    display: none;
+  }
 }
 @media screen and (min-width: 1050px) and (max-width: 1190px) {
   .top-bar .hamburger-menu {
@@ -1302,15 +1258,15 @@ input:checked + label::before {
     padding: 8px 0px;
     text-align: center;
   }
-  .prod-longest-line {
-    margin-top: 10px;
+}
+@media screen and (max-width: 11128px) {
+  .mega-menu {
+    display: none;
   }
 }
+
 /* ==== mobile + tablet: width <= 1049 ====== */
 @media screen and (max-width: 1049px) {
-  .prod-longest-line {
-    margin-top: 10px;
-  }
   .top-bar {
     position: relative;
   }

@@ -143,7 +143,7 @@
 /* Mega menu */
 .mega-menu {
   position: absolute;
-  z-index: 1;
+  z-index: 9999;
   width: 100%; /* Chiều rộng menu */
   background-color: var(--index-background-color-2); /* Màu nền menu */
   left: -100%;

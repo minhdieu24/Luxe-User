@@ -40,7 +40,7 @@
 
     <!-- Scripts -->
     <script src="./js/header.js"></script>
-    <script src="./js/scripts.js"></script>
+    <script src="./js/danhmuc.js"></script>
   </head>
 
   <body>
@@ -51,38 +51,11 @@
     </script>
     <!-----------------Phần trang chủ/sản phẩm-------------->
     <div class="prod-longest-line"></div>
-    <!-- <div class="prod-nav-bar">
-      <div class="container">
-        <nav class="prod-nav-bar__text">
-          <ul>
-            <li>
-              <a href="#!" class="prod-nav-bar__text--Trang-chu">Trang chủ</a>
-            </li>
-            Đường phân cách
-            <li class="top-act-separate"></li>
-            <li><span class="prod-nav-bar__text--San-pham">Sản phẩm</span></li>
-          </ul>
-        </nav>
-      </div>
-    </div>  -->
     <div class="container-main">
       <!------------------- Product Wrap --------------------------->
       <div class="container">
         <h2 class="container__title-page-product">SẢN PHẨM</h2>
         <div class="container__product-wrap">
-          <!-- <nav class="list-product">
-            <a href="#!" id="all">TẤT CẢ</a>
-            <span class="separator"> | </span>
-            <a class="center" href="#!">VÒNG TAY</a>
-            <span class="separator"> | </span>
-            <a href="#!">NHẪN</a>
-            <span class="separator"> | </span>
-            <a href="#!">BÔNG TAI</a>
-            <span class="separator"> | </span>
-            <a href="#!">LẮC TAY</a>
-            <span class="separator"> | </span>
-            <a href="#!">DÂY CHUYỀN</a>
-            </nav> -->
           <ul class="product-wrap--nav-links">
             <li class="center"><a href="#">TẤT CẢ</a></li>
             <li class="center"><a href="#">NHẪN</a></li>
@@ -200,21 +173,6 @@
                             <span>Từ 7.000.000₫ - 10.000.000₫</span>
                           </label>
                         </li>
-                        <li
-                          class="custom-filter-input"
-                          data-filter1="10-000-000-max"
-                        >
-                          <label>
-                            <input
-                              type="checkbox"
-                              name="price-filter"
-                              data-price="10,000,000:max"
-                              data-value="10-000-000-max"
-                              value="((price:product>=10,000,000))"
-                            />
-                            <span>Lớn hơn 10.000.000₫</span>
-                          </label>
-                        </li>
                       </ul>
                     </div>
                   </div>
@@ -222,118 +180,40 @@
                   <div class="collection-filter-color collection-item">
                     <div class="sidebar-sort">
                       <div class="sort_title">
-                        <span>Màu sắc</span> <i class="fa fa-sort-down"></i>
+                        <span>Chất Liệu</span> <i class="fa fa-sort-down"></i>
                       </div>
                       <ul
                         class="mg-left-0 no-bullets filter-variant filter-color clearfix"
                       >
                         <li class="pd-left-0">
                           <label
-                            data-filter="Vàng Vàng"
-                            data-filter1="vang-vang"
+                            data-filter="Vàng"
+                            data-filter1="vang"
                             class="filter-vendor__item custom-filter-input vang-vang"
                           >
                             <input
                               class=""
                               type="checkbox"
-                              value="(variant:product=Vàng Vàng)"
+                              value="(variant:product=Vàng)"
                               data-value="vang-vang"
                             />
-                            <span>Vàng Vàng</span>
+                            <span>Vàng</span>
                           </label>
                         </li>
 
                         <li class="pd-left-0">
                           <label
-                            data-filter="Vàng Trắng"
-                            data-filter1="vang-trang"
+                            data-filter="Bạc"
+                            data-filter1="bac"
                             class="filter-vendor__item custom-filter-input vang-trang"
                           >
                             <input
                               class=""
                               type="checkbox"
-                              value="(variant:product=Vàng Trắng)"
-                              data-value="vang-trang"
+                              value="(variant:product=Bạc)"
+                              data-value="bac"
                             />
-                            <span>Vàng Trắng</span>
-                          </label>
-                        </li>
-
-                        <li class="pd-left-0">
-                          <label
-                            data-filter="Vàng Hồng"
-                            data-filter1="vang-hong"
-                            class="filter-vendor__item custom-filter-input vang-hong"
-                          >
-                            <input
-                              class=""
-                              type="checkbox"
-                              value="(variant:product=Vàng Hồng)"
-                              data-value="vang-hong"
-                            />
-                            <span>Vàng Hồng</span>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="collection-filter-tag1 collection-item">
-                    <div class="sidebar-sort">
-                      <div class="sort_title">
-                        <span>Chất liệu</span> <i class="fa fa-sort-down"></i>
-                      </div>
-                      <ul
-                        class="grid mg-left-0 no-bullets filter-variant filter-size clearfix"
-                      >
-                        <li
-                          class="pd-left-0 grid__item large--one-whole medium--one-whole small--one-whole"
-                        >
-                          <label
-                            data-filter="10k"
-                            data-filter1="10k"
-                            class="filter-vendor__item custom-filter-input 10k"
-                          >
-                            <input
-                              type="checkbox"
-                              value="(tag:product=10k)"
-                              data-value="10k"
-                            />
-                            <span>10k</span>
-                          </label>
-                        </li>
-
-                        <li
-                          class="pd-left-0 grid__item large--one-whole medium--one-whole small--one-whole"
-                        >
-                          <label
-                            data-filter="14k"
-                            data-filter1="14k"
-                            class="filter-vendor__item custom-filter-input 14k"
-                          >
-                            <input
-                              type="checkbox"
-                              value="(tag:product=14k)"
-                              data-value="14k"
-                            />
-                            <span>14k</span>
-                          </label>
-                        </li>
-
-                        <li
-                          class="pd-left-0 grid__item large--one-whole medium--one-whole small--one-whole"
-                        >
-                          <label
-                            data-filter="18k"
-                            data-filter1="18k"
-                            class="filter-vendor__item custom-filter-input 18k"
-                          >
-                            <input
-                              type="checkbox"
-                              value="(tag:product=18k)"
-                              data-value="18k"
-                            />
-                            <span>18k</span>
+                            <span>Bạc</span>
                           </label>
                         </li>
                       </ul>
@@ -343,7 +223,7 @@
                   <div class="collection-filter-tag2 collection-item">
                     <div class="sidebar-sort">
                       <div class="sort_title">
-                        <span>Đá</span> <i class="fa fa-sort-down"></i>
+                        <span>Loại Đá</span> <i class="fa fa-sort-down"></i>
                       </div>
                       <ul
                         class="grid mg-left-0 no-bullets filter-variant filter-size clearfix"
@@ -352,33 +232,16 @@
                           class="pd-left-0 grid__item large--one-whole medium--one-whole small--one-whole"
                         >
                           <label
-                            data-filter="Kim Cương"
-                            data-filter1="kim-cuong"
-                            class="filter-vendor__item custom-filter-input kim-cuong"
+                            data-filter="Đá Xà cừ "
+                            data-filter1="da-xa-cu"
+                            class="filter-vendor__item custom-filter-input da-xa-cu"
                           >
                             <input
                               type="checkbox"
-                              value="(tag:product=Kim Cương)"
-                              data-value="kim-cuong"
+                              value="(tag:product= Đá Xà cừ )"
+                              data-value="da-xa-cu"
                             />
-                            <span>Kim Cương</span>
-                          </label>
-                        </li>
-
-                        <li
-                          class="pd-left-0 grid__item large--one-whole medium--one-whole small--one-whole"
-                        >
-                          <label
-                            data-filter="Moissanite"
-                            data-filter1="moissanite"
-                            class="filter-vendor__item custom-filter-input moissanite"
-                          >
-                            <input
-                              type="checkbox"
-                              value="(tag:product=Moissanite)"
-                              data-value="moissanite"
-                            />
-                            <span>Moissanite</span>
+                            <span> Đá Xà cừ </span>
                           </label>
                         </li>
 
@@ -403,16 +266,16 @@
                           class="pd-left-0 grid__item large--one-whole medium--one-whole small--one-whole"
                         >
                           <label
-                            data-filter="Đá Màu"
-                            data-filter1="da-mau"
-                            class="filter-vendor__item custom-filter-input da-mau"
+                            data-filter="Đá Zirconia"
+                            data-filter1="da-Zirconia"
+                            class="filter-vendor__item custom-filter-input da-Zirconia"
                           >
                             <input
                               type="checkbox"
-                              value="(tag:product=Đá Màu)"
-                              data-value="da-mau"
+                              value="(tag:product=Đá Zirconia)"
+                              data-value="da-Zirconia"
                             />
-                            <span>Đá Màu</span>
+                            <span>Đá Zirconia</span>
                           </label>
                         </li>
                       </ul>
@@ -447,48 +310,25 @@
                     data-value="7-000-000-10-000-000"
                     >7.000.000đ : 10.000.000đ <a><span></span></a
                   ></span>
-                  <span class="filter_chosen price" data-value="10-000-000-max"
-                    >10.000.000đ : max <a><span></span></a
-                  ></span>
 
                   <span class="filter_chosen" data-value="vang-vang"
-                    >Vàng Vàng <a><span></span></a
+                    >Vàng<a><span></span></a
                   ></span>
 
                   <span class="filter_chosen" data-value="vang-trang"
-                    >Vàng Trắng <a><span></span></a
+                    >Bạc<a><span></span></a
                   ></span>
 
-                  <span class="filter_chosen" data-value="vang-hong"
-                    >Vàng Hồng <a><span></span></a
-                  ></span>
-
-                  <span class="filter_chosen" data-value="10k"
-                    >10k <a><span></span></a
-                  ></span>
-
-                  <span class="filter_chosen" data-value="14k"
-                    >14k <a><span></span></a
-                  ></span>
-
-                  <span class="filter_chosen" data-value="18k"
-                    >18k <a><span></span></a
-                  ></span>
-
-                  <span class="filter_chosen" data-value="kim-cuong"
-                    >Kim Cương <a><span></span></a
-                  ></span>
-
-                  <span class="filter_chosen" data-value="moissanite"
-                    >Moissanite <a><span></span></a
+                  <span class="filter_chosen" data-value="da-xa-cu">
+                    Đá Xà cừ <a><span></span></a
                   ></span>
 
                   <span class="filter_chosen" data-value="da-cubic-zirconia"
                     >Đá Cubic Zirconia <a><span></span></a
                   ></span>
 
-                  <span class="filter_chosen" data-value="da-mau"
-                    >Đá Màu <a><span></span></a
+                  <span class="filter_chosen" data-value="da-Zirconia"
+                    >Đá Zirconia <a><span></span></a
                   ></span>
                   <span class="clear_all"
                     ><a href="javascript:void(0)">Bỏ lọc</a></span
@@ -583,17 +423,16 @@
           <!----------- DROPDOWN ------------>
           <div class="prod-dropdown">
             <label class="prod-dropdown--left">
-              <!-- <img
-                width="20"
-                height="auto"
-                alt="Sắp xếp"
-                src="./img/icon-sort.png"
-              /> -->
               <i class="fa-solid fa-arrow-up-wide-short"></i> Sắp xếp:
             </label>
             <div class="prod-dropdown--right">
               <div class="prod-dropdown__input-box"></div>
               <div class="prod-dropdown__list">
+                <input type="radio" name="drop1" id="id1" class="radio" />
+                <label for="id1">
+                  <span class="name">Mặc định</span>
+                </label>
+
                 <input type="radio" name="drop1" id="id2" class="radio" />
                 <label for="id2">
                   <span class="name">Mới nhất</span>
@@ -606,24 +445,47 @@
 
                 <input type="radio" name="drop1" id="id4" class="radio" />
                 <label for="id4">
-                  <span class="name">Giá từ thấp đến cao</span>
+                  <span class="name">Giá từ thấp tới cao</span>
                 </label>
 
                 <input type="radio" name="drop1" id="id5" class="radio" />
                 <label for="id5">
-                  <span class="name">Giá từ cao đến thấp</span>
+                  <span class="name">Giá từ cao tới thấp</span>
                 </label>
               </div>
             </div>
           </div>
         </div>
-        <script src="./js/dropdown.js"></script>
+        <!-- jvs DROPDOWN -->
+        <script>
+          var input = document.querySelector(".prod-dropdown__input-box");
+          input.onclick = function () {
+            this.classList.toggle("open");
+            let list = this.nextElementSibling;
+            if (list.style.maxHeight) {
+              list.style.maxHeight = null;
+              list.style.boxShadow = null;
+            } else {
+              list.style.maxHeight = list.scrollHeight + "px";
+              list.style.boxShadow =
+                "0 1px 2px 0 rgba(0, 0, 0, 0.15),0 1px 3px 1px rgba(0, 0, 0, 0.1)";
+            }
+          };
+
+          var rad = document.querySelectorAll(".radio");
+          rad.forEach((item) => {
+            item.addEventListener("change", () => {
+              input.innerHTML = item.nextElementSibling.innerHTML;
+              input.click();
+            });
+          });
+        </script>
 
         <!--------------- Tổng hợp các sản phẩm-------------->
         <div class="prod-list">
           <div class="prod-list__grid">
             <!-- Dòng 1 -->
-            <!-- SP 1 -->
+            <!-- SP 1 Nhẫn -->
             <section class="prod-list__item">
               <div class="prod-list__item__image">
                 <a href="">
@@ -631,7 +493,7 @@
                     class="prod-list__item__img1"
                     loading="lazy"
                     alt=""
-                    src="./img/day-chuyen-2.webp"
+                    src="./img/3H0-1.webp"
                   />
                 </a>
                 <span class="product-sale-tag">
@@ -647,8 +509,6 @@
                       class="prod-list__item__image--heart-hover"
                     />
                   </a>
-                  <!-- </div> -->
-                  <!-- <div class="button-cart"> -->
                   <a href="">
                     <img
                       src="./icon/cart.svg"
@@ -656,7 +516,6 @@
                       class="prod-list__item__image--cart-hover"
                     />
                   </a>
-                  <!-- </div> -->
                 </div>
               </div>
 
@@ -664,17 +523,17 @@
                 <div class="prod-list__item__inner--child">
                   <div class="prod-list__item__info">
                     <div class="prod-list__item__info--title">
-                      <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
+                      <a href="">Nhẫn NDINO 3H0</a>
                     </div>
                     <div class="prod-list__item__info--masp">Nhẫn</div>
                   </div>
                   <div class="prod-list__item__info--price-fb">
                     <div class="prod-list__item--price">
                       <span class="prod-list__item__info--price">
-                        2.090.000đ
+                        1.400.000đ
                       </span>
                       <span class="prod-list__item__info--price-sales">
-                        3.000.000đ
+                        2.000.000đ
                       </span>
                     </div>
                     <div class="prod-list__item__info--star-icon">
@@ -682,7 +541,7 @@
                         class="info--star-icon"
                         loading="lazy"
                         alt=""
-                        src="./img/iconlylightstar.svg"
+                        src="./icon/star.svg"
                       />
                       <div class="prod-list__item__info--fb">4.3</div>
                     </div>
@@ -690,7 +549,8 @@
                 </div>
               </div>
             </section>
-            <!-- SP 2 -->
+
+            <!-- SP 2 Dây chuyền LUXEMAND 01-->
             <section class="prod-list__item">
               <div class="prod-list__item__image">
                 <a href="">
@@ -698,12 +558,10 @@
                     class="prod-list__item__img1"
                     loading="lazy"
                     alt=""
-                    src="./img/lac-tay-2.webp"
+                    src="./img/AND 01-1.webp"
                   />
                 </a>
-                <!-- Hover heart and cart -->
                 <div class="button-heart-cart-hover">
-                  <!-- <div class="button-heart"> -->
                   <a href="">
                     <img
                       src="./icon/heart.svg"
@@ -711,8 +569,6 @@
                       class="prod-list__item__image--heart-hover"
                     />
                   </a>
-                  <!-- </div> -->
-                  <!-- <div class="button-cart"> -->
                   <a href="">
                     <img
                       src="./icon/cart.svg"
@@ -720,7 +576,6 @@
                       class="prod-list__item__image--cart-hover"
                     />
                   </a>
-                  <!-- </div> -->
                 </div>
               </div>
 
@@ -728,17 +583,17 @@
                 <div class="prod-list__item__inner--child">
                   <div class="prod-list__item__info">
                     <div class="prod-list__item__info--title">
-                      <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
+                      <a href="">Dây chuyền LUXEMAND 01</a>
                     </div>
-                    <div class="prod-list__item__info--masp">Nhẫn</div>
+                    <div class="prod-list__item__info--masp">Dây chuyền</div>
                   </div>
                   <div class="prod-list__item__info--price-fb">
                     <div class="prod-list__item--price">
                       <span class="prod-list__item__info--price">
-                        2.090.000đ
+                        1.533.000đ
                       </span>
                       <span class="prod-list__item__info--price-sales">
-                        3.000.000đ
+                        2.190.000đ
                       </span>
                     </div>
                     <div class="prod-list__item__info--star-icon">
@@ -746,7 +601,7 @@
                         class="info--star-icon"
                         loading="lazy"
                         alt=""
-                        src="./img/iconlylightstar.svg"
+                        src="./icon/star.svg"
                       />
                       <div class="prod-list__item__info--fb">4.3</div>
                     </div>
@@ -754,7 +609,8 @@
                 </div>
               </div>
             </section>
-            <!-- SP 3 -->
+
+            <!-- D1 - SP 3 Bông tai DTBCD 340 -->
             <section class="prod-list__item">
               <div class="prod-list__item__image">
                 <a href="">
@@ -762,12 +618,10 @@
                     class="prod-list__item__img1"
                     loading="lazy"
                     alt=""
-                    src="./img/lac-tay-2.webp"
+                    src="./img/BCD 340-1.webp"
                   />
                 </a>
-                <!-- Hover heart and cart -->
                 <div class="button-heart-cart-hover">
-                  <!-- <div class="button-heart"> -->
                   <a href="">
                     <img
                       src="./icon/heart.svg"
@@ -775,8 +629,6 @@
                       class="prod-list__item__image--heart-hover"
                     />
                   </a>
-                  <!-- </div> -->
-                  <!-- <div class="button-cart"> -->
                   <a href="">
                     <img
                       src="./icon/cart.svg"
@@ -784,7 +636,6 @@
                       class="prod-list__item__image--cart-hover"
                     />
                   </a>
-                  <!-- </div> -->
                 </div>
               </div>
 
@@ -792,17 +643,14 @@
                 <div class="prod-list__item__inner--child">
                   <div class="prod-list__item__info">
                     <div class="prod-list__item__info--title">
-                      <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
+                      <a href="">Bông tai DTBCD 340</a>
                     </div>
-                    <div class="prod-list__item__info--masp">Nhẫn</div>
+                    <div class="prod-list__item__info--masp">Bông tai</div>
                   </div>
                   <div class="prod-list__item__info--price-fb">
                     <div class="prod-list__item--price">
                       <span class="prod-list__item__info--price">
-                        2.090.000đ
-                      </span>
-                      <span class="prod-list__item__info--price-sales">
-                        3.000.000đ
+                        3.450.000đ
                       </span>
                     </div>
                     <div class="prod-list__item__info--star-icon">
@@ -810,7 +658,7 @@
                         class="info--star-icon"
                         loading="lazy"
                         alt=""
-                        src="./img/iconlylightstar.svg"
+                        src="./icon/star.svg"
                       />
                       <div class="prod-list__item__info--fb">4.3</div>
                     </div>
@@ -827,7 +675,7 @@
                     class="prod-list__item__img1"
                     loading="lazy"
                     alt=""
-                    src="./img/lac-tay-2.webp"
+                    src="./img/TP 123-1.webp"
                   />
                 </a>
                 <span class="product-sale-tag">
@@ -835,7 +683,6 @@
                 </span>
                 <!-- Hover heart and cart -->
                 <div class="button-heart-cart-hover">
-                  <!-- <div class="button-heart"> -->
                   <a href="">
                     <img
                       src="./icon/heart.svg"
@@ -843,8 +690,6 @@
                       class="prod-list__item__image--heart-hover"
                     />
                   </a>
-                  <!-- </div> -->
-                  <!-- <div class="button-cart"> -->
                   <a href="">
                     <img
                       src="./icon/cart.svg"
@@ -852,7 +697,6 @@
                       class="prod-list__item__image--cart-hover"
                     />
                   </a>
-                  <!-- </div> -->
                 </div>
               </div>
 
@@ -860,17 +704,17 @@
                 <div class="prod-list__item__inner--child">
                   <div class="prod-list__item__info">
                     <div class="prod-list__item__info--title">
-                      <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
+                      <a href="">Vòng tay LBTP 123</a>
                     </div>
-                    <div class="prod-list__item__info--masp">Nhẫn</div>
+                    <div class="prod-list__item__info--masp">Vòng tay</div>
                   </div>
                   <div class="prod-list__item__info--price-fb">
                     <div class="prod-list__item--price">
                       <span class="prod-list__item__info--price">
-                        2.090.000đ
+                        1.540.000đ
                       </span>
                       <span class="prod-list__item__info--price-sales">
-                        3.000.000đ
+                        2.200.000đ
                       </span>
                     </div>
                     <div class="prod-list__item__info--star-icon">
@@ -878,7 +722,7 @@
                         class="info--star-icon"
                         loading="lazy"
                         alt=""
-                        src="./img/iconlylightstar.svg"
+                        src="./icon/star.svg"
                       />
                       <div class="prod-list__item__info--fb">4.3</div>
                     </div>
@@ -886,8 +730,9 @@
                 </div>
               </div>
             </section>
+
             <!-- Dòng 2 -->
-            <!-- SP 1 -->
+            <!-- D2 SP 1 -->
             <section class="prod-list__item">
               <div class="prod-list__item__image">
                 <a href="">
@@ -895,7 +740,132 @@
                     class="prod-list__item__img1"
                     loading="lazy"
                     alt=""
-                    src="./img/lac-tay-2.webp"
+                    src="./img/TP 134-1.webp"
+                  />
+                </a>
+                <!-- Hover heart and cart -->
+                <div class="button-heart-cart-hover">
+                  <a href="">
+                    <img
+                      src="./icon/heart.svg"
+                      alt=""
+                      class="prod-list__item__image--heart-hover"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="./icon/cart.svg"
+                      alt=""
+                      class="prod-list__item__image--cart-hover"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="prod-list__item__inner">
+                <div class="prod-list__item__inner--child">
+                  <div class="prod-list__item__info">
+                    <div class="prod-list__item__info--title">
+                      <a href="">Vòng tay LBTP 134</a>
+                    </div>
+                    <div class="prod-list__item__info--masp">Vòng tay</div>
+                  </div>
+                  <div class="prod-list__item__info--price-fb">
+                    <div class="prod-list__item--price">
+                      <span class="prod-list__item__info--price">
+                        9.000.000đ
+                      </span>
+                      <span class="prod-list__item__info--price-sales">
+                        3.000.000đ
+                      </span>
+                    </div>
+                    <div class="prod-list__item__info--star-icon">
+                      <img
+                        class="info--star-icon"
+                        loading="lazy"
+                        alt=""
+                        src="./icon/star.svg"
+                      />
+                      <div class="prod-list__item__info--fb">4.3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- D2 SP 2 -->
+            <section class="prod-list__item">
+              <div class="prod-list__item__image">
+                <a href="">
+                  <img
+                    class="prod-list__item__img1"
+                    loading="lazy"
+                    alt=""
+                    src="./img/BCD 777-1.webp"
+                  />
+                </a>
+                <span class="product-sale-tag">
+                  <span> NEW!</span>
+                </span>
+                <!-- Hover heart and cart -->
+                <div class="button-heart-cart-hover">
+                  <a href="">
+                    <img
+                      src="./icon/heart.svg"
+                      alt=""
+                      class="prod-list__item__image--heart-hover"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="./icon/cart.svg"
+                      alt=""
+                      class="prod-list__item__image--cart-hover"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="prod-list__item__inner">
+                <div class="prod-list__item__inner--child">
+                  <div class="prod-list__item__info">
+                    <div class="prod-list__item__info--title">
+                      <a href="">Bông tai DTBCD 777</a>
+                    </div>
+                    <div class="prod-list__item__info--masp">Bông tai</div>
+                  </div>
+                  <div class="prod-list__item__info--price-fb">
+                    <div class="prod-list__item--price">
+                      <span class="prod-list__item__info--price">
+                        4.500.000đ
+                      </span>
+                      <span class="prod-list__item__info--price-sales">
+                        3.000.000đ
+                      </span>
+                    </div>
+                    <div class="prod-list__item__info--star-icon">
+                      <img
+                        class="info--star-icon"
+                        loading="lazy"
+                        alt=""
+                        src="./icon/star.svg"
+                      />
+                      <div class="prod-list__item__info--fb">4.3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- D2 SP 3 -->
+            <section class="prod-list__item">
+              <div class="prod-list__item__image">
+                <a href="">
+                  <img
+                    class="prod-list__item__img1"
+                    loading="lazy"
+                    alt=""
+                    src="./img/AND 02-1.webp"
                   />
                 </a>
                 <!-- Hover heart and cart -->
@@ -908,7 +878,6 @@
                       class="prod-list__item__image--heart-hover"
                     />
                   </a>
-                  <!-- </div> -->
                   <!-- <div class="button-cart"> -->
                   <a href="">
                     <img
@@ -917,7 +886,6 @@
                       class="prod-list__item__image--cart-hover"
                     />
                   </a>
-                  <!-- </div> -->
                 </div>
               </div>
 
@@ -925,17 +893,17 @@
                 <div class="prod-list__item__inner--child">
                   <div class="prod-list__item__info">
                     <div class="prod-list__item__info--title">
-                      <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
+                      <a href="">Dây chuyền LUXEMAND 02</a>
                     </div>
-                    <div class="prod-list__item__info--masp">Nhẫn</div>
+                    <div class="prod-list__item__info--masp">Dây chuyền</div>
                   </div>
                   <div class="prod-list__item__info--price-fb">
                     <div class="prod-list__item--price">
                       <span class="prod-list__item__info--price">
-                        2.090.000đ
+                        7.899.000đ
                       </span>
                       <span class="prod-list__item__info--price-sales">
-                        3.000.000đ
+                        5.529.300
                       </span>
                     </div>
                     <div class="prod-list__item__info--star-icon">
@@ -943,7 +911,7 @@
                         class="info--star-icon"
                         loading="lazy"
                         alt=""
-                        src="./img/iconlylightstar.svg"
+                        src="./icon/star.svg"
                       />
                       <div class="prod-list__item__info--fb">4.3</div>
                     </div>
@@ -952,7 +920,7 @@
               </div>
             </section>
 
-            <!-- SP 2 -->
+            <!-- D2 SP 4 -->
             <section class="prod-list__item">
               <div class="prod-list__item__image">
                 <a href="">
@@ -960,12 +928,11 @@
                     class="prod-list__item__img1"
                     loading="lazy"
                     alt=""
-                    src="./img/lac-tay-2.webp"
+                    src="./img/8D1-1.webp"
                   />
                 </a>
                 <!-- Hover heart and cart -->
                 <div class="button-heart-cart-hover">
-                  <!-- <div class="button-heart"> -->
                   <a href="">
                     <img
                       src="./icon/heart.svg"
@@ -973,7 +940,6 @@
                       class="prod-list__item__image--heart-hover"
                     />
                   </a>
-                  <!-- </div> -->
                   <!-- <div class="button-cart"> -->
                   <a href="">
                     <img
@@ -982,7 +948,6 @@
                       class="prod-list__item__image--cart-hover"
                     />
                   </a>
-                  <!-- </div> -->
                 </div>
               </div>
 
@@ -990,17 +955,17 @@
                 <div class="prod-list__item__inner--child">
                   <div class="prod-list__item__info">
                     <div class="prod-list__item__info--title">
-                      <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
+                      <a href="">Nhẫn NDINO 8D1</a>
                     </div>
                     <div class="prod-list__item__info--masp">Nhẫn</div>
                   </div>
                   <div class="prod-list__item__info--price-fb">
                     <div class="prod-list__item--price">
                       <span class="prod-list__item__info--price">
-                        2.090.000đ
+                        1.470.000đ
                       </span>
                       <span class="prod-list__item__info--price-sales">
-                        3.000.000đ
+                        2.100.000đ
                       </span>
                     </div>
                     <div class="prod-list__item__info--star-icon">
@@ -1008,7 +973,7 @@
                         class="info--star-icon"
                         loading="lazy"
                         alt=""
-                        src="./img/iconlylightstar.svg"
+                        src="./icon/star.svg"
                       />
                       <div class="prod-list__item__info--fb">4.3</div>
                     </div>
@@ -1017,137 +982,8 @@
               </div>
             </section>
 
-            <!-- SP 3 -->
-            <section class="prod-list__item">
-              <div class="prod-list__item__image">
-                <a href="">
-                  <img
-                    class="prod-list__item__img1"
-                    loading="lazy"
-                    alt=""
-                    src="./img/lac-tay-2.webp"
-                  />
-                </a>
-                <!-- Hover heart and cart -->
-                <div class="button-heart-cart-hover">
-                  <!-- <div class="button-heart"> -->
-                  <a href="">
-                    <img
-                      src="./icon/heart.svg"
-                      alt=""
-                      class="prod-list__item__image--heart-hover"
-                    />
-                  </a>
-                  <!-- </div> -->
-                  <!-- <div class="button-cart"> -->
-                  <a href="">
-                    <img
-                      src="./icon/cart.svg"
-                      alt=""
-                      class="prod-list__item__image--cart-hover"
-                    />
-                  </a>
-                  <!-- </div> -->
-                </div>
-              </div>
-
-              <div class="prod-list__item__inner">
-                <div class="prod-list__item__inner--child">
-                  <div class="prod-list__item__info">
-                    <div class="prod-list__item__info--title">
-                      <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
-                    </div>
-                    <div class="prod-list__item__info--masp">Nhẫn</div>
-                  </div>
-                  <div class="prod-list__item__info--price-fb">
-                    <div class="prod-list__item--price">
-                      <span class="prod-list__item__info--price">
-                        2.090.000đ
-                      </span>
-                      <span class="prod-list__item__info--price-sales">
-                        3.000.000đ
-                      </span>
-                    </div>
-                    <div class="prod-list__item__info--star-icon">
-                      <img
-                        class="info--star-icon"
-                        loading="lazy"
-                        alt=""
-                        src="./img/iconlylightstar.svg"
-                      />
-                      <div class="prod-list__item__info--fb">4.3</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <!-- SP 4 -->
-            <section class="prod-list__item">
-              <div class="prod-list__item__image">
-                <a href="">
-                  <img
-                    class="prod-list__item__img1"
-                    loading="lazy"
-                    alt=""
-                    src="./img/lac-tay-2.webp"
-                  />
-                </a>
-                <!-- Hover heart and cart -->
-                <div class="button-heart-cart-hover">
-                  <!-- <div class="button-heart"> -->
-                  <a href="">
-                    <img
-                      src="./icon/heart.svg"
-                      alt=""
-                      class="prod-list__item__image--heart-hover"
-                    />
-                  </a>
-                  <!-- </div> -->
-                  <!-- <div class="button-cart"> -->
-                  <a href="">
-                    <img
-                      src="./icon/cart.svg"
-                      alt=""
-                      class="prod-list__item__image--cart-hover"
-                    />
-                  </a>
-                  <!-- </div> -->
-                </div>
-              </div>
-
-              <div class="prod-list__item__inner">
-                <div class="prod-list__item__inner--child">
-                  <div class="prod-list__item__info">
-                    <div class="prod-list__item__info--title">
-                      <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
-                    </div>
-                    <div class="prod-list__item__info--masp">Nhẫn</div>
-                  </div>
-                  <div class="prod-list__item__info--price-fb">
-                    <div class="prod-list__item--price">
-                      <span class="prod-list__item__info--price">
-                        2.090.000đ
-                      </span>
-                      <span class="prod-list__item__info--price-sales">
-                        3.000.000đ
-                      </span>
-                    </div>
-                    <div class="prod-list__item__info--star-icon">
-                      <img
-                        class="info--star-icon"
-                        loading="lazy"
-                        alt=""
-                        src="./img/iconlylightstar.svg"
-                      />
-                      <div class="prod-list__item__info--fb">4.3</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
             <!-- Dòng 3 -->
-            <!-- SP 1 -->
+            <!-- D3 SP 1 -->
             <section class="prod-list__item">
               <div class="prod-list__item__image">
                 <a href="">
@@ -1155,13 +991,12 @@
                     class="prod-list__item__img1"
                     loading="lazy"
                     alt=""
-                    src="./img/lac-tay-2.webp"
+                    src="./img/AND 03-1.webp"
                   />
                 </a>
 
                 <!-- Hover heart and cart -->
                 <div class="button-heart-cart-hover">
-                  <!-- <div class="button-heart"> -->
                   <a href="">
                     <img
                       src="./icon/heart.svg"
@@ -1169,7 +1004,6 @@
                       class="prod-list__item__image--heart-hover"
                     />
                   </a>
-                  <!-- </div> -->
                   <!-- <div class="button-cart"> -->
                   <a href="">
                     <img
@@ -1178,7 +1012,6 @@
                       class="prod-list__item__image--cart-hover"
                     />
                   </a>
-                  <!-- </div> -->
                 </div>
               </div>
 
@@ -1186,17 +1019,17 @@
                 <div class="prod-list__item__inner--child">
                   <div class="prod-list__item__info">
                     <div class="prod-list__item__info--title">
-                      <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
+                      <a href="">Dây chuyền LUXEMAND 03</a>
                     </div>
-                    <div class="prod-list__item__info--masp">Nhẫn</div>
+                    <div class="prod-list__item__info--masp">Dây chuyền</div>
                   </div>
                   <div class="prod-list__item__info--price-fb">
                     <div class="prod-list__item--price">
                       <span class="prod-list__item__info--price">
-                        2.090.000đ
+                        1.540.000đ
                       </span>
                       <span class="prod-list__item__info--price-sales">
-                        3.000.000đ
+                        2.200.000đ
                       </span>
                     </div>
                     <div class="prod-list__item__info--star-icon">
@@ -1204,7 +1037,7 @@
                         class="info--star-icon"
                         loading="lazy"
                         alt=""
-                        src="./img/iconlylightstar.svg"
+                        src="./icon/star.svg"
                       />
                       <div class="prod-list__item__info--fb">4.3</div>
                     </div>
@@ -1213,7 +1046,7 @@
               </div>
             </section>
 
-            <!-- SP 2 -->
+            <!-- D3 SP 2 -->
             <section class="prod-list__item">
               <div class="prod-list__item__image">
                 <a href="">
@@ -1221,12 +1054,11 @@
                     class="prod-list__item__img1"
                     loading="lazy"
                     alt=""
-                    src="./img/lac-tay-2.webp"
+                    src="./img/5N3-1.webp"
                   />
                 </a>
                 <!-- Hover heart and cart -->
                 <div class="button-heart-cart-hover">
-                  <!-- <div class="button-heart"> -->
                   <a href="">
                     <img
                       src="./icon/heart.svg"
@@ -1234,8 +1066,6 @@
                       class="prod-list__item__image--heart-hover"
                     />
                   </a>
-                  <!-- </div> -->
-                  <!-- <div class="button-cart"> -->
                   <a href="">
                     <img
                       src="./icon/cart.svg"
@@ -1243,7 +1073,6 @@
                       class="prod-list__item__image--cart-hover"
                     />
                   </a>
-                  <!-- </div> -->
                 </div>
               </div>
 
@@ -1251,17 +1080,17 @@
                 <div class="prod-list__item__inner--child">
                   <div class="prod-list__item__info">
                     <div class="prod-list__item__info--title">
-                      <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
+                      <a href="">Nhẫn NDINO 5N3</a>
                     </div>
                     <div class="prod-list__item__info--masp">Nhẫn</div>
                   </div>
                   <div class="prod-list__item__info--price-fb">
                     <div class="prod-list__item--price">
                       <span class="prod-list__item__info--price">
-                        2.090.000đ
+                        2.415.000đ
                       </span>
                       <span class="prod-list__item__info--price-sales">
-                        3.000.000đ
+                        3.450.000đ
                       </span>
                     </div>
                     <div class="prod-list__item__info--star-icon">
@@ -1269,7 +1098,7 @@
                         class="info--star-icon"
                         loading="lazy"
                         alt=""
-                        src="./img/iconlylightstar.svg"
+                        src="./icon/star.svg"
                       />
                       <div class="prod-list__item__info--fb">4.3</div>
                     </div>
@@ -1278,7 +1107,7 @@
               </div>
             </section>
 
-            <!-- SP 3 -->
+            <!-- D3 SP 3 -->
             <section class="prod-list__item">
               <div class="prod-list__item__image">
                 <a href="">
@@ -1286,12 +1115,11 @@
                     class="prod-list__item__img1"
                     loading="lazy"
                     alt=""
-                    src="./img/lac-tay-2.webp"
+                    src="./img/TP 145-1.webp"
                   />
                 </a>
                 <!-- Hover heart and cart -->
                 <div class="button-heart-cart-hover">
-                  <!-- <div class="button-heart"> -->
                   <a href="">
                     <img
                       src="./icon/heart.svg"
@@ -1299,8 +1127,6 @@
                       class="prod-list__item__image--heart-hover"
                     />
                   </a>
-                  <!-- </div> -->
-                  <!-- <div class="button-cart"> -->
                   <a href="">
                     <img
                       src="./icon/cart.svg"
@@ -1308,7 +1134,6 @@
                       class="prod-list__item__image--cart-hover"
                     />
                   </a>
-                  <!-- </div> -->
                 </div>
               </div>
 
@@ -1316,17 +1141,17 @@
                 <div class="prod-list__item__inner--child">
                   <div class="prod-list__item__info">
                     <div class="prod-list__item__info--title">
-                      <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
+                      <a href="">Vòng tay LBTP 145</a>
                     </div>
-                    <div class="prod-list__item__info--masp">Nhẫn</div>
+                    <div class="prod-list__item__info--masp">Vòng tay</div>
                   </div>
                   <div class="prod-list__item__info--price-fb">
                     <div class="prod-list__item--price">
                       <span class="prod-list__item__info--price">
-                        2.090.000đ
+                        2.513.000đ
                       </span>
                       <span class="prod-list__item__info--price-sales">
-                        3.000.000đ
+                        3.590.000đ
                       </span>
                     </div>
                     <div class="prod-list__item__info--star-icon">
@@ -1334,7 +1159,7 @@
                         class="info--star-icon"
                         loading="lazy"
                         alt=""
-                        src="./img/iconlylightstar.svg"
+                        src="./icon/star.svg"
                       />
                       <div class="prod-list__item__info--fb">4.3</div>
                     </div>
@@ -1343,7 +1168,7 @@
               </div>
             </section>
 
-            <!-- SP 4 -->
+            <!-- D3 SP 4 -->
             <section class="prod-list__item">
               <div class="prod-list__item__image">
                 <a href="">
@@ -1351,12 +1176,14 @@
                     class="prod-list__item__img1"
                     loading="lazy"
                     alt=""
-                    src="./img/lac-tay-2.webp"
+                    src="./img/BCD 666-1.webp"
                   />
                 </a>
+                <span class="product-sale-tag">
+                  <span> NEW!</span>
+                </span>
                 <!-- Hover heart and cart -->
                 <div class="button-heart-cart-hover">
-                  <!-- <div class="button-heart"> -->
                   <a href="">
                     <img
                       src="./icon/heart.svg"
@@ -1364,8 +1191,6 @@
                       class="prod-list__item__image--heart-hover"
                     />
                   </a>
-                  <!-- </div> -->
-                  <!-- <div class="button-cart"> -->
                   <a href="">
                     <img
                       src="./icon/cart.svg"
@@ -1373,7 +1198,6 @@
                       class="prod-list__item__image--cart-hover"
                     />
                   </a>
-                  <!-- </div> -->
                 </div>
               </div>
 
@@ -1381,17 +1205,17 @@
                 <div class="prod-list__item__inner--child">
                   <div class="prod-list__item__info">
                     <div class="prod-list__item__info--title">
-                      <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
+                      <a href="">Bông tai DTBCD 666</a>
                     </div>
-                    <div class="prod-list__item__info--masp">Nhẫn</div>
+                    <div class="prod-list__item__info--masp">Bông tai</div>
                   </div>
                   <div class="prod-list__item__info--price-fb">
                     <div class="prod-list__item--price">
                       <span class="prod-list__item__info--price">
-                        2.090.000đ
+                        3.493.000đ
                       </span>
                       <span class="prod-list__item__info--price-sales">
-                        3.000.000đ
+                        4.990.000đ
                       </span>
                     </div>
                     <div class="prod-list__item__info--star-icon">
@@ -1399,7 +1223,7 @@
                         class="info--star-icon"
                         loading="lazy"
                         alt=""
-                        src="./img/iconlylightstar.svg"
+                        src="./icon/star.svg"
                       />
                       <div class="prod-list__item__info--fb">4.3</div>
                     </div>
@@ -1452,7 +1276,93 @@
             </button>
           </div>
         </div>
-        <script src="./js/pagination.js"></script>
+        <!-- //pagination sản phẩm -->
+        <script>
+          // Lựa chọn các phần tử DOM
+          const pagination_startBtn = document.querySelector(
+              "#pagination_startBtn"
+            ), // nút "Bắt đầu"
+            pagination_endBtn = document.querySelector("#pagination_endBtn"), // nút "Kết thúc"
+            prevNext = document.querySelectorAll(".prevNext"), // mảng chứa nút "Previous" và "Next"
+            numbers = document.querySelectorAll(".link"); // mảng chứa các liên kết số trang
+
+          // Thiết lập bước khởi đầu
+          let currentStep = 0; //Biến currentStep được sử dụng để lưu trạng thái hiện tại của bước.
+
+          //Hàm cập nhật trạng thái nút
+          const updateBtn = () => {
+            // Nếu ở bước cuối tức là trang cuối
+            if (currentStep === 3) {
+              pagination_endBtn.disabled = true; //nút "End" sẽ bị vô hiệu hóa
+              prevNext[1].disabled = true; //nút "Next" bị vô hiệu hóa
+            }
+            //Nếu currentStep bằng 0, hoặc đang ở trang đầu tiên
+            else if (currentStep === 0) {
+              // Nếu ở trang đầu tiên
+              pagination_startBtn.disabled = true; //nút "Start" sẽ bị vô hiệu hóa
+              prevNext[0].disabled = true; // nút "Previous" bị vô hiệu hóa
+            }
+            //Nếu currentStep không phải là 0 hoặc 3
+            /*tất cả các nút "Start", "End", "Previous" và "Next" đều được kích hoạt để cho phép người dùng di chuyển qua các trang khác nhau. */
+            else {
+              // Tất cả các nút "Bắt đầu", "Kết thúc", "Previous" và "Next" đều được kích hoạt để cho phép người dùng di chuyển qua các trang khác nhau.
+              pagination_endBtn.disabled = false;
+              prevNext[1].disabled = false;
+              pagination_startBtn.disabled = false;
+              prevNext[0].disabled = false;
+            }
+          };
+
+          // Thêm event listeners cho các liên kết số trang
+          numbers.forEach((number, numIndex) => {
+            number.addEventListener("click", (e) => {
+              e.preventDefault();
+              //Đặt bước hiện tại thành số trang được nhấp vào
+              currentStep = numIndex;
+              // Xóa lớp "active" từ liên kết số trang trước đó
+              document.querySelector(".active").classList.remove("active");
+              // Thêm lớp "active" vào liên kết số trang được nhấp vào
+              number.classList.add("active");
+              updateBtn(); // Cập nhật trạng thái các nút
+            });
+          });
+
+          // Thêm các trình nghe sự kiện cho các nút "Previous" và "Next"
+          prevNext.forEach((button) => {
+            button.addEventListener("click", (e) => {
+              // Tăng hoặc giảm bước hiện tại dựa trên nút được nhấp vào
+              currentStep += e.target.id === "pagination_next" ? 1 : -1;
+              numbers.forEach((number, numIndex) => {
+                /// Chuyển đổi lớp "active" trên các liên kết số trang dựa trên bước hiện tại
+                number.classList.toggle("active", numIndex === currentStep);
+                updateBtn(); // Cập nhật trạng thái các nút
+              });
+            });
+          });
+
+          // Thêm trình nghe sự kiện cho nút "Start"
+          pagination_startBtn.addEventListener("click", () => {
+            // Xóa lớp "active" từ liên kết số trang trước đó
+            document.querySelector(".active").classList.remove("active");
+            // Thêm lớp "active" vào liên kết số trang đầu tiên  numbers[0].classList.add("active");
+            currentStep = 0;
+            updateBtn(); // Cập nhật trạng thái các nút
+            pagination_endBtn.disabled = false;
+            prevNext[1].disabled = false;
+          });
+
+          // Thêm trình nghe sự kiện cho nút "Kết thúc"
+          pagination_endBtn.addEventListener("click", () => {
+            // Xóa lớp "active" từ liên kết số trang trước đó
+            document.querySelector(".active").classList.remove("active");
+            // Thêm lớp "active" vào liên kết số trang cuối cùng
+            numbers[3].classList.add("active");
+            currentStep = 4;
+            updateBtn(); // Cập nhật trạng thái các nút
+            pagination_startBtn.disabled = false;
+            prevNext[0].disabled = false;
+          });
+        </script>
         <div class="prod-third-line"></div>
       </article>
 
@@ -1471,15 +1381,14 @@
                     class="prod-list__item__img1"
                     loading="lazy"
                     alt=""
-                    src="./img/lac-tay-2.webp"
+                    src="./img/2N5-1.webp"
                   />
                 </a>
                 <span class="product-sale-tag">
-                  <span> NEW!</span>
+                  <span> SALES!</span>
                 </span>
                 <!-- Hover heart and cart -->
                 <div class="button-heart-cart-hover">
-                  <!-- <div class="button-heart"> -->
                   <a href="">
                     <img
                       src="./icon/heart.svg"
@@ -1501,17 +1410,17 @@
                 <div class="prod-list__item__inner--child">
                   <div class="prod-list__item__info">
                     <div class="prod-list__item__info--title">
-                      <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
+                      <a href="">Nhẫn NDINO 2N5</a>
                     </div>
                     <div class="prod-list__item__info--masp">Nhẫn</div>
                   </div>
                   <div class="prod-list__item__info--price-fb">
                     <div class="prod-list__item--price">
                       <span class="prod-list__item__info--price">
-                        2.090.000đ
+                        3.150.000đ
                       </span>
                       <span class="prod-list__item__info--price-sales">
-                        3.000.000đ
+                        4.500.000đ
                       </span>
                     </div>
                     <div class="prod-list__item__info--star-icon">
@@ -1519,7 +1428,7 @@
                         class="info--star-icon"
                         loading="lazy"
                         alt=""
-                        src="./img/iconlylightstar.svg"
+                        src="./icon/star.svg"
                       />
                       <div class="prod-list__item__info--fb">4.3</div>
                     </div>
@@ -1535,12 +1444,14 @@
                     class="prod-list__item__img1"
                     loading="lazy"
                     alt=""
-                    src="./img/lac-tay-2.webp"
+                    src="./img/AND 04-1.webp"
                   />
                 </a>
+                <span class="product-sale-tag">
+                  <span> NEW!</span>
+                </span>
                 <!-- Hover heart and cart -->
                 <div class="button-heart-cart-hover">
-                  <!-- <div class="button-heart"> -->
                   <a href="">
                     <img
                       src="./icon/heart.svg"
@@ -1548,8 +1459,6 @@
                       class="prod-list__item__image--heart-hover"
                     />
                   </a>
-                  <!-- </div> -->
-                  <!-- <div class="button-cart"> -->
                   <a href="">
                     <img
                       src="./icon/cart.svg"
@@ -1557,7 +1466,6 @@
                       class="prod-list__item__image--cart-hover"
                     />
                   </a>
-                  <!-- </div> -->
                 </div>
               </div>
 
@@ -1565,17 +1473,17 @@
                 <div class="prod-list__item__inner--child">
                   <div class="prod-list__item__info">
                     <div class="prod-list__item__info--title">
-                      <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
+                      <a href="">Dây chuyền LUXEMAND 04</a>
                     </div>
-                    <div class="prod-list__item__info--masp">Nhẫn</div>
+                    <div class="prod-list__item__info--masp">Dây chuyền</div>
                   </div>
                   <div class="prod-list__item__info--price-fb">
                     <div class="prod-list__item--price">
                       <span class="prod-list__item__info--price">
-                        2.090.000đ
+                        6.300.000đ
                       </span>
                       <span class="prod-list__item__info--price-sales">
-                        3.000.000đ
+                        9.000.000đ
                       </span>
                     </div>
                     <div class="prod-list__item__info--star-icon">
@@ -1583,7 +1491,7 @@
                         class="info--star-icon"
                         loading="lazy"
                         alt=""
-                        src="./img/iconlylightstar.svg"
+                        src="./icon/star.svg"
                       />
                       <div class="prod-list__item__info--fb">4.3</div>
                     </div>
@@ -1599,12 +1507,14 @@
                     class="prod-list__item__img1"
                     loading="lazy"
                     alt=""
-                    src="./img/lac-tay-2.webp"
+                    src="./img/BCD 555-1.webp"
                   />
                 </a>
+                <span class="product-sale-tag">
+                  <span> SALES!</span>
+                </span>
                 <!-- Hover heart and cart -->
                 <div class="button-heart-cart-hover">
-                  <!-- <div class="button-heart"> -->
                   <a href="">
                     <img
                       src="./icon/heart.svg"
@@ -1612,8 +1522,6 @@
                       class="prod-list__item__image--heart-hover"
                     />
                   </a>
-                  <!-- </div> -->
-                  <!-- <div class="button-cart"> -->
                   <a href="">
                     <img
                       src="./icon/cart.svg"
@@ -1621,7 +1529,6 @@
                       class="prod-list__item__image--cart-hover"
                     />
                   </a>
-                  <!-- </div> -->
                 </div>
               </div>
 
@@ -1629,17 +1536,17 @@
                 <div class="prod-list__item__inner--child">
                   <div class="prod-list__item__info">
                     <div class="prod-list__item__info--title">
-                      <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
+                      <a href="">Bông tai DTBCD 555</a>
                     </div>
-                    <div class="prod-list__item__info--masp">Nhẫn</div>
+                    <div class="prod-list__item__info--masp">Bông tai</div>
                   </div>
                   <div class="prod-list__item__info--price-fb">
                     <div class="prod-list__item--price">
                       <span class="prod-list__item__info--price">
-                        2.090.000đ
+                        3.493.000đ
                       </span>
                       <span class="prod-list__item__info--price-sales">
-                        3.000.000đ
+                        4.990.000đ
                       </span>
                     </div>
                     <div class="prod-list__item__info--star-icon">
@@ -1647,7 +1554,7 @@
                         class="info--star-icon"
                         loading="lazy"
                         alt=""
-                        src="./img/iconlylightstar.svg"
+                        src="./icon/star.svg"
                       />
                       <div class="prod-list__item__info--fb">4.3</div>
                     </div>
@@ -1663,7 +1570,7 @@
                     class="prod-list__item__img1"
                     loading="lazy"
                     alt=""
-                    src="./img/lac-tay-2.webp"
+                    src="./img/TP 190-1.webp"
                   />
                 </a>
                 <span class="product-sale-tag">
@@ -1671,7 +1578,6 @@
                 </span>
                 <!-- Hover heart and cart -->
                 <div class="button-heart-cart-hover">
-                  <!-- <div class="button-heart"> -->
                   <a href="">
                     <img
                       src="./icon/heart.svg"
@@ -1679,8 +1585,6 @@
                       class="prod-list__item__image--heart-hover"
                     />
                   </a>
-                  <!-- </div> -->
-                  <!-- <div class="button-cart"> -->
                   <a href="">
                     <img
                       src="./icon/cart.svg"
@@ -1688,7 +1592,6 @@
                       class="prod-list__item__image--cart-hover"
                     />
                   </a>
-                  <!-- </div> -->
                 </div>
               </div>
 
@@ -1696,17 +1599,17 @@
                 <div class="prod-list__item__inner--child">
                   <div class="prod-list__item__info">
                     <div class="prod-list__item__info--title">
-                      <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
+                      <a href="">Vòng tay LBTP 190</a>
                     </div>
-                    <div class="prod-list__item__info--masp">Nhẫn</div>
+                    <div class="prod-list__item__info--masp">Vòng tay</div>
                   </div>
                   <div class="prod-list__item__info--price-fb">
                     <div class="prod-list__item--price">
                       <span class="prod-list__item__info--price">
-                        2.090.000đ
+                        3.983.000đ
                       </span>
                       <span class="prod-list__item__info--price-sales">
-                        3.000.000đ
+                        5.690.000đ
                       </span>
                     </div>
                     <div class="prod-list__item__info--star-icon">
@@ -1714,7 +1617,7 @@
                         class="info--star-icon"
                         loading="lazy"
                         alt=""
-                        src="./img/iconlylightstar.svg"
+                        src="./icon/star.svg"
                       />
                       <div class="prod-list__item__info--fb">4.3</div>
                     </div>
@@ -1730,12 +1633,14 @@
                     class="prod-list__item__img1"
                     loading="lazy"
                     alt=""
-                    src="./img/lac-tay-2.webp"
+                    src="./img/6N9-1.webp"
                   />
                 </a>
+                <span class="product-sale-tag">
+                  <span> NEW!</span>
+                </span>
                 <!-- Hover heart and cart -->
                 <div class="button-heart-cart-hover">
-                  <!-- <div class="button-heart"> -->
                   <a href="">
                     <img
                       src="./icon/heart.svg"
@@ -1743,8 +1648,6 @@
                       class="prod-list__item__image--heart-hover"
                     />
                   </a>
-                  <!-- </div> -->
-                  <!-- <div class="button-cart"> -->
                   <a href="">
                     <img
                       src="./icon/cart.svg"
@@ -1752,7 +1655,6 @@
                       class="prod-list__item__image--cart-hover"
                     />
                   </a>
-                  <!-- </div> -->
                 </div>
               </div>
 
@@ -1760,17 +1662,14 @@
                 <div class="prod-list__item__inner--child">
                   <div class="prod-list__item__info">
                     <div class="prod-list__item__info--title">
-                      <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
+                      <a href="">Nhẫn NDINO 6N9</a>
                     </div>
                     <div class="prod-list__item__info--masp">Nhẫn</div>
                   </div>
                   <div class="prod-list__item__info--price-fb">
                     <div class="prod-list__item--price">
                       <span class="prod-list__item__info--price">
-                        2.090.000đ
-                      </span>
-                      <span class="prod-list__item__info--price-sales">
-                        3.000.000đ
+                        4.990.000đ
                       </span>
                     </div>
                     <div class="prod-list__item__info--star-icon">
@@ -1778,7 +1677,7 @@
                         class="info--star-icon"
                         loading="lazy"
                         alt=""
-                        src="./img/iconlylightstar.svg"
+                        src="./icon/star.svg"
                       />
                       <div class="prod-list__item__info--fb">4.3</div>
                     </div>
@@ -1786,7 +1685,6 @@
                 </div>
               </div>
             </div>
-
             <!-- sp6 -->
             <div class="card swiper-slide">
               <div class="prod-list__item__image">
@@ -1795,7 +1693,7 @@
                     class="prod-list__item__img1"
                     loading="lazy"
                     alt=""
-                    src="./img/lac-tay-2.webp"
+                    src="./img/AND 05-1.webp"
                   />
                 </a>
                 <span class="product-sale-tag">
@@ -1803,7 +1701,6 @@
                 </span>
                 <!-- Hover heart and cart -->
                 <div class="button-heart-cart-hover">
-                  <!-- <div class="button-heart"> -->
                   <a href="">
                     <img
                       src="./icon/heart.svg"
@@ -1811,8 +1708,6 @@
                       class="prod-list__item__image--heart-hover"
                     />
                   </a>
-                  <!-- </div> -->
-                  <!-- <div class="button-cart"> -->
                   <a href="">
                     <img
                       src="./icon/cart.svg"
@@ -1820,7 +1715,6 @@
                       class="prod-list__item__image--cart-hover"
                     />
                   </a>
-                  <!-- </div> -->
                 </div>
               </div>
 
@@ -1828,17 +1722,17 @@
                 <div class="prod-list__item__inner--child">
                   <div class="prod-list__item__info">
                     <div class="prod-list__item__info--title">
-                      <a href="">Nhẫn Đá Cubic Zirconia NLF 415</a>
+                      <a href="">Dây chuyền LUXEMAND 05</a>
                     </div>
-                    <div class="prod-list__item__info--masp">Nhẫn</div>
+                    <div class="prod-list__item__info--masp">Dây chuyền</div>
                   </div>
                   <div class="prod-list__item__info--price-fb">
                     <div class="prod-list__item--price">
                       <span class="prod-list__item__info--price">
-                        2.090.000đ
+                        2.513.000đ
                       </span>
                       <span class="prod-list__item__info--price-sales">
-                        3.000.000đ
+                        3.590.000đ
                       </span>
                     </div>
                     <div class="prod-list__item__info--star-icon">
@@ -1846,7 +1740,255 @@
                         class="info--star-icon"
                         loading="lazy"
                         alt=""
-                        src="./img/iconlylightstar.svg"
+                        src="./icon/star.svg"
+                      />
+                      <div class="prod-list__item__info--fb">4.3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- sp7 -->
+            <div class="card swiper-slide">
+              <div class="prod-list__item__image">
+                <a href="">
+                  <img
+                    class="prod-list__item__img1"
+                    loading="lazy"
+                    alt=""
+                    src="./img/BCD 210-1.webp"
+                  />
+                </a>
+                <span class="product-sale-tag">
+                  <span> HOT!</span>
+                </span>
+                <!-- Hover heart and cart -->
+                <div class="button-heart-cart-hover">
+                  <a href="">
+                    <img
+                      src="./icon/heart.svg"
+                      alt=""
+                      class="prod-list__item__image--heart-hover"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="./icon/cart.svg"
+                      alt=""
+                      class="prod-list__item__image--cart-hover"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="prod-list__item__inner">
+                <div class="prod-list__item__inner--child">
+                  <div class="prod-list__item__info">
+                    <div class="prod-list__item__info--title">
+                      <a href="">Bông tai DTBCD 210</a>
+                    </div>
+                    <div class="prod-list__item__info--masp">Bông tai</div>
+                  </div>
+                  <div class="prod-list__item__info--price-fb">
+                    <div class="prod-list__item--price">
+                      <span class="prod-list__item__info--price">
+                        1.743.000đ
+                      </span>
+                      <span class="prod-list__item__info--price-sales">
+                        2.490.000đ
+                      </span>
+                    </div>
+                    <div class="prod-list__item__info--star-icon">
+                      <img
+                        class="info--star-icon"
+                        loading="lazy"
+                        alt=""
+                        src="./icon/star.svg"
+                      />
+                      <div class="prod-list__item__info--fb">4.3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- sp8 -->
+            <div class="card swiper-slide">
+              <div class="prod-list__item__image">
+                <a href="">
+                  <img
+                    class="prod-list__item__img1"
+                    loading="lazy"
+                    alt=""
+                    src="./img/TP 127-1.webp"
+                  />
+                </a>
+                <span class="product-sale-tag">
+                  <span> HOT!</span>
+                </span>
+                <!-- Hover heart and cart -->
+                <div class="button-heart-cart-hover">
+                  <a href="">
+                    <img
+                      src="./icon/heart.svg"
+                      alt=""
+                      class="prod-list__item__image--heart-hover"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="./icon/cart.svg"
+                      alt=""
+                      class="prod-list__item__image--cart-hover"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="prod-list__item__inner">
+                <div class="prod-list__item__inner--child">
+                  <div class="prod-list__item__info">
+                    <div class="prod-list__item__info--title">
+                      <a href="">Vòng tay LBTP 127</a>
+                    </div>
+                    <div class="prod-list__item__info--masp">Vòng tay</div>
+                  </div>
+                  <div class="prod-list__item__info--price-fb">
+                    <div class="prod-list__item--price">
+                      <span class="prod-list__item__info--price">
+                        1.959.300đ
+                      </span>
+                      <span class="prod-list__item__info--price-sales">
+                        2.799.000đ
+                      </span>
+                    </div>
+                    <div class="prod-list__item__info--star-icon">
+                      <img
+                        class="info--star-icon"
+                        loading="lazy"
+                        alt=""
+                        src="./icon/star.svg"
+                      />
+                      <div class="prod-list__item__info--fb">4.3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- sp9 -->
+            <div class="card swiper-slide">
+              <div class="prod-list__item__image">
+                <a href="">
+                  <img
+                    class="prod-list__item__img1"
+                    loading="lazy"
+                    alt=""
+                    src="./img/9K6-1.webp"
+                  />
+                </a>
+                <span class="product-sale-tag">
+                  <span> NEW!</span>
+                </span>
+                <div class="button-heart-cart-hover">
+                  <a href="">
+                    <img
+                      src="./icon/heart.svg"
+                      alt=""
+                      class="prod-list__item__image--heart-hover"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="./icon/cart.svg"
+                      alt=""
+                      class="prod-list__item__image--cart-hover"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="prod-list__item__inner">
+                <div class="prod-list__item__inner--child">
+                  <div class="prod-list__item__info">
+                    <div class="prod-list__item__info--title">
+                      <a href="">Nhẫn NDINO 9K6</a>
+                    </div>
+                    <div class="prod-list__item__info--masp">Nhẫn</div>
+                  </div>
+                  <div class="prod-list__item__info--price-fb">
+                    <div class="prod-list__item--price">
+                      <span class="prod-list__item__info--price">
+                        3.999.000đ
+                      </span>
+                    </div>
+                    <div class="prod-list__item__info--star-icon">
+                      <img
+                        class="info--star-icon"
+                        loading="lazy"
+                        alt=""
+                        src="./icon/star.svg"
+                      />
+                      <div class="prod-list__item__info--fb">4.3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- sp10 -->
+            <div class="card swiper-slide">
+              <div class="prod-list__item__image">
+                <a href="">
+                  <img
+                    class="prod-list__item__img1"
+                    loading="lazy"
+                    alt=""
+                    src="./img/AND 06-1.webp"
+                  />
+                </a>
+                <span class="product-sale-tag">
+                  <span> HOT!</span>
+                </span>
+                <!-- Hover heart and cart -->
+                <div class="button-heart-cart-hover">
+                  <a href="">
+                    <img
+                      src="./icon/heart.svg"
+                      alt=""
+                      class="prod-list__item__image--heart-hover"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="./icon/cart.svg"
+                      alt=""
+                      class="prod-list__item__image--cart-hover"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="prod-list__item__inner">
+                <div class="prod-list__item__inner--child">
+                  <div class="prod-list__item__info">
+                    <div class="prod-list__item__info--title">
+                      <a href="">Dây chuyền LUXEMAND 06</a>
+                    </div>
+                    <div class="prod-list__item__info--masp">Dây chuyền</div>
+                  </div>
+                  <div class="prod-list__item__info--price-fb">
+                    <div class="prod-list__item--price">
+                      <span class="prod-list__item__info--price">
+                        3.983.000đ
+                      </span>
+                      <span class="prod-list__item__info--price-sales">
+                        5.690.000đ
+                      </span>
+                    </div>
+                    <div class="prod-list__item__info--star-icon">
+                      <img
+                        class="info--star-icon"
+                        loading="lazy"
+                        alt=""
+                        src="./icon/star.svg./icon/star.svg"
                       />
                       <div class="prod-list__item__info--fb">4.3</div>
                     </div>
@@ -1862,8 +2004,41 @@
       </div>
       <!-- Swiper JS -->
       <script src="js/swiper-bundle.min.js"></script>
-      <!-- JavaScript -->
-      <script src="js/Card-slider.js"></script>
+      <!-- card-sider -->
+      <script>
+        var swiper = new Swiper(".slide-content", {
+          slidesPerView: 3,
+          spaceBetween: 25,
+          loop: true,
+          centerSlide: "true",
+          fade: "true",
+          grabCursor: "true",
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+
+          breakpoints: {
+            0: {
+              slidesPerView: 1,
+            },
+            520: {
+              slidesPerView: 2,
+            },
+            950: {
+              slidesPerView: 3,
+            },
+            1000: {
+              slidesPerView: 4,
+            },
+          },
+        });
+      </script>
       <!-------------- DANH MỤC ƯA CHUỘNG -------------->
       <div class="third-line"></div>
       <div class="explore-dm">
@@ -1878,12 +2053,23 @@
             mỗi khi bạn xuất hiện
           </p>
         </div>
-        <!-- Day chuyen -->
         <div class="container-listing">
+          <!-- ALL -->
           <div class="listing-title">
             <a href="" class="listing-tile__link">
               <figure class="listing-tile__image">
-                <img class="" src="img/day-chuyen-9.webp" />
+                <img class="" src="./img/danhmuc-ShopAll1.jpeg" />
+              </figure>
+              <div class="listing-tile__content">
+                <p class="listing-tile__title" id="TatCa">TẤT CẢ</p>
+              </div>
+            </a>
+          </div>
+          <!-- Day chuyen -->
+          <div class="listing-title">
+            <a href="" class="listing-tile__link">
+              <figure class="listing-tile__image">
+                <img class="" src="./img/day-chuyen.webp" />
               </figure>
               <div class="listing-tile__content">
                 <p class="listing-tile__title">DÂY CHUYỀN</p>
@@ -1894,7 +2080,7 @@
           <div class="listing-title">
             <a href="" class="listing-tile__link">
               <figure class="listing-tile__image">
-                <img class="" src="img/bong-tai-8.jpg" />
+                <img class="" src="./img/bong-tai.jpg" />
               </figure>
               <div class="listing-tile__content">
                 <p class="listing-tile__title">BÔNG TAI</p>
@@ -1905,7 +2091,7 @@
           <div class="listing-title">
             <a href="" class="listing-tile__link">
               <figure class="listing-tile__image">
-                <img class="" src="img/nhan-5.webp" />
+                <img class="" src="./img/nhan.webp" />
               </figure>
               <div class="listing-tile__content">
                 <p class="listing-tile__title">NHẪN</p>
@@ -1916,21 +2102,10 @@
           <div class="listing-title">
             <a href="" class="listing-tile__link">
               <figure class="listing-tile__image">
-                <img class="" src="img/lac-tay-8.webp" />
+                <img class="" src="./img/lac-tay.webp" />
               </figure>
               <div class="listing-tile__content">
                 <p class="listing-tile__title">VÒNG TAY</p>
-              </div>
-            </a>
-          </div>
-          <!-- ALL -->
-          <div class="listing-title">
-            <a href="" class="listing-tile__link">
-              <figure class="listing-tile__image">
-                <img class="" src="img/Nhan-cau-hon-1.webp" />
-              </figure>
-              <div class="listing-tile__content">
-                <p class="listing-tile__title">Shop All</p>
               </div>
             </a>
           </div>
