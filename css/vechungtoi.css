@@ -250,7 +250,6 @@ td {
   margin-left: 10%;
   flex-basis: 40%;
   text-align: justify;
-  min-width: auto;
 }
 .tam-nhin {
   display: flex;
