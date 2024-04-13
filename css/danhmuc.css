@@ -532,6 +532,7 @@ input[type="radio"] {
 .prod-dropdown--left {
   display: flex;
   align-items: center; /* căn giữa theo chiều dọc */
+  cursor: pointer;
 }
 
 .prod-dropdown--left i {
