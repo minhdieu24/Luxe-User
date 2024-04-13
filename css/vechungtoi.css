@@ -252,14 +252,14 @@ td {
   margin: 70px 100px;
 }
 .tam-nhin div {
-  flex-basis: 50%;
+  flex-basis: 40%;
   text-align: justify;
 }
 .tam-nhin img {
   flex-basis: 50%;
   margin-left: 14%;
   max-height: 360px;
-  max-width: 410px;
+  max-width: 360px;
   border-radius: 10px;
 }
 .thanh-vien {
