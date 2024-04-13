@@ -192,7 +192,7 @@ td {
 /* VỀ-CHÚNG-TÔI */
 .container-wrapper{
   max-width: 1100px;
-  margin:  auto;
+  margin: auto;
   font-family: Quicksand;
   justify-content: center;
 }
@@ -323,4 +323,85 @@ td {
 }
 .active {
   background-color: #fe823b;
+}
+@media(max-width: 790px){
+  .content-wrapper{
+    height: auto;
+  }
+  .content-wrapper h1{
+    font-size: 1.7em;
+  }
+  .content-wrapper p{
+    font-size: medium;
+  }
+  .ve-chung-toi-wrap {
+    height: auto;
+    padding: 40px 40px;
+ }
+ .ve-chung-toi {
+   flex-direction: column;
+   position: unset;
+   top: auto;
+   transform: none;
+   gap: 40px;
+ }
+ .ve-chung-toi div {
+   flex-basis: 100%;
+   width: 100%;   
+ }
+ .ve-chung-toi img {
+   display: block;
+   margin: auto ;
+ }
+ .su-menh, .tam-nhin{
+  flex-direction: column;
+  margin: 40px 30px;
+ }
+ .su-menh{
+    display: flex;
+ }
+ .su-menh img {
+  order: 2;
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+ }
+ .su-menh div {
+  order: 1;
+  margin-left: auto;
+  margin-bottom: 30px;
+ }
+ .tam-nhin div {
+   margin-top: 10em;
+   margin-bottom: 2em;
+ }
+ .tam-nhin img {
+  display: block;
+  margin: auto;
+ } 
+ .thanh-vien {
+  margin-top: 25em;
+  text-align: center;
+}
+.ba-thanh-vien {
+  margin: 40px 5px;
+}
+.ba-thanh-vien .mot-thanh-vien {
+  padding: 1em;
+}
+.arrow-left,
+.arrow-right {
+  top: 40%;
+  padding: 5px;
+}
+.arrow-left {
+  left: -50px;
+}
+.arrow-right {
+  right: -50px;
+}
+.img-index-dot {
+  right: 40%;
+}
 }

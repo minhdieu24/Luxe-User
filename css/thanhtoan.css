@@ -205,6 +205,25 @@ h2, h3{
 .hoa-don-cua-ban button:hover {
   background: #f46b1c;
 }
+@media (max-width:790px){
+  .wrapper{
+    flex-wrap: wrap;
+    margin: auto 20px ;
+  }
+  .thong-tin-hoa-don{
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .hoa-don-cua-ban{
+    max-width: 100%;
+    flex-basis: 100%;
+    margin: auto ;
+    padding-right: 20px;
+  }
+  .hoa-don-cua-ban button{
+    margin-bottom: 40px;
+  }
+}
 
 /* VỀ-CHÚNG-TÔI */
 .content1 img {
