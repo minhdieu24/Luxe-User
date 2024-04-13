@@ -17,7 +17,7 @@ next.onclick = function(){
     reloadSlider();
 }
 
-let refreshSlider = setInterval(()=> {li.click()}, 3000);
+let refreshSlider = setInterval(()=> {list.click()}, 3000);
 function reloadSlider(){
     // Kiểm tra active có lớn hơn hoặc bằng chiều dài của mảng items hay không
     if (active >= items.length) {
