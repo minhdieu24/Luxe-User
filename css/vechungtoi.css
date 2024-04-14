@@ -273,14 +273,21 @@ td {
   margin: 70px 100px;
   text-align: center;
 }
+.thanh-vien-gr {
+  position: relative;
+  width: 90%;
+  display: block;
+  margin: auto;
+}
 .ba-thanh-vien {
-  display: flex;
-  margin: 40px 30px;
+  display: flex; /* Sử dụng flexbox */
   overflow: hidden;
+  /* margin: 40px 30px; */
   scroll-behavior: smooth;
 }
-.ba-thanh-vien .mot-thanh-vien {
+.thanh-vien-gr .mot-thanh-vien {
   padding: 25px;
+  width: calc(90%/3);
 }
 .ba-thanh-vien .mot-thanh-vien div {
   margin: 20px auto;
@@ -289,9 +296,7 @@ td {
 .ba-thanh-vien .mot-thanh-vien div h3 {
   font-weight: bold;
 }
-.thanh-vien-gr {
-  position: relative;
-}
+
 .arrow-left,
 .arrow-right {
   top: 50%;
@@ -324,7 +329,7 @@ td {
 .active {
   background-color: #fe823b;
 }
-@media(max-width: 790px){
+@media(max-width: 1100px){
   .content-wrapper{
     height: auto;
   }
@@ -389,6 +394,10 @@ td {
 }
 .ba-thanh-vien .mot-thanh-vien {
   padding: 1em;
+  width: auto;
+}
+.mot-thanh-vien img{
+  width: 220px;
 }
 .arrow-left,
 .arrow-right {
